@@ -1,0 +1,14 @@
+body, .side-nav {
+  font-family: 'Quicksand', sans-serif;
+}
+#summary, #media-links {
+  height: 150px;
+}
+
+a {
+  color: #616161
+}
+
+nav, .brand-logo {
+  padding: 10px;
+}
