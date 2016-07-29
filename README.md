@@ -1,1 +1,3 @@
-Portfolio for JJ Keith -- still very much in progress.
+#Portfolio for JJ Keith
+
+A work in progress!
