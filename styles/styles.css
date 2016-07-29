@@ -1,0 +1,19 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+nav {
+  height: 100px;
+  opacity: .7;
+}
+
+dt, a {
+  color: #bf360c;
+}
+
+#media-links {
+  height: 200px;
+}
+
+.icon :hover {
+  color: black;
+}
