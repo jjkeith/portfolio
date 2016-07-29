@@ -4,7 +4,14 @@ body, .side-nav {
 #summary, #media-links {
   height: 150px;
 }
+.icon :hover {
+  color: black;
+}
 
 nav, .brand-logo {
-  padding: 10px;
+  /*padding: 10px;*/
 }
+
+dt, a {
+    color: #bf360c;
+  }
