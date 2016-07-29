@@ -1,17 +1,14 @@
-body, .side-nav {
+body {
   font-family: 'Quicksand', sans-serif;
 }
-#summary, #media-links {
-  height: 150px;
-}
+
 .icon :hover {
   color: black;
 }
-
-nav, .brand-logo {
-  /*padding: 10px;*/
+nav {
+  height: 100px;
+  opacity: .75;
 }
-
 dt, a {
     color: #bf360c;
   }
