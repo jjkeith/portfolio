@@ -6,5 +6,6 @@ A work in progress!
 * Sidenav is behaving strangely
 * Index needs design rework
 
+
 ###Upcoming changes
 * Remove materialize dependency and create custom Sass
