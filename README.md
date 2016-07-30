@@ -8,4 +8,4 @@ A work in progress!
 
 
 ###Upcoming changes
-* Remove materialize dependency and create custom Sass
+* shift from materialize class-based formatting to custom SASS. 
