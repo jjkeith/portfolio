@@ -1,4 +1,4 @@
-#Portfolio for JJ Keith
+#jjkeith.net — portfolio site
 
 A work in progress!
 
