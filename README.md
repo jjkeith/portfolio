@@ -3,9 +3,9 @@
 A work in progress!
 
 ###Current Issues
-* Sidenav is behaving strangely
+* Sidenav is not working
 * Index needs design rework
 
 
 ###Upcoming changes
-* shift from materialize class-based formatting to custom SASS. 
+* shift from materialize class-based formatting to custom SASS.
