@@ -1,9 +1,13 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 nav {
   height: 100px;
   opacity: .7;
+}
+
+nav .brand-logo {
+  padding-left: 10px;
 }
 
 dt, a {
@@ -15,5 +19,5 @@ dt, a {
 }
 
 .icon :hover {
-  color: black;
+  color: #ffab91;
 }
