@@ -7,7 +7,17 @@ nav {
   opacity: .7;
 }
 
-nav .brand-logo {
+header, main {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main {
+    padding-left: 0;
+  }
+}
+
+.brand-logo {
   padding-left: 10px;
 }
 
