@@ -12,10 +12,17 @@ nav {
   }
 }
 
+#profilepic {
+  margin-top: 10px;
+}
+
 a.brand-logo, a.button-collapse {
   padding-left: 10px;
 }
 
+.side-nav a  {
+  height: 64px;
+}
 
 dt, a {
   color: #bf360c;
