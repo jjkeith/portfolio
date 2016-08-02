@@ -12,9 +12,10 @@ nav {
   }
 }
 
-.brand-logo {
+a.brand-logo, a.button-collapse {
   padding-left: 10px;
 }
+
 
 dt, a {
   color: #bf360c;

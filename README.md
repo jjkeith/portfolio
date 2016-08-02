@@ -2,9 +2,10 @@
 
 A work in progress!
 
-###Current Issues
-* Sidenav is not working
-* Index needs design rework
+
+###Known bugs
+* highlighting is wonky on sideNav
+
 
 ###Upcoming changes
 * shift from materialize class-based formatting to custom SASS.
