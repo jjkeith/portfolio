@@ -4,7 +4,12 @@ body {
 }
 nav {
   height: 100px;
-  opacity: .7;
+}
+
+@media (max-width: 993px) {
+  main {
+    padding-left: 100px;
+  }
 }
 
 .brand-logo {
