@@ -1,11 +1,10 @@
 $(document).ready(function(){
-  $('.button-collapse').sideNav({
-      menuWidth: 100,
+  $( '.button-collapse' ).sideNav({
       edge: 'left',
       closeOnClick: true
     }
   );
-  $('.button-collapse').sideNav('hide');
+  $( '.button-collapse' ).sideNav( 'hide' );
 });
 
 

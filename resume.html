@@ -1,165 +1,218 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>JJ Keith's Resume</title>
-  </head>
-  <!-- Load Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<!-- Load Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-  <!-- Sourcing in CSS -->
-    <link rel="stylesheet" href="styles/materialize.min.css">
-    <link rel='stylesheet' type="text/css" href="styles/styles.css">
+<!-- Sourcing in CSS -->
+<link rel="stylesheet" href="styles/materialize.min.css">
+<link rel='stylesheet' type="text/css" href="./styles/index.css">
 
-  <!-- Sourcing in Javascript-->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
 
-  <!-- Sourcing in fonts -->
-    <!-- primary font -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
-    <!-- icon font -->
-    <script src="https://use.fontawesome.com/5a919c595e.js"></script>
+<!-- Sourcing in Javascript-->
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+        crossorigin="anonymous"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/app.js"></script>
 
-  <body>
-    <!-- Navbar begin -->
+<!-- Sourcing in fonts -->
+<!-- primary font -->
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+<!-- icon font -->
+<script src="https://use.fontawesome.com/5a919c595e.js"></script>
+
+<body>
+<!--Navbar begin -->
 <header>
-  <div class="navbar-fixed">
-    <nav class="deep-orange lighten-2">
-      <div class="nav-wrapper navbar-fixed">
-        <a href="index.html" class="brand-logo">JJ Keith</a>
-        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-          <li class="waves-effect"><a href="index.html">Projects</a></li>
-          <li class="waves-effect"><a href="about.html">About</a></li>
-          <li class="active"><a href="resume.html">Résumé</a></li>
-          <li class="waves-effect"><a href="writing.html">Writing</a></li>
-        </ul>
-        <!-- Small screen menu -->
-        <ul class="side-nav white" id="mobile-menu">
-          <div class="center-align" id="profilepic">
-            <img src="images/headshot.jpg" alt="JJ Keith" class="circle responsive-img" width="80"><h5 class="deep-orange-text text-lighten-2">JJ Keith</h5>
-          </div>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="index.html" data-position="right" data-delay="0" data-tooltip="Projects"><i class="fa fa-terminal fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Projects" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="about.html"><i class="fa fa-user fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="About" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="resume.html"><i class="fa fa-file-text fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Résumé" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="writing.html"><i class="fa fa-book fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Writing" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Email" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="LinkedIn" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x  deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="GitHub" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <div class="navbar-fixed">
+        <nav class="navbar-jj">
+            <div class="nav-wrapper navbar-fixed">
+                <a href="projects.html" class="brand-logo">JJ Keith</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars"
+                                                                                    aria-hidden="true"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x"
+                                                                        aria-hidden="true"></i></a></li>
+                    <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="waves-effect"><a href="about.html">About</a></li>
+                    <li class="waves-effect active"><a href="resume.html">Résumé</a></li>
+                    <li class="waves-effect"><a href="writing.html">Writing</a></li>
+                    <li class="waves-effect"><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- Small screen menu -->
+                <ul class="side-nav" id="mobile-menu">
+                    <li><img src="images/jj-keith.jpg" alt="JJ Keith" class="pro-pic mod-menu circle responsive-img">
+                    </li>
+                    <li class="side-nav-header"><h5>JJ Keith</h5></li>
+
+                    <li class="side-nav-item">
+                        <a href="projects.html" data-position="right"
+                           data-delay="0" data-tooltip="Projects">
+                            <i class="nav-icon fa fa-terminal fa-2x"></i>Projects</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="about.html">
+                            <i class="nav-icon fa fa-user fa-2x"></i>About</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="resume.html">
+                            <i class="nav-icon fa fa-file-text fa-2x"></i>Résumé</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="writing.html">
+                            <i class="nav-icon fa fa-book fa-2x"></i>Writing</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="mailto:jj@jjkeith.net">
+                            <i class="nav-icon fa fa-envelope fa-2x"></i>Email</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="http://www.linkedin.com/in/jjkeith">
+                            <i class="nav-icon fa fa-linkedin fa-2x"></i>LinkedIn</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="http://github.com/jjkeith"><i
+                                class="fa fa-github fa-2x"></i>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
-  <!-- Navbar end -->
+<!--Navbar end -->
 
 <main class="container">
     <div class="row">
-      <div class="col s12">
-        <h5>Relevant Projects</h5>
-          <dl>
-            <a href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/"><dt>Bright Lights, Big Kitty: </dt></a>
-            <dd>A logic-driven card game build with JavaScript, HTML and CSS.</dd>
+        <div class="col s7">
 
-            <a  href="https://pokemon-book.herokuapp.com/"><dt>Pokémon Book: </dt></a>
-            <dd>A full-CRUD, Bootsrapped, Ruby on Rails-created website that allows users to create an account and maintain a list of their favorite Pokémon.</dd>
+            <h5>Professional Experience</h5>
+            <dl>
+                <dt>Gigmor (August 2016-present)</dt>
+                <dd>Using Foundation, Sass, and JSX/React to create client-facing views for a peer-to-peer online
+                    marketplace facilitating connections between musicians and talent seekers. Responsible for
+                    implementing others' designs and creating my own to ensure an excellent user experience.
+                </dd>
+                <dt>POPP@ARTC (2014-2016)</dt>
+                <dd>Taught social studies and targeted writing courses to secondary and postsecondary students seeking
+                    careers in law enforcement. Chief accomplishment was a Penn in the Classroom fellowship that
+                    culminated with students producing a self-published a book of their own writing.
+                </dd>
 
-            <a  href="http://nearhear.herokuapp.com/"><dt>Near Hear</dt></a>
-            <dd>A team-built Node.js-based site utilizing Google Maps and Bands in Town APIs that allows users to find concerts happening near them and get ticket information.</dd>
+                <dt>Tripepi Smith &amp; Associates (2015)</dt>
+                <dd>Conducted two ten-week professional development workshops to engineers at the Port of Long Beach.
+                    Using WordPress-administered quizzes to monitor progress, guided participants towards greater
+                    clarity and precision in their business communications.
+                </dd>
 
-            <a  href="https://emojinationapp.herokuapp.com/#/"><dt>Emojination</dt></a>
-            <dd>A MEAN-stack app that allows users to write stories based on emoji prompts. Featured Materialize formatting that cycled through color schemes randomly with each click and content that was served up with some randomization.</dd>
-          </ul>
-      </div>
+                <dt>Gnomon (2012-2014)</dt>
+                <dd>Helped a postsecondary school change their accreditor. Other duties included scheduling extension
+                    and program courses — including seeking out and implementing new courses and instructors — and
+                    organizing career-focused events for a diverse and highly technical student body.
+                </dd>
+
+                <dt>USC (2006-2010)</dt>
+                <dd>Over three years, progressed from being a fully funded teaching assistant in the Anthropology
+                    Department to a full-time lecturer in the Writing Department. Duties ranged from leading discussion
+                    sections to overseeing a group of junior instructors and hosting workshops on teaching standards.
+                    Earned high evaluations from students and developed curricula that reflected cultural change.
+                </dd>
+
+                <dt>Freelance writer (2005-2016)</dt>
+                <dd>Built an audience by contributing personal essays and stories to a variety of websites and
+                    publications, including Reader's Digest, Salon and others. Additionally, provided ghost writing and
+                    copy editing services for a number of clients, including popular business book agency Business Ghost
+                    and a New York Times-bestselling author. Published a book of essays in two countries and as an
+                    audiobook.
+                </dd>
+            </dl>
+        </div>
+        <div class="col s5">
+            <h5>Skills</h5>
+            <dl>
+                <dt>Languages</dt>
+                <dd>JavaScript | Ruby | PHP</dd>
+
+                <dt>Front-end Frameworks</dt>
+                <dd>HTML5 | CSS3 | SASS | Foundation | Bootstrap | Materialize | BEM | Trello CSS</dd>
+
+                <dt>Web Application Frameworks</dt>
+                <dd>Rails | Node | Express | Angular | Ajax | Laravel</dd>
+
+                <dt>JavaScript Libraries</dt>
+                <dd>React | jQuery | Angular | Socket.io</dd>
+
+                <dt>Databases</dt>
+                <dd>PostgreSQL | MongoDB</dd>
+
+                <dt>Version Control</dt>
+                <dd>Git | GitHub</dd>
+
+                <dt>Content Management Systems</dt>
+                <dd>WordPress | Refinery</dd>
+
+                <dt>Additional Skills</dt>
+                <dd>Agile workflow/SCRUM | RESTful API creation | SEO | social media | writing | instruction | editing |
+                    public
+                    speaking
+                </dd>
+            </dl>
+
+            <h5>Education</h5>
+            <dl>
+                <dt>University of California at Berkeley</dt>
+                <dd>Bachelor of Arts in anthropology, 2000</dd>
+
+                <dt>University of Southern California</dt>
+                <dd>Master of Professional Writing, emphasis in nonfiction, 2008</dd>
+
+                <dt>General Assembly</dt>
+                <dd>Santa Monica campus, full-stack web development, 2016</dd>
+            </dl>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h5>Relevant Projects</h5>
+                <dl>
+                    <a href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/">
+                        <dt>Bright Lights, Big Kitty:</dt>
+                    </a>
+                    <dd>A logic-driven card game build with JavaScript, HTML and CSS.</dd>
+
+                    <a href="https://pokemon-book.herokuapp.com/">
+                        <dt>Pokémon Book:</dt>
+                    </a>
+                    <dd>A full-CRUD, Bootsrapped, Ruby on Rails-created website that allows users to create an account
+                        and
+                        maintain a list of their favorite Pokémon.
+                    </dd>
+
+                    <a href="http://nearhear.herokuapp.com/">
+                        <dt>Near Hear</dt>
+                    </a>
+                    <dd>A team-built Node.js-based site utilizing Google Maps and Bands in Town APIs that allows users
+                        to
+                        find concerts happening near them and get ticket information.
+                    </dd>
+
+                    <a href="https://emojinationapp.herokuapp.com/#/">
+                        <dt>Emojination</dt>
+                    </a>
+                    <dd>A MEAN-stack app that allows users to write stories based on emoji prompts. Featured Materialize
+                        formatting that cycled through color schemes randomly with each click and content that was
+                        served up
+                        with some randomization.
+                    </dd>
+                </dl>
+            </div>
+        </div>
     </div>
-
-<div class="row">
-  <div class="col s7">
-
-    <h5>Professional Experience</h5>
-      <dl>
-        <dt>POPP@ARTC (2014-2016)</dt>
-        <dd>Taught social studies and targeted writing courses to secondary and postsecondary students seeking careers in law enforcement. Chief accomplishment was a Penn in the Classroom fellowship that culminated with students producing a self-published a book of their own writing.</dd>
-
-        <dt>Tripepi Smith &amp; Associates (2015)</dt>
-        <dd>Conducted two ten-week professional development workshops to engineers at the Port of Long Beach. Using WordPress-administered quizzes to monitor progress, guided participants towards greater clarity and precision in their business communications.</dd>
-
-        <dt>Gnomon (2012-2014)</dt>
-        <dd>Helped a postsecondary school change their accreditor, including updating their in-house documentation and drafting accreditation applications. Other duties included scheduling extension and program courses — including seeking out and implementing new courses and instructors — and organizing career-focused events for a diverse and highly technical student body.</dd>
-
-        <dt>USC (2006-2010)</dt>
-        <dd>Over three years, progressed from being a fully funded teaching assistant in the Anthropology Department to a full-time lecturer in the Writing Department. Duties ranged from leading discussion sections to overseeing a group of junior instructors and hosting workshops on teaching standards. Earned high evaluations from students and developed curricula that reflected cultural change.</dd>
-
-        <dt>Freelance writer (2005-2016)</dt>
-        <dd>Built an audience by contributing personal essays and stories to a variety of websites and publications, including Reader's Digest, Salon, the Sunday Morning Herald, the Huffington Post, and others. Additionally, provided ghost writing and copy editing services for a number of clients, including popular business book agency Business Ghost and a New York Times-bestselling author. Published a book of essays in two countries and as an audiobook.</dd>
-      </dl>
-    </div>
-
-  <div class="col s5">
-    <h5>Skills</h5>
-      <dl>
-        <dt>Languages</dt>
-        <dd>JavaScript | Ruby</dd>
-
-        <dt>Web Application Frameworks</dt>
-        <dd>Rails | Node | Express | Angular | Ajax</dd>
-
-        <dt>Mobile Application Framework</dt>
-        <dd>Ionic</dd>
-
-        <dt>Front-end Frameworks</dt>
-        <dd>HTML4 | CSS3 | SASS | Bootstrap | Materialize | Pure CSS | Foundation | Semantic UI</dd>
-
-        <dt>JavaScript Libraries</dt>
-        <dd>jQuery | Angular | Socket.io</dd>
-
-        <dt>Databases</dt>
-        <dd>PostgreSQL | MongoDB</dd>
-
-        <dt>Version Control</dt>
-        <dd>Git | GitHub</dd>
-
-        <dt>Content Management Systems</dt>
-        <dd>WordPress | Refinery</dd>
-
-        <dt>Additional Skills</dt>
-        <dd>Agile workflow/SCRUM | SEO | social media | writing | instruction | editing | storytelling | public speaking</dd>
-      </dl>
-
-      <h5>Education</h5>
-      <dl>
-        <dt>University of California at Berkeley</dt>
-        <dd>Bachelor of Arts in anthropology, 2000</dd>
-
-        <dt>University of Southern California</dt>
-        <dd>Master of Professional Writing, emphasis in nonfiction, 2008</dd>
-
-        <dt>General Assembly</dt>
-        <dd>Santa Monica campus, full-stack web development, 2016</dd>
-      </dl>
-    </div>
-  </div>
 </main>
 
-  </body>
+</body>
 </html>

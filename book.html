@@ -1,148 +1,217 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <!-- Load Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
     <!-- Sourcing in CSS -->
-      <link rel="stylesheet" href="styles/materialize.min.css">
-      <link rel='stylesheet' type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <link rel='stylesheet' type="text/css" href="./styles/index.css">
 
     <!-- Sourcing in Javascript-->
-      <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
-      <script src="js/materialize.min.js"></script>
-      <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"
+            integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Sourcing in fonts -->
-      <!-- primary font -->
-      <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
-      <!-- icon font -->
-      <script src="https://use.fontawesome.com/5a919c595e.js"></script>
+    <!-- primary font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- icon font -->
+    <script src="https://use.fontawesome.com/5a919c595e.js"></script>
 
     <title>Book Reviews</title>
-  </head>
-  <body>
-    <!-- Navbar begin -->
+</head>
+<body>
+<!-- Navbar begin -->
 <header>
-  <div class="navbar-fixed">
-    <nav class="deep-orange lighten-2">
-      <div class="nav-wrapper navbar-fixed">
-        <a href="index.html" class="brand-logo">JJ Keith</a>
-        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-          <li class="waves-effect"><a href="index.html">Projects</a></li>
-          <li class="waves-effect"><a href="about.html">About</a></li>
-          <li class="waves-effect"><a href="resume.html">Résumé</a></li>
-          <li class="waves-effect"><a href="writing.html">Writing</a></li>
-        </ul>
-        <!-- Small screen menu -->
-        <ul class="side-nav white" id="mobile-menu">
-          <div class="center-align" id="profilepic">
-            <img src="images/headshot.jpg" alt="JJ Keith" class="circle responsive-img" width="80"><h5 class="deep-orange-text text-lighten-2">JJ Keith</h5>
-          </div>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="index.html" data-position="right" data-delay="0" data-tooltip="Projects"><i class="fa fa-terminal fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Projects" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="about.html"><i class="fa fa-user fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="About" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="resume.html"><i class="fa fa-file-text fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Résumé" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="writing.html"><i class="fa fa-book fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Writing" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a class="deep-orange-text text-lighten-2" href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="Email" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="LinkedIn" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x  deep-orange-text text-lighten-2 tooltipped" data-position="right" data-delay="0" data-tooltip="GitHub" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <div class="navbar-fixed">
+        <nav class="deep-orange lighten-2">
+            <div class="nav-wrapper navbar-fixed">
+                <a href="projects.html" class="brand-logo">JJ Keith</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars"
+                                                                                    aria-hidden="true"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x"
+                                                                        aria-hidden="true"></i></a></li>
+                    <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="waves-effect"><a href="projects.html">Projects</a></li>
+                    <li class="waves-effect"><a href="about.html">About</a></li>
+                    <li class="waves-effect"><a href="resume.html">Résumé</a></li>
+                    <li class="waves-effect"><a href="writing.html">Writing</a></li>
+                </ul>
+                <!-- Small screen menu -->
+                <ul class="side-nav white" id="mobile-menu">
+                    <div class="center-align" id="profilepic">
+                        <img src="images/headshot.jpg" alt="JJ Keith" class="circle responsive-img" width="80"><h5
+                            class="deep-orange-text text-lighten-2">JJ Keith</h5>
+                    </div>
+                    <li>
+                        <a class="deep-orange-text text-lighten-2" href="projects.html" data-position="right"
+                           data-delay="0" data-tooltip="Projects"><i
+                                class="fa fa-terminal fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="Projects" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="deep-orange-text text-lighten-2" href="about.html"><i
+                                class="fa fa-user fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="About" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="deep-orange-text text-lighten-2" href="resume.html"><i
+                                class="fa fa-file-text fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="Résumé" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="deep-orange-text text-lighten-2" href="writing.html"><i
+                                class="fa fa-book fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="Writing" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="deep-orange-text text-lighten-2" href="mailto:jj@jjkeith.net"><i
+                                class="fa fa-envelope fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="Email" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/in/jjkeith"><i
+                                class="fa fa-linkedin fa-2x deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="LinkedIn" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/jjkeith"><i
+                                class="fa fa-github fa-2x  deep-orange-text text-lighten-2 tooltipped"
+                                data-position="right" data-delay="0" data-tooltip="GitHub" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
-  <!-- Navbar end -->
+<!-- Navbar end -->
 
 
 <main class="container">
-  <h1 class="center-align">Reviews</h1>
+    <h1 class="center-align">Reviews</h1>
 
-  <div class="row">
-    <div class="col m3 hide-on-small-only">
+    <div class="row">
+        <div class="col m3 hide-on-small-only">
 
-      <img class="responsive-img materialboxed" width="300" src="images/motherhood-smotherhood.jpg" alt="" />
+            <img class="responsive-img materialboxed" width="300" src="images/motherhood-smotherhood.jpg" alt=""/>
 
-      <h5>Where to Buy</h5>
-        <p><em>Motherhood Smotherhood</em> is available at discerning bookstores in the U.S. and Canada, as well as in Australia with the title <em>Stop Reading Baby Books. </em></p>
-      <h6>LOCAL</h6>
-        <p>To find a local, independent bookstore near you, go to <a href="http://www.indiebound.org/book/9781629146584">IndieBound.com</a>. </p>
-      <h6>WEB</h6>
-        <ul>
-          <li><a href="http://www.amazon.com/gp/product/1629146587/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1629146587&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=JG42FEHM6GMLON2Y">Amazon</a></li>
-          <li><a href="http://click.linksynergy.com/link?id=mYK8lnaa39c&amp;offerid=239662.9781629146584&amp;type=2&amp;murl=http%3A%2F%2Fsearch.barnesandnoble.com%2FMotherhood-Smotherhood%2FJ-J-Keith%2Fe%2F9781629146584">Barnes and Noble</a></li>
-          <li><a href="http://www.chapters.indigo.ca/books/motherhood-smotherhood-fighting-back-against/9781629146584-item.html?ikwid=motherhood+smotherhood&amp;ikwsec=Home&amp;ikwidx=0">Indigo</a></li>
-          <li><a href="http://www.powells.com/biblio/62-9781629146584-0">Powell's</a></li><li><a href="http://www.target.com/p/motherhood-smotherhood-hardcover/-/A-16178862">Target</a></li>
-        </ul>
+            <h5>Where to Buy</h5>
+            <p><em>Motherhood Smotherhood</em> is available at discerning bookstores in the U.S. and Canada, as well as
+                in Australia with the title <em>Stop Reading Baby Books. </em></p>
+            <h6>LOCAL</h6>
+            <p>To find a local, independent bookstore near you, go to <a
+                    href="http://www.indiebound.org/book/9781629146584">IndieBound.com</a>. </p>
+            <h6>WEB</h6>
+            <ul>
+                <li>
+                    <a href="http://www.amazon.com/gp/product/1629146587/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1629146587&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=JG42FEHM6GMLON2Y">Amazon</a>
+                </li>
+                <li>
+                    <a href="http://click.linksynergy.com/link?id=mYK8lnaa39c&amp;offerid=239662.9781629146584&amp;type=2&amp;murl=http%3A%2F%2Fsearch.barnesandnoble.com%2FMotherhood-Smotherhood%2FJ-J-Keith%2Fe%2F9781629146584">Barnes
+                        and Noble</a></li>
+                <li>
+                    <a href="http://www.chapters.indigo.ca/books/motherhood-smotherhood-fighting-back-against/9781629146584-item.html?ikwid=motherhood+smotherhood&amp;ikwsec=Home&amp;ikwidx=0">Indigo</a>
+                </li>
+                <li><a href="http://www.powells.com/biblio/62-9781629146584-0">Powell's</a></li>
+                <li><a href="http://www.target.com/p/motherhood-smotherhood-hardcover/-/A-16178862">Target</a></li>
+            </ul>
 
+        </div>
+        <div class="col m9 s12">
+            <p>
+                "The author’s writing is sharp, her arguments valid, and her book timely. Enthusiastically recommended;
+                let’s hope this isn’t the last we hear from Keith."
+                <br/><strong>— <em>Library Journal</em>, Starred Review </strong>
+            </p>
+
+            <p>
+                "In her first book, Keith, a mother of two, presents an irreverent manifesto for cavalier mothering. Her
+                philosophy in a nutshell: 'I try not to be a dick to my kids, but it’s okay if sometimes they are
+                inconvenienced by my need to be a human in addition to being a mother.'"
+                <br/><strong>— <em>Publishers Weekly</em></strong>
+            </p>
+            <p>
+                "[<em>Motherhood Smotherhood</em>] is funny and serious and irritated and earnest all at once. Keith is
+                grounded and reasonable, loving her two toddlers but not suffocating them with love."
+                <br/><strong>— Gina B. Nahai, author of <a
+                    href="http://www.amazon.com/gp/product/1617753203/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1617753203&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=PEHTHG32PLWSADEC"><em>The
+                Luminous Heart of Jonah S., </em></a>writing in the <em><a
+                    href="http://www.jewishjournal.com/gina_nahai/article/mommy_dearest#.VBDIdVIhfFY.mailto">Jewish
+                Journal</a></em></strong>
+            </p>
+            <p>
+                “I love her stuff.”
+                <br/><strong>— Jenny Lawson (<a href="http://thebloggess.com">The Bloggess</a>), New York Times
+                bestselling author of <a
+                        href="http://www.amazon.com/gp/product/0425261018/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0425261018&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=MFM6W524E3XCKFO7"><em>Let’s
+                    Pretend This Never Happened</em></a></strong>
+            </p>
+            <p>
+                “JJ Keith’s writing is exceptionally gutsy, sometimes heartbreaking and always laugh out loud funny.
+                She’s the queen of finding a fresh angle on every topic. What I’m saying is, I’m jealous of her ability.
+                Okay? There. The secret is out.”
+                <br/><strong>— Stefanie Wilder-Taylor, bestselling author of <a
+                    href="http://www.amazon.com/gp/product/1416915060/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1416915060&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=7YQE34YHYP3GKHEX"><em>Sippy
+                Cups Are Not for Chardonnay </em></a>and <em><a
+                    href="http://www.amazon.com/gp/product/1416954139/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1416954139&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=LPGKQOE7Q7MCTZPS">Naptime
+                is the New Happy Hour</a></em></strong>
+            </p>
+            <p>
+                “DUDE. This is epic. Every new mom needs a copy of <em>Motherhood<br/>Smotherhood</em>.”
+                <br/><strong>— Rebecca Woolf (<a href="http://www.girlsgonechild.net">Girls Gone Child</a>), author of
+                <a href="http://www.amazon.com/gp/product/1580052320/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1580052320&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=5HBGYX5FWB4HMZTL"><em>Rockabye:
+                    From Wild to Child</em></a></strong>
+            </p>
+            <p>
+                "As a new mom trying to find my feet, I was excited to read what was sure to be a sassy backlash against
+                some of the nonsense in the parenting world. It is so much more than that. JJ is a smart, compassionate
+                writer and I found myself alternating between, 'Yes! Someone finally called out those idiots!' and 'Oh,
+                crap, I've been that idiot.' It's a good book that can make you see yourself and others with more humor
+                and understanding. I laughed out loud while reading, and dang it if the last sentence didn't make me
+                cry."
+                <br/><strong>— Laura Simms, Founder and Career Coach at <a href="http://createasfolk.com">Create as
+                Folk</a></strong>
+            </p>
+            <p>
+                “JJ Keith’s entertaining book succeeds where so many writers on parenting fail: she takes her
+                experience, avoids universalizing it, and uses it to bring parents together, away from the myth of per-
+                fection parenting. Motherhood Smotherhood is filled with worldly￼￼￼￼￼￼ ￼￼￼￼￼￼￼￼perspective and an
+                original voice. In short, it’s frank, fresh, and funny. I wish I’d written it.”
+                <br/><strong>— Leanne Shirtliffe, author of <a
+                    href="http://www.amazon.com/gp/product/1620875268/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1620875268&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=JGHJ5EECSMUF7IHS"><em>Don’t
+                Lick the Minivan: And Other Things I Never Thought I’d Say to My Kids</em></a></strong>
+            </p>
+            <p>
+                “If for some reason I end up with a kid, this is the shit I would read.”
+                <br/><strong>— Samantha Irby (<a href="http://bitchesgottaeat.blogspot.com">Bitches Gotta Eat</a>),
+                author of <a
+                        href="http://www.amazon.com/gp/product/0988480425/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0988480425&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=S2JZA3GOOC4XNMAP"><em>Meaty:
+                    Essays</em></a></strong>
+            </p>
+            <p>
+                “In today’s culture of parenting do’s and don’ts, those who seek out the ‘best’ child-rearing
+                philosophies are often met with more questions than answers. JJ Keith demystifies those questions by
+                asserting that no parent is perfect—and that’s okay. Her relatable and witty essays soothe rather than
+                worry, and for someone who’s embarking on the parenting journey, that’s the only advice that will really
+                matter.”
+                <br/><strong>— <a href="http://www.stfuparentsblog.com">Blair Koenig</a>, author of <a
+                    href="http://www.amazon.com/gp/product/0399159762/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0399159762&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=4T7WH7G3YFX5YDD6"><em>STFU,
+                Parents: The Jaw-Dropping, Self-Indulgent, and Occasionally Rage-Inducing World of Parent Overshare</em></a></strong>
+            </p>
+            <p>
+                “I should have written this. My bad.”<br/><strong>— Dr. Benjamin M. Spock (posthumously via a reputable
+                psychic)</strong>
+            </p>
+        </div>
     </div>
-    <div class="col m9 s12">
-      <p>
-        "The author’s writing is sharp, her arguments valid, and her book timely. Enthusiastically recommended; let’s hope this isn’t the last we hear from Keith."
-        <br /><strong>— <em>Library Journal</em>, Starred Review </strong>
-      </p>
 
-      <p>
-        "In her first book, Keith, a mother of two, presents an irreverent manifesto for cavalier mothering. Her philosophy in a nutshell: 'I try not to be a dick to my kids, but it’s okay if sometimes they are inconvenienced by my need to be a human in addition to being a mother.'"
-        <br /><strong>— <em>Publishers Weekly</em></strong>
-      </p>
-      <p>
-        "[<em>Motherhood Smotherhood</em>] is funny and serious and irritated and earnest all at once. Keith is grounded and reasonable, loving her two toddlers but not suffocating them with love."
-        <br /><strong>— Gina B. Nahai, author of <a href="http://www.amazon.com/gp/product/1617753203/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1617753203&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=PEHTHG32PLWSADEC"><em>The Luminous Heart of Jonah S., </em></a>writing in the <em><a href="http://www.jewishjournal.com/gina_nahai/article/mommy_dearest#.VBDIdVIhfFY.mailto">Jewish Journal</a></em></strong>
-      </p>
-      <p>
-        “I love her stuff.”
-        <br /><strong>— Jenny Lawson (<a href="http://thebloggess.com">The Bloggess</a>), New York Times bestselling author of <a href="http://www.amazon.com/gp/product/0425261018/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0425261018&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=MFM6W524E3XCKFO7"><em>Let’s Pretend This Never Happened</em></a></strong>
-      </p>
-      <p>
-        “JJ Keith’s writing is exceptionally gutsy, sometimes heartbreaking and always laugh out loud funny. She’s the queen of finding a fresh angle on every topic. What I’m saying is, I’m jealous of her ability. Okay? There. The secret is out.”
-        <br /><strong>— Stefanie Wilder-Taylor, bestselling author of <a href="http://www.amazon.com/gp/product/1416915060/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1416915060&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=7YQE34YHYP3GKHEX"><em>Sippy Cups Are Not for Chardonnay </em></a>and <em><a href="http://www.amazon.com/gp/product/1416954139/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1416954139&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=LPGKQOE7Q7MCTZPS">Naptime is the New Happy Hour</a></em></strong>
-      </p>
-      <p>
-        “DUDE. This is epic. Every new mom needs a copy of <em>Motherhood<br />Smotherhood</em>.”
-        <br /><strong>— Rebecca Woolf (<a href="http://www.girlsgonechild.net">Girls Gone Child</a>), author of <a href="http://www.amazon.com/gp/product/1580052320/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1580052320&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=5HBGYX5FWB4HMZTL"><em>Rockabye: From Wild to Child</em></a></strong>
-      </p>
-      <p>
-        "As a new mom trying to find my feet, I was excited to read what was sure to be a sassy backlash against some of the nonsense in the parenting world. It is so much more than that. JJ is a smart, compassionate writer and I found myself alternating between, 'Yes! Someone finally called out those idiots!' and 'Oh, crap, I've been that idiot.' It's a good book that can make you see yourself and others with more humor and understanding. I laughed out loud while reading, and dang it if the last sentence didn't make me cry."
-        <br /><strong>— Laura Simms, Founder and Career Coach at <a href="http://createasfolk.com">Create as Folk</a></strong>
-      </p>
-      <p>
-        “JJ Keith’s entertaining book succeeds where so many writers on parenting fail: she takes her experience, avoids universalizing it, and uses it to bring parents together, away from the myth of per- fection parenting. Motherhood Smotherhood is filled with worldly￼￼￼￼￼￼ ￼￼￼￼￼￼￼￼perspective and an original voice. In short, it’s frank, fresh, and funny. I wish I’d written it.”
-        <br /><strong>— Leanne Shirtliffe, author of <a href="http://www.amazon.com/gp/product/1620875268/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1620875268&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=JGHJ5EECSMUF7IHS"><em>Don’t Lick the Minivan: And Other Things I Never Thought I’d Say to My Kids</em></a></strong>
-      </p>
-      <p>
-        “If for some reason I end up with a kid, this is the shit I would read.”
-        <br /><strong>— Samantha Irby (<a href="http://bitchesgottaeat.blogspot.com">Bitches Gotta Eat</a>), author of <a href="http://www.amazon.com/gp/product/0988480425/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0988480425&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=S2JZA3GOOC4XNMAP"><em>Meaty: Essays</em></a></strong>
-      </p>
-      <p>
-        “In today’s culture of parenting do’s and don’ts, those who seek out the ‘best’ child-rearing philosophies are often met with more questions than answers. JJ Keith demystifies those questions by asserting that no parent is perfect—and that’s okay. Her relatable and witty essays soothe rather than worry, and for someone who’s embarking on the parenting journey, that’s the only advice that will really matter.”
-        <br /><strong>— <a href="http://www.stfuparentsblog.com">Blair Koenig</a>, author of <a href="http://www.amazon.com/gp/product/0399159762/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0399159762&amp;linkCode=as2&amp;tag=jjukid0e-20&amp;linkId=4T7WH7G3YFX5YDD6"><em>STFU, Parents: The Jaw-Dropping, Self-Indulgent, and Occasionally Rage-Inducing World of Parent Overshare</em></a></strong>
-      </p>
-      <p>
-        “I should have written this. My bad.”<br /><strong>— Dr. Benjamin M. Spock (posthumously via a reputable psychic)</strong>
-      </p>
-    </div>
-  </div>
-
-  </main>
-  </body>
+</main>
+</body>
 </html>

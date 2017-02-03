@@ -1,0 +1,56 @@
+.mt0 {
+  margin-top: 0; }
+
+.container {
+  color: #003246; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Oxygen', sans-serif; }
+
+@media (max-width: 993px) {
+  main {
+    padding-left: 100px; } }
+.navbar-jj {
+  background-color: #0387b1;
+  color: #f5f5f5;
+  padding: 0 1.5rem; }
+
+nav .brand-logo {
+  color: #f5f5f5; }
+
+.side-nav {
+  padding: 0 1rem; }
+
+.pro-pic.mod-menu {
+  padding: 2rem; }
+
+.side-nav > .side-nav-header {
+  color: #e4491c;
+  margin-left: 1rem; }
+
+li.side-nav-item > a {
+  color: #003246;
+  font-size: 1.25rem;
+  height: 64px; }
+
+li.side-nav-item > a > i {
+  color: #003246; }
+
+.project-card.card-action {
+  background-color: #013b4d;
+  color: #f5f5f5; }
+
+.card-content {
+  color: #003246; }
+
+a.media-links {
+  height: 200px; }
+
+a.social-media-icon {
+  color: #e4491c; }
+
+dt, a {
+  color: #e4491c; }
+
+/*# sourceMappingURL=index.css.map */

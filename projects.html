@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Load Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <!-- Sourcing in CSS -->
+    <link rel="stylesheet" href="styles/materialize.min.css">
+    <link rel='stylesheet' type="text/css" href="./styles/index.css">
+
+
+    <!-- Sourcing in Javascript-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"
+            integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Sourcing in fonts -->
+    <!-- primary font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- icon font -->
+    <script src="https://use.fontawesome.com/5a919c595e.js"></script>
+
+    <title>JJ Keith</title>
+</head>
+
+<body>
+<!--Navbar begin -->
+<header>
+    <div class="navbar-fixed">
+        <nav class="navbar-jj">
+            <div class="nav-wrapper navbar-fixed">
+                <a href="projects.html" class="brand-logo">JJ Keith</a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars"
+                                                                                    aria-hidden="true"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x"
+                                                                        aria-hidden="true"></i></a></li>
+                    <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="waves-effect"><a href="about.html">About</a></li>
+                    <li class="waves-effect"><a href="resume.html">Résumé</a></li>
+                    <li class="waves-effect"><a href="writing.html">Writing</a></li>
+                    <li class="waves-effect active"><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- Small screen menu -->
+                <ul class="side-nav" id="mobile-menu">
+                    <li><img src="images/jj-keith.jpg" alt="JJ Keith" class="pro-pic mod-menu circle responsive-img"></li>
+                    <li class="side-nav-header"><h5>JJ Keith</h5></li>
+
+                    <li class="side-nav-item">
+                        <a href="projects.html" data-position="right"
+                           data-delay="0" data-tooltip="Projects">
+                            <i class="nav-icon fa fa-terminal fa-2x"></i>Projects</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="about.html">
+                            <i class="nav-icon fa fa-user fa-2x"></i>About</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="resume.html">
+                            <i class="nav-icon fa fa-file-text fa-2x"></i>Résumé</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="writing.html">
+                            <i class="nav-icon fa fa-book fa-2x"></i>Writing</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a class="" href="mailto:jj@jjkeith.net">
+                            <i class="nav-icon fa fa-envelope fa-2x"></i>Email</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="http://www.linkedin.com/in/jjkeith">
+                            <i class="nav-icon fa fa-linkedin fa-2x"></i>LinkedIn</a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="http://github.com/jjkeith"><i
+                                class="fa fa-github fa-2x"></i>GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--Navbar end -->
+
+<main class="container">
+    <div id="portfolio" class="">
+        <h1 class="center-align">Projects</h1>
+        <div class="row">
+            <div class="col s12 m6">
+                <a href="https://pokemon-book.herokuapp.com/">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="images/pokemonbook.png">
+                        </div>
+                        <div class="card-content">
+                            <p>A full-CRUD, Bootsrapped, Ruby on Rails-created website that allows users to make an
+                                account and maintain a list of their favorite Pokémon.</p>
+                        </div>
+                        <div class="project-card card-action">
+                            <h6>POKÉBOOK</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col s12 m6">
+                <a href="http://nearhear.herokuapp.com/">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="images/nearhear.png">
+                        </div>
+                        <div class="card-content">
+                            <p>A collaborative Node.js-based site built with the Google Maps and Bands in Town APIs,
+                                allowign users to find what concerts are happening near them and get ticket
+                                information.</p>
+                        </div>
+                        <div class="project-card card-action">
+                            <h6>NEARHEAR</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- ends row -->
+        <div class="row">
+            <div class="col s12 m6">
+                <a href="https://emojinationapp.herokuapp.com/#/">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="images/emojination.png">
+                        </div>
+                        <div class="card-content">
+                            <p>A MEAN-stack app that allows users to write stories based on emoji prompts. Featured
+                                Materialize formatting that cycled through color schemes randomly with each click and
+                                content that was served up with some randomization.</p>
+                        </div>
+                        <div class="project-card card-action">
+                            <h6>EMOJINATION</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col s12 m6">
+                <a href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="images/bright-lights.png">
+                        </div>
+                        <div class="card-content">
+                            <p>A logic-driven card game build with JavaScript, HTML and CSS.</p>
+                        </div>
+                        <div class="project-card card-action">
+                            <h6>BRIGHT LIGHTS, BIG KITTY</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- ends row -->
+    </div> <!-- ends portfolio div -->=
+    <div class="media-links">
+        <div class="row center-align">
+            <div class="col m2 s6 offset-m2">
+                <a class="social-media-icon" href="https://github.com/jjkeith">
+                    <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col m2 s6">
+                <a class="social-media-icon" href="https://www.linkedin.com/in/jjkeith">
+                    <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col m2 s6">
+                <a class="social-media-icon" href="https://twitter.com/jj_keith">
+                    <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col m2 s6">
+                <a class="social-media-icon" href="mailto:jj@jjkeith.net">
+                    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+</body>
+</html>

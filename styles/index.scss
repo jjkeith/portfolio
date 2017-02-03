@@ -1,0 +1,95 @@
+
+//variables
+$nav-color: #0387b1;
+$background-color:  #f5f5f5;
+$header-color: #0387b1;
+$text-color: #003246;
+$link-color: #e4491c;
+
+
+//utility classes
+.mt0 {
+  margin-top: 0;
+}
+
+// Site-wide Styles
+
+.container {
+  color: $text-color;
+}
+
+body {
+  background-color: $background-color;
+  font-family: 'Oxygen', sans-serif;
+}
+
+@media (max-width: 993px) {
+  main {
+    padding-left: 100px;
+  }
+}
+
+
+// desktop nav styles
+
+.navbar-jj {
+  background-color: $nav-color;
+  color: $background-color;
+  padding: 0 1.5rem;
+}
+
+  nav .brand-logo {
+    color: $background-color;
+  }
+
+
+  // mobile nav styles
+.side-nav {
+  padding: 0 1rem;
+}
+
+  .pro-pic.mod-menu {
+    padding: 2rem;
+  }
+
+  .side-nav > .side-nav-header {
+    color: $link-color;
+    margin-left: 1rem;
+  }
+
+    li.side-nav-item > a {
+      color: $text-color;
+      font-size: 1.25rem;
+      height: 64px;
+    }
+
+      li.side-nav-item > a > i {
+        color: $text-color;
+      }
+
+// projects styles
+
+.project-card.card-action {
+  background-color: darken( $nav-color, 20% );
+  color: $background-color;
+}
+
+  .card-content {
+    color: $text-color;
+  }
+
+
+a.media-links {
+  height: 200px;
+}
+
+  a.social-media-icon {
+    color: $link-color;
+  }
+
+// Resume styles
+
+
+dt, a {
+  color: $link-color;
+}
