@@ -2,7 +2,8 @@
   margin-top: 0; }
 
 .container {
-  color: #003246; }
+  color: #003246;
+  margin-top: 1rem; }
 
 body {
   background-color: #f5f5f5;
@@ -26,7 +27,7 @@ nav .brand-logo {
   padding: 2rem; }
 
 .side-nav > .side-nav-header {
-  color: #e4491c;
+  color: #b71c1c;
   margin-left: 1rem; }
 
 li.side-nav-item > a {
@@ -48,9 +49,16 @@ a.media-links {
   height: 200px; }
 
 a.social-media-icon {
-  color: #e4491c; }
+  color: #b71c1c; }
 
 dt, a {
-  color: #e4491c; }
+  color: #b71c1c; }
+
+.profile-text, li {
+  text-align: justify; }
+
+h5 {
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=index.css.map */
