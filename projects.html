@@ -18,6 +18,8 @@
     <script src="js/app.js"></script>
 
     <!-- Sourcing in fonts -->
+    <!-- display font -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <!-- primary font -->
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <!-- icon font -->
@@ -30,17 +32,15 @@
 <!--Navbar begin -->
 <header>
     <div class="navbar-fixed">
-        <nav class="navbar-jj">
+        <nav class="navbar-jj blue-grey darken-3">
             <div class="nav-wrapper navbar-fixed">
-                <a href="projects.html" class="brand-logo">JJ Keith</a>
+                <a href="index.html" class="brand-logo">JJ Keith</a>
                 <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars"
                                                                                     aria-hidden="true"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="http://www.linkedin.com/in/jjkeith"><i class="fa fa-linkedin fa-2x"
-                                                                        aria-hidden="true"></i></a></li>
-                    <li><a href="http://github.com/jjkeith"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                    </li>
+                    <li><a href="http://www.linkedin.com/in/jjkeith" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="http://github.com/jjkeith" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
                     <li class="waves-effect"><a href="index.html">About</a></li>
                     <li class="waves-effect"><a href="resume.html">Résumé</a></li>
                     <li class="waves-effect"><a href="writing.html">Writing</a></li>
@@ -89,26 +89,45 @@
 
 <main class="container">
     <div id="portfolio" class="">
-        <h1 class="center-align">Projects</h1>
+        <h1 class="center-align blue-grey-text text-darken-3">Projects</h1>
+        <div class="row">
+            <div class="col s12 m6 push-m3">
+                <a href="http://www.gigmor.com" target="_blank">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="images/gigmor.png">
+                        </div>
+                        <div class="card-content">
+                            <p>A jobs marketplace connecting musicians and talent bookers. Junior engineer on
+                                five-person team working in React.js. Responsible for all markup and styles and
+                                contributed to integration on the front-end.</p>
+                        </div>
+                        <div class="project-card card-action blue-grey darken-3">
+                            <h6>GIGMOR</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> <!-- ends row -->
         <div class="row">
             <div class="col s12 m6">
-                <a href="https://pokemon-book.herokuapp.com/">
+                <a href="https://pokemon-book.herokuapp.com/" target="_blank">
                     <div class="card large hoverable">
                         <div class="card-image">
                             <img src="images/pokemonbook.png">
                         </div>
                         <div class="card-content">
-                            <p>A full-CRUD, Bootsrapped, Ruby on Rails-created website that allows users to make an
-                                account and maintain a list of their favorite Pokémon.</p>
+                            <p>A full-CRUD, Bootsrapped, Ruby on Rails website created in a one-week sprint that allows
+                                users to make an account and maintain a list of their favorite Pokémon.</p>
                         </div>
-                        <div class="project-card card-action">
+                        <div class="project-card card-action blue-grey darken-3">
                             <h6>POKÉBOOK</h6>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col s12 m6">
-                <a href="http://nearhear.herokuapp.com/">
+                <a href="http://nearhear.herokuapp.com/" target="_blank">
                     <div class="card large hoverable">
                         <div class="card-image">
                             <img src="images/nearhear.png">
@@ -118,7 +137,7 @@
                                 allowign users to find what concerts are happening near them and get ticket
                                 information.</p>
                         </div>
-                        <div class="project-card card-action">
+                        <div class="project-card card-action blue-grey darken-3">
                             <h6>NEARHEAR</h6>
                         </div>
                     </div>
@@ -127,7 +146,7 @@
         </div> <!-- ends row -->
         <div class="row">
             <div class="col s12 m6">
-                <a href="https://emojinationapp.herokuapp.com/#/">
+                <a href="https://emojinationapp.herokuapp.com/#/" target="_blank">
                     <div class="card large hoverable">
                         <div class="card-image">
                             <img src="images/emojination.png">
@@ -137,48 +156,49 @@
                                 Materialize formatting that cycled through color schemes randomly with each click and
                                 content that was served up with some randomization.</p>
                         </div>
-                        <div class="project-card card-action">
+                        <div class="project-card card-action blue-grey darken-3">
                             <h6>EMOJINATION</h6>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col s12 m6">
-                <a href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/">
+                <a href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/" target="_blank">
                     <div class="card large hoverable">
                         <div class="card-image">
                             <img src="images/bright-lights.png">
                         </div>
                         <div class="card-content">
-                            <p>A logic-driven card game build with JavaScript, HTML and CSS.</p>
+                            <p>A logic-driven card game build with JavaScript, HTML, CSS, and a gratuitous quantity of
+                                cute cat pics.</p>
                         </div>
-                        <div class="project-card card-action">
+                        <div class="project-card card-action blue-grey darken-3">
                             <h6>BRIGHT LIGHTS, BIG KITTY</h6>
                         </div>
                     </div>
                 </a>
             </div>
         </div> <!-- ends row -->
-    </div> <!-- ends portfolio div -->=
+    </div> <!-- ends portfolio div -->
     <div class="media-links">
         <div class="row center-align">
             <div class="col m2 s6 offset-m2">
-                <a class="social-media-icon" href="https://github.com/jjkeith">
+                <a class="blue-grey-text text-darken-1" href="https://github.com/jjkeith">
                     <i class="fa fa-github fa-4x" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="col m2 s6">
-                <a class="social-media-icon" href="https://www.linkedin.com/in/jjkeith">
+                <a class="blue-grey-text text-darken-1" href="https://www.linkedin.com/in/jjkeith">
                     <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="col m2 s6">
-                <a class="social-media-icon" href="https://twitter.com/jj_keith">
+                <a class="blue-grey-text text-darken-1" href="https://twitter.com/jj_keith">
                     <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="col m2 s6">
-                <a class="social-media-icon" href="mailto:jj@jjkeith.net">
+                <a class="blue-grey-text text-darken-" href="mailto:jj@jjkeith.net">
                     <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
                 </a>
             </div>

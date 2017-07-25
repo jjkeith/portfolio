@@ -1,13 +1,13 @@
 
 //variables
-$nav-color: #0387b1;
 $background-color:  #f5f5f5;
-$header-color: #0387b1;
+$header-color: #010101;
 $text-color: #003246;
-$link-color: #b71c1c;
+$link-color: #0387b1;
 
 
 //utility classes
+
 .mt0 {
   margin-top: 0;
 }
@@ -24,25 +24,24 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+}
+
 @media (max-width: 993px) {
   main {
     padding-left: 100px;
   }
 }
 
-
 // desktop nav styles
 
 .navbar-jj {
-  background-color: $nav-color;
   color: $background-color;
+  font-family: 'Comfortaa', cursive;
   padding: 0 1.5rem;
 }
-
-  nav .brand-logo {
-    color: $background-color;
-  }
-
 
   // mobile nav styles
 .side-nav {
@@ -71,8 +70,8 @@ body {
 // projects styles
 
 .project-card.card-action {
-  background-color: darken( $nav-color, 20% );
   color: $background-color;
+  font-family: 'Comfortaa', cursive;
 }
 
   .card-content {
@@ -80,18 +79,15 @@ body {
   }
 
 
-a.media-links {
+.media-links {
   height: 200px;
+  margin-top: 50px;
 }
-
-  a.social-media-icon {
-    color: $link-color;
-  }
 
 // Resume styles
 
 
-dt, a {
+a {
   color: $link-color;
 }
 
