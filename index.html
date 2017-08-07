@@ -7,13 +7,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
     <!-- Sourcing in CSS -->
-    <link rel="stylesheet" href="styles/materialize.min.css">
     <link rel='stylesheet' type="text/css" href="./styles/index.css">
+
 
     <!-- Sourcing in Javascript-->
     <script src="https://code.jquery.com/jquery-3.1.0.js"
             integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script src="js/materialize.min.js"></script>
     <script src="js/app.js"></script>
 
     <!-- Sourcing in fonts -->
@@ -24,91 +23,129 @@
     <!-- icon font -->
     <script src="https://use.fontawesome.com/5a919c595e.js"></script>
 
-    <title>About</title>
+    <title>JJ Keith</title>
+
+
+    <!--Custom JavaScript-->
+    <script>
+
+
+    </script>
 </head>
-<body>
-<!--Navbar begin -->
-<header>
-    <div class="navbar-fixed">
-        <nav class="navbar-jj red darken-3">
-            <div class="nav-wrapper navbar-fixed">
-                <a href="index.html" class="brand-logo">JJ Keith</a>
-                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="mailto:jj@jjkeith.net"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="http://www.linkedin.com/in/jjkeith" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="http://github.com/jjkeith" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="waves-effect active"><a href="index.html">About</a></li>
-                    <li class="waves-effect"><a href="resume.html">Résumé</a></li>
-                    <li class="waves-effect"><a href="writing.html">Writing</a></li>
-                    <li class="waves-effect"><a href="projects.html">Projects</a></li>
-                </ul>
-                <!-- Small screen menu -->
-                <ul class="side-nav" id="mobile-menu">
-                    <li><img src="images/jj-keith.jpg" alt="JJ Keith" class="pro-pic mod-menu circle responsive-img"></li>
-                    <li class="side-nav-header"><h5>JJ Keith</h5></li>
+<body class="body">
 
-                    <li class="side-nav-item">
-                        <a href="projects.html" data-position="right"
-                           data-delay="0" data-tooltip="Projects">
-                            <i class="nav-icon fa fa-terminal fa-2x"></i>Projects</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a class="" href="index.html">
-                            <i class="nav-icon fa fa-user fa-2x"></i>About</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a class="" href="resume.html">
-                            <i class="nav-icon fa fa-file-text fa-2x"></i>Résumé</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a class="" href="writing.html">
-                            <i class="nav-icon fa fa-book fa-2x"></i>Writing</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a class="" href="mailto:jj@jjkeith.net">
-                            <i class="nav-icon fa fa-envelope fa-2x"></i>Email</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a href="http://www.linkedin.com/in/jjkeith">
-                            <i class="nav-icon fa fa-linkedin fa-2x"></i>LinkedIn</a>
-                    </li>
-                    <li class="side-nav-item">
-                        <a href="http://github.com/jjkeith"><i
-                                class="fa fa-github fa-2x"></i>GitHub</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<header class="heading">
+    <h1 class="heading__name">JJ Keith</h1>
+    <ul class="heading__menu menu">
+        <li class="menu__menu-item menu-item">
+            <a href="mailto:jj@jjkeith.net" class="menu-item__link">
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+        <li class="menu__menu-item menu-item">
+            <a href="http://www.linkedin.com/in/jjkeith" target="_blank" class="menu-item__link">
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        <li class="menu__menu-item menu-item">
+            <a href="http://github.com/jjkeith" target="_blank" class="menu-item__link">
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
 </header>
- <!--Navbar end -->
 
-
-<main class="container">
-
-    <div class="row">
-        <div class="col offset-m4"><h1 class="red-text text-darken-3">About</h1></div>
-    </div>
-
-    <div class="row">
-        <div class="col m3 hide-on-small-only offset-m1">
-            <img class="responsive-img materialboxed circle" width="300" src="images/jj-keith.jpg" alt=""/>
+<main class="content">
+    <div class="container container--about">
+        <div class="container__heading">Hello!</div>
+        <div class="container__img-wrapper img-wrapper--about img-wrapper--margin-left">
+            <img class="img img--about " src="images/jj-keith.jpg" alt=""/>
         </div>
-        <div class="col m7 s12">
-            <p class="mt0">Last year, after a decade as a writer and college instructor, I changed course and embarked on a career
-                in front-end web development. After months of studying on my own, I enrolled in a three-month web
-                development immersive at General Assembly in Santa Monica. I emerged as a full-stack developer, but with
-                a clear emphasis on the front end.</p>
-
-            <p>Since August 2016, I've been working at Gigmor, a Santa Monica startup connecting musicians with
+        <div class="container__text-wrapper text-wrapper--about">
+            <p class="text-wrapper__text text--paragraph">
+                Last year, after a decade as a writer and college instructor, I changed course and embarked on a career in
+                front-end web development. After months of studying on my own, I enrolled in a three-month web development
+                immersive at General Assembly in Santa Monica. I emerged as a full-stack developer, but with a clear
+                emphasis on the front end.
+            </p>
+            <p class="text-wrapper__text text--paragraph">
+                Since August 2016, I've been working at Gigmor, a Santa Monica startup connecting musicians with
                 venues and bookers. Armed with just a few examples from an outside designer and some rough wireframes, I
-                have developed a front-end look and experience that is clean, responsive and easy to use. </p>
-
-            <p>When not coding, I enjoy listening to podcasts, particularly about science and politics; visiting
-                museums; reading long-form journalism; and collecting Legos.</p>
+                have developed a front-end look and experience that is clean, responsive and easy to use.
+            </p>
+            <p class="text-wrapper__text text--paragraph">
+                When not coding, I enjoy listening to podcasts, particularly about science and politics; visiting
+                museums; reading long-form journalism; and collecting Legos.
+            </p>
         </div>
     </div>
+
+    <!-- TODO Need to crop the images so they resize well then add in the rest, anchor them, etc or make an image card style set-->
+    <div class="container container--projects">
+        <div class="container__heading">Projects</div>
+        <div class="card">
+            <div class="card__image"><img class="img--card" src="images/gigmor.png" alt=""/></div>
+            <div class="card__heading">Gigmor</div>
+            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus, et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum eligendi ipsa nihil nisi numquam tempore voluptates!</div>
+        </div>
+        <div class="card">
+            <div class="card__image"><img class="img--card" src="images/pokemonbook.png" alt=""/></div>
+            <div class="card__heading">Pokébook</div>
+            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus, et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum eligendi ipsa nihil nisi numquam tempore voluptates!</div>
+        </div>
+        <div class="card">
+            <div class="card__image"><img class="img--card" src="images/nearhear.png" alt=""/></div>
+            <div class="card__heading">Nearhear</div>
+            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus, et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum eligendi ipsa nihil nisi numquam tempore voluptates!</div>
+        </div>
+
+        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects img-wrapper&#45;&#45;margin-left">-->
+            <!--<img class="img img&#45;&#45;projects" src="images/gigmor.png" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects">-->
+            <!--<img class="img img&#45;&#45;projects" src="images/emojination.png" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects">-->
+            <!--<img class="img img&#45;&#45;projects" src="images/bright-lights.png" alt=""/>-->
+        <!--</div>-->
+
+    </div>
+
 </main>
+
+
+<!--<main class="container">-->
+
+<!--<div class="row">-->
+<!--<div class="col offset-m4"><h1 class="red-text text-darken-3">About</h1></div>-->
+<!--</div>-->
+
+<!--<div class="row">-->
+<!--<div class="col m3 hide-on-small-only offset-m1">-->
+<!--<img class="responsive-img materialboxed circle" width="300" src="images/jj-keith.jpg" alt=""/>-->
+<!--</div>-->
+<!--<div class="col m7 s12">-->
+<!--<p class="mt0">Last year, after a decade as a writer and college instructor, I changed course and embarked on a career-->
+<!--in front-end web development. After months of studying on my own, I enrolled in a three-month we->
+<!--development immersive at General Assembly in Santa Monica. I emerged as a full-stack developer, but with-->
+<!--a clear emphasis on the front end.</p>-->
+
+<!--<p>Since August 2016, I've been working at Gigmor, a Santa Monica startup connecting musicians with-->
+<!--venues and bookers. Armed with just a few examples from an outside designer and some rough wireframes, I-->
+<!--have developed a front-end look and experience that is clean, responsive and easy to use. </p>-->
+
+<!--<p>When not coding, I enjoy listening to podcasts, particularly about science and politics; visiting-->
+<!--museums; reading long-form journalism; and collecting Legos.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</main>-->
 </body>
 </html>

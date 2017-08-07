@@ -1,101 +1,195 @@
+// Todo: fix colors, maybe pin down header
+// Variables
+$accentColor: teal;
+$headerBackground: lightgray;
+$bodyBackground: skyblue;
 
-//variables
-$background-color:  #f5f5f5;
-$header-color: #010101;
-$text-color: #003246;
-$link-color: #0387b1;
+// Header Styles
 
-
-//utility classes
-
-.mt0 {
-  margin-top: 0;
+.heading {
+  background-color: $headerBackground;
+  border-bottom: 1px solid $headerBackground;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-// Site-wide Styles
+.heading__name {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+  height: 2rem;
+  color: $accentColor;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+}
+
+.menu__menu-item {
+  display: inline-flex;
+  margin-left: 1.5rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.menu-item__link {
+  color: rgba( $accentColor, 0.6 );
+  -webkit-transition: color 500ms;
+  -moz-transition: color 500ms;
+  -ms-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+  &:active,
+  &:visited,
+  &:hover {
+    color: rgba( $accentColor, 1.0 );
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+  }
+}
+
+
+// Generalized Body Styles
+
+.body {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.content {
+  display: block;
+}
+
+.img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 
 .container {
-  color: $text-color;
-  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
 }
 
-body {
-  background-color: $background-color;
+.container__img-wrapper {
+  flex: auto;
+  position: relative;
+  margin: 1rem;
+}
+
+.container__heading {
+  background-color: $accentColor;
+  color: $headerBackground;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  -webkit-transform: translate( 25% ) rotate( 340deg );
+  -moz-transform: translate( 25% ) rotate( 340deg );
+  -ms-transform: translate( 25% ) rotate( 340deg );
+  -o-transform: translate( 25% ) rotate( 340deg );
+  transform: translate( 25% ) rotate( 340deg );
+}
+
+.container__text-wrapper {
   font-family: 'Oxygen', sans-serif;
+  margin: 0 1rem;
 }
 
+.text-wrapper__text {}
 
-h1 {
+.card {
+  border: 1px solid $headerBackground;
+  flex: 0 0 15%;
+  margin-left: 5%;
+  &:nth-child( 2 ) {
+    margin-left: 5%;
+  }
+}
+
+.card__image {}
+
+.card__heading {
   font-family: 'Comfortaa', cursive;
+  font-size: 1.25rem;
+  color: $accentColor;
+  text-align: center;
+  padding: 1rem;
+}
+.card__body {
+  padding: 0 1rem 1rem;
+  text-align: justify;
+
 }
 
-@media (max-width: 993px) {
-  main {
-    padding-left: 100px;
-  }
+// Container Modifiers
+
+.container--about {
+  background-color: lighten( $bodyBackground, 10% );
 }
 
-// desktop nav styles
-
-.navbar-jj {
-  color: $background-color;
-  font-family: 'Comfortaa', cursive;
-  padding: 0 1.5rem;
+.container--projects {
+  background-color: lighten( $bodyBackground, 15% );
 }
 
-  // mobile nav styles
-.side-nav {
-  padding: 0 1rem;
+
+// Image Wrapper Modifiers
+
+.img-wrapper--margin-left {
+  padding-left: 7.5%;
 }
 
-  .pro-pic.mod-menu {
-    padding: 2rem;
-  }
-
-  .side-nav > .side-nav-header {
-    color: $link-color;
-    margin-left: 1rem;
-  }
-
-    li.side-nav-item > a {
-      color: $text-color;
-      font-size: 1.25rem;
-      height: 64px;
-    }
-
-      li.side-nav-item > a > i {
-        color: $text-color;
-      }
-
-// projects styles
-
-.project-card.card-action {
-  color: $background-color;
-  font-family: 'Comfortaa', cursive;
+.img-wrapper--about {
+  flex: 1 0 15%;
+  height: auto;
+  -webkit-border-radius: 100%;
+  -moz-border-radius :100%;
+  border-radius: 100%;
 }
 
-  .card-content {
-    color: $text-color;
-  }
 
+// Img modifiers
 
-.media-links {
-  height: 200px;
-  margin-top: 50px;
+.img--about {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
 }
 
-// Resume styles
+.img--card {
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
 
-
-a {
-  color: $link-color;
 }
 
-.profile-text, li {
+
+// Text Wrapper Modifiers
+
+.text-wrapper--about {
+  display: block;
+  flex: 2 0 50%;
+  height: auto;
+  margin: 1rem 15% 1rem 5%;
   text-align: justify;
 }
 
-h5 {
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+
+// Text Modifiers
+
+.text--paragraph {
+  margin: 1rem 0;
 }
+
