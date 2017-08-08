@@ -55,6 +55,7 @@
 
 .container {
   display: inline-flex;
+  flex-flow: row wrap;
   align-items: center;
   padding: 3rem 0;
   width: 100%; }
@@ -82,9 +83,13 @@
   margin: 0 1rem; }
 
 .card {
+  background-color: white;
   border: 1px solid lightgray;
-  flex: 0 0 15%;
-  margin-left: 5%; }
+  align-items: flex-start;
+  flex: 0 0 10%;
+  margin-left: 2.5%;
+  padding: 1rem;
+  border-radius: 6px; }
   .card:nth-child(2) {
     margin-left: 5%; }
 
@@ -93,10 +98,10 @@
   font-size: 1.25rem;
   color: teal;
   text-align: center;
-  padding: 1rem; }
+  padding-bottom: 1rem; }
 
 .card__body {
-  padding: 0 1rem 1rem;
+  padding-top: 1rem;
   text-align: justify; }
 
 .container--about {
@@ -127,7 +132,7 @@
 
 .text-wrapper--about {
   display: block;
-  flex: 2 0 50%;
+  flex: 2 0 45%;
   height: auto;
   margin: 1rem 15% 1rem 5%;
   text-align: justify; }

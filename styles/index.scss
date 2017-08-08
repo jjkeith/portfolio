@@ -3,6 +3,7 @@
 $accentColor: teal;
 $headerBackground: lightgray;
 $bodyBackground: skyblue;
+$cardBackground: white;
 
 // Header Styles
 
@@ -78,6 +79,7 @@ $bodyBackground: skyblue;
 
 .container {
   display: inline-flex;
+  flex-flow: row wrap;
   align-items: center;
   padding: 3rem 0;
   width: 100%;
@@ -111,25 +113,30 @@ $bodyBackground: skyblue;
 .text-wrapper__text {}
 
 .card {
+  background-color: $cardBackground;
   border: 1px solid $headerBackground;
-  flex: 0 0 15%;
-  margin-left: 5%;
+  align-items: flex-start;
+  flex: 0 0 10%;
+  margin-left: 2.5%;
+  padding: 1rem;
+  border-radius: 6px;
   &:nth-child( 2 ) {
     margin-left: 5%;
   }
 }
 
-.card__image {}
+.card__image {
+}
 
 .card__heading {
   font-family: 'Comfortaa', cursive;
   font-size: 1.25rem;
   color: $accentColor;
   text-align: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 .card__body {
-  padding: 0 1rem 1rem;
+  padding-top: 1rem;
   text-align: justify;
 
 }
@@ -180,7 +187,7 @@ $bodyBackground: skyblue;
 
 .text-wrapper--about {
   display: block;
-  flex: 2 0 50%;
+  flex: 2 0 45%;
   height: auto;
   margin: 1rem 15% 1rem 5%;
   text-align: justify;
