@@ -1,4 +1,6 @@
-// Todo: fix colors, maybe pin down header
+// Todo: Small media queries are not working; bug test
+
+
 // Variables
 $accent-color: #993366;
 $header-background: #e1e1e1;
@@ -62,17 +64,7 @@ $xlarge-breakpoint: 1280px;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  @include small-screens() {
-    background-color: darkblue;
-  }
 }
-
-@media (max-width: 639px) {
-  .heading {
-    background-color: gold;
-  }
-}
-
 
 .heading__name {
   @include link-color();
@@ -190,7 +182,7 @@ $xlarge-breakpoint: 1280px;
     clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
     top: 0;
     left: 0;
-    margin: -1rem -1rem 1rem -1rem;
+    margin: -1rem -1rem 3rem -1rem;
     text-align: left;
     &:hover {
       -webkit-transform: none;
@@ -201,7 +193,6 @@ $xlarge-breakpoint: 1280px;
     }
     @include small-screens() {
       width: auto;
-      margin-bottom: 2rem;
     }
   }
 }
@@ -238,10 +229,11 @@ $xlarge-breakpoint: 1280px;
   @include medium-screens() {
     max-width: 80%;
     margin: 0 10%;
+    text-align: left;
     @include small-screens {
       max-width: 100%;
       margin: 0;
-      text-align: left;
+      //text-align: left;
     }
   }
 }
@@ -307,7 +299,11 @@ $xlarge-breakpoint: 1280px;
   text-align: center;
   height: 25rem;
   @include medium-screens() {
-    max-width: calc( 50% - 2rem );
+    //max-width: calc( 50% - 2rem );
+    background-color: $header-background;
+    max-width: 100%;
+    margin-right: 0;
+    height: auto;
   }
   @include small-screens() {
     max-width: 100%;
@@ -334,7 +330,7 @@ $xlarge-breakpoint: 1280px;
   padding: 0 1rem 1rem;
   text-align: justify;
   border-top: 1px solid $header-background;
-  @include small-screens() {
+  @include medium-screens() {
     text-align: left;
   }
 }

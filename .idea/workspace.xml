@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0252ee9d-f030-4d2f-a969-3d5b2f9d2986" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/22dd08a8ee2198ffed61c98c300e538cb8ae5960/index.scssc" afterPath="$PROJECT_DIR$/.sass-cache/22dd08a8ee2198ffed61c98c300e538cb8ae5960/index.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/book.html" afterPath="$PROJECT_DIR$/book.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css" afterPath="$PROJECT_DIR$/styles/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css.map" afterPath="$PROJECT_DIR$/styles/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.scss" afterPath="$PROJECT_DIR$/styles/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/writing.html" afterPath="$PROJECT_DIR$/writing.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +39,8 @@
           <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -51,8 +49,8 @@
           <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="778">
-                  <caret line="365" column="27" lean-forward="false" selection-start-line="365" selection-start-column="27" selection-end-line="365" selection-end-column="27" />
+                <state relative-caret-position="604">
+                  <caret line="302" column="40" lean-forward="false" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -87,8 +85,8 @@
           <file leaf-file-name="book.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/book.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="825">
-                  <caret line="171" column="10" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="171" selection-end-column="10" />
+                <state relative-caret-position="341">
+                  <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
@@ -112,7 +110,6 @@
       <find>-left</find>
       <find>break-medium</find>
       <find>small</find>
-      <find>justif</find>
       <find>&lt;</find>
       <find>&lt;a hre</find>
       <find>&lt;a href</find>
@@ -137,6 +134,7 @@
       <find>ll-sc</find>
       <find>&lt;a</find>
       <find>class=&quot;collection-item&quot;</find>
+      <find>justif</find>
     </findStrings>
     <replaceStrings>
       <replace>project-card card-action</replace>
@@ -175,8 +173,8 @@
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/writing.html" />
-        <option value="$PROJECT_DIR$/styles/index.scss" />
         <option value="$PROJECT_DIR$/book.html" />
+        <option value="$PROJECT_DIR$/styles/index.scss" />
       </list>
     </option>
   </component>
@@ -392,7 +390,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70951000" />
+    <option name="totallyTimeSpent" value="71263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="22" width="1919" height="1024" extended-state="0" />
@@ -742,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -758,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="365" column="27" lean-forward="false" selection-start-line="365" selection-start-column="27" selection-end-line="365" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="709">
@@ -776,8 +766,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="171" column="10" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="171" selection-end-column="10" />
+        <state relative-caret-position="341">
+          <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="302" column="40" lean-forward="false" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="40" />
           <folding />
         </state>
       </provider>
