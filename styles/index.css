@@ -9,6 +9,9 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
+  @media (max-width: 639px) {
+    .heading {
+      background-color: darkblue; } }
 
 .heading__name {
   font-family: "Comfortaa", cursive;
@@ -123,7 +126,7 @@
         -ms-transform: none;
         -o-transform: none;
         transform: none; } }
-  @media (max-width: 639px) {
+  @media (max-width: 1023px) and (max-width: 639px) {
     .container__heading {
       width: auto;
       margin-bottom: 2rem; } }
@@ -164,7 +167,7 @@
     .container__text-wrapper {
       max-width: 80%;
       margin: 0 10%; } }
-  @media (max-width: 639px) {
+  @media (max-width: 1023px) and (max-width: 639px) {
     .container__text-wrapper {
       max-width: 100%;
       margin: 0;

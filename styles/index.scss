@@ -62,6 +62,9 @@ $xlarge-breakpoint: 1280px;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  @include small-screens() {
+    background-color: darkblue;
+  }
 }
 
 
@@ -190,10 +193,10 @@ $xlarge-breakpoint: 1280px;
       -o-transform: none;
       transform: none;
     }
-  }
-  @include small-screens() {
-    width: auto;
-    margin-bottom: 2rem;
+    @include small-screens() {
+      width: auto;
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -229,11 +232,11 @@ $xlarge-breakpoint: 1280px;
   @include medium-screens() {
     max-width: 80%;
     margin: 0 10%;
-  }
-  @include small-screens {
-    max-width: 100%;
-    margin: 0;
-    text-align: left;
+    @include small-screens {
+      max-width: 100%;
+      margin: 0;
+      text-align: left;
+    }
   }
 }
 
