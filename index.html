@@ -25,17 +25,11 @@
 
     <title>JJ Keith</title>
 
-
-    <!--Custom JavaScript-->
-    <script>
-
-
-    </script>
 </head>
 <body class="body">
 
 <header class="heading">
-    <h1 class="heading__name">JJ Keith</h1>
+    <h1 class="heading__name"><a href="index.html">JJ Keith</a></h1>
     <ul class="heading__menu menu">
         <li class="menu__menu-item menu-item">
             <a href="mailto:jj@jjkeith.net" class="menu-item__link">
@@ -63,13 +57,13 @@
     </ul>
 </header>
 
-<main class="content">
-    <div class="container container--about">
+<main>
+    <div class="container">
         <div class="container__heading">Hello!</div>
-        <div class="container__img-wrapper img-wrapper--about img-wrapper--margin-left">
+        <div class="container__img-wrapper img-wrapper--about">
             <img class="img img--about " src="images/jj-keith.jpg" alt=""/>
         </div>
-        <div class="container__text-wrapper text-wrapper--about">
+        <div class="container__text-wrapper">
             <p class="text-wrapper__text text--paragraph">
                 I'm a front end developer with a love for clean styles, responsive design, great documentation, and
                 learning new technologies. Before I got into web development, I was a writer and an educator, which
@@ -79,8 +73,7 @@
             </p>
             <p class="text-wrapper__text text--paragraph">
                 I've been a full-time web-developer for just over a year, but my experience with HTML and CSS goes back
-                so far that I dare not put a time frame on it. Suffice to say, Geocities was involved and I may or may
-                not have been attached to a tricked out MySpace page at some point.
+                so far that I dare not put a time frame on it. Suffice to say, Geocities was involved.
             </p>
             <p class="text-wrapper__text text--paragraph">
                 Since adding JavaScript to my toolkit, I've been learning new stuff like crazy. With my current
@@ -91,72 +84,78 @@
         </div>
     </div>
 
-    <div class="container container--projects">
+    <div class="container">
         <h4 class="container__heading">Projects</h4>
         <div class="card">
-            <div class="card__heading">Gigmor</div>
-            <div class="card__image"><img class="img--card" src="images/gigmor.png" alt=""/></div>
-            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus,
-                et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum
-                eligendi ipsa nihil nisi numquam tempore voluptates!
+            <img class="card__image" src="images/gigmor.png" alt=""/>
+            <div class="card__body">
+                <p class="card__title">Gigmor</p>
+                <p>
+                    A jobs marketplace connecting musicians and talent bookers. Junior engineer on
+                    five-person team working in React.js. Responsible for all markup and styles and
+                    contributed to integration on the front-end.
+                </p>
             </div>
         </div>
         <div class="card">
-            <div class="card__heading">Pokébook</div>
-            <div class="card__image"><img class="img--card" src="images/pokemonbook.png" alt=""/></div>
-            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus,
-                et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum
-                eligendi ipsa nihil nisi numquam tempore voluptates!
+            <img class="card__image" src="images/pokemonbook.png" alt=""/>
+            <div class="card__body">
+                <p class="card__title">Pokébook</p>
+                <p>
+                    A full-CRUD, Bootsrapped, Ruby on Rails website created in a one-week sprint that allows
+                    users to make an account and maintain a list of their favorite Pokémon.
+                </p>
             </div>
         </div>
         <div class="card">
-            <div class="card__heading">Near Hear</div>
-            <div class="card__image"><img class="img--card" src="images/nearhear.png" alt=""/></div>
-            <div class="card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolores doloribus,
-                et facilis incidunt quibusdam repellat tempore velit veritatis? Adipisci consequuntur dolores dolorum
-                eligendi ipsa nihil nisi numquam tempore voluptates!
+            <img class="card__image" src="images/nearhear.png" alt=""/>
+            <div class="card__body">
+                <p class="card__title">Near Hear</p>
+                <p>
+                    A collaborative Node.js-based site built with the Google Maps and Bands in Town APIs,
+                    allowign users to find what concerts are happening near them and get ticket
+                    information.
+                </p>
             </div>
         </div>
+        <div class="card">
+            <img class="card__image" src="images/emojination.png" alt=""/>
+            <div class="card__body">
+                <p class="card__title">Emojination</p>
+                <p>
+                    A MEAN-stack app that allows users to write stories based on emoji prompts. Featured
+                    Materialize formatting that cycled through color schemes randomly with each click and
+                    content that was served up with some randomization.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/bright-lights.png" alt=""/>
+            <div class="card__body">
+                <p class="card__title">Bright Lights, Big Kitty</p>
+                <p>
+                    A logic-driven card game build with JavaScript, HTML, CSS, and a gratuitous quantity of
+                    cute cat pics.
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects img-wrapper&#45;&#45;margin-left">-->
-        <!--<img class="img img&#45;&#45;projects" src="images/gigmor.png" alt=""/>-->
-        <!--</div>-->
-        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects">-->
-        <!--<img class="img img&#45;&#45;projects" src="images/emojination.png" alt=""/>-->
-        <!--</div>-->
-        <!--<div class="container__img-wrapper img-wrapper&#45;&#45;projects">-->
-        <!--<img class="img img&#45;&#45;projects" src="images/bright-lights.png" alt=""/>-->
-        <!--</div>-->
-
+    <div class="container">
+        <hr>
+        <p class="container__subheading">Other Stuff</p>
+        <a href="resume.pdf" download="JJ Keith's Resume" class="container__button">
+            <i class="fa fa-download fa-lg"></i>&ensp;Download My Resume
+        </a>
+        <p class="text--generic">
+            Prior to beginning my career in web development, I was a writer, primarily on the topic of parenting. I
+            contributed dozens of essays to publications as far ranging as <i>Reader's Digest</i> and <i>Bitch
+            Magazine</i>. At some point in the future, I'll get back to writing, but right now I'm using all of my
+            creative and analytical juices on web development. In the meantime, for a partial list of my publications,
+            go <a href="writing.html">here</a>, and for information about my book, go <a href="book.html">here</a>.
+        </p>
     </div>
 
 </main>
-
-
-<!--<main class="container">-->
-
-<!--<div class="row">-->
-<!--<div class="col offset-m4"><h1 class="red-text text-darken-3">About</h1></div>-->
-<!--</div>-->
-
-<!--<div class="row">-->
-<!--<div class="col m3 hide-on-small-only offset-m1">-->
-<!--<img class="responsive-img materialboxed circle" width="300" src="images/jj-keith.jpg" alt=""/>-->
-<!--</div>-->
-<!--<div class="col m7 s12">-->
-<!--<p class="mt0">Last year, after a decade as a writer and college instructor, I changed course and embarked on a career-->
-<!--in front-end web development. After months of studying on my own, I enrolled in a three-month we->
-<!--development immersive at General Assembly in Santa Monica. I emerged as a full-stack developer, but with-->
-<!--a clear emphasis on the front end.</p>-->
-
-<!--<p>Since August 2016, I've been working at Gigmor, a Santa Monica startup connecting musicians with-->
-<!--venues and bookers. Armed with just a few examples from an outside designer and some rough wireframes, I-->
-<!--have developed a front-end look and experience that is clean, responsive and easy to use. </p>-->
-
-<!--<p>When not coding, I enjoy listening to podcasts, particularly about science and politics; visiting-->
-<!--museums; reading long-form journalism; and collecting Legos.</p>-->
-<!--</div>-->
-<!--</div>-->
-<!--</main>-->
 </body>
 </html>
