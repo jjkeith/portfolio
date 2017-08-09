@@ -68,10 +68,10 @@
   clear: both; }
   .container > * {
     vertical-align: middle; }
-  @media screen and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     .container {
       padding-right: 1rem; } }
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     .container {
       padding: 1rem;
       margin: 0 auto; } }
@@ -101,7 +101,7 @@
     -ms-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     transform: rotate(30deg); }
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     .container__heading {
       width: 50%;
       position: relative;
@@ -123,9 +123,10 @@
         -ms-transform: none;
         -o-transform: none;
         transform: none; } }
-  @media screen and (max-width: 639px) {
+  @media (max-width: 639px) {
     .container__heading {
-      width: auto; } }
+      width: auto;
+      margin-bottom: 2rem; } }
 
 .container__subheading {
   font-family: "Comfortaa", cursive;
@@ -137,10 +138,10 @@
   margin: 1rem;
   max-width: calc(30% - 2rem);
   display: inline-block; }
-  @media screen and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     .container__img-wrapper {
       max-width: calc( 40% - 2rem ); } }
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     .container__img-wrapper {
       max-width: 60%;
       margin: 0 15%; } }
@@ -156,14 +157,14 @@
       color: #73264d; }
     .container__text-wrapper a:hover {
       color: #bf4080; }
-  @media screen and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     .container__text-wrapper {
       max-width: calc( 60% - 2rem ); } }
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     .container__text-wrapper {
       max-width: 80%;
       margin: 0 10%; } }
-  @media screen and (max-width: 639px) {
+  @media (max-width: 639px) {
     .container__text-wrapper {
       max-width: 100%;
       margin: 0;
@@ -196,7 +197,7 @@
       color: #73264d; }
     .container__list a:hover {
       color: #bf4080; }
-  @media screen and (max-width: 639px) {
+  @media (max-width: 639px) {
     .container__list {
       line-height: 1.5; }
       .container__list li {
@@ -227,10 +228,10 @@
   float: left;
   text-align: center;
   height: 25rem; }
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     .card {
       max-width: calc( 50% - 2rem ); } }
-  @media screen and (max-width: 639px) {
+  @media (max-width: 639px) {
     .card {
       max-width: 100%;
       margin-right: 0; } }
@@ -252,7 +253,7 @@
   padding: 0 1rem 1rem;
   text-align: justify;
   border-top: 1px solid #e1e1e1; }
-  @media screen and (max-width: 639px) {
+  @media (max-width: 639px) {
     .card__body {
       text-align: left; } }
 
