@@ -13,6 +13,9 @@
     .heading {
       background-color: darkblue; } }
 
+@media (max-width: 639px) {
+  .heading {
+    background-color: gold; } }
 .heading__name {
   font-family: "Comfortaa", cursive;
   font-size: 2rem;
@@ -276,5 +279,10 @@
       color: #73264d; }
     .text--generic a:hover {
       color: #bf4080; }
+
+.button--back-arrow {
+  padding: 2rem 1rem 2rem 3rem;
+  -webkit-clip-path: polygon(25% 0, 25% 20%, 100% 20%, 100% 80%, 25% 80%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0, 25% 20%, 100% 20%, 100% 80%, 25% 80%, 25% 100%, 0% 50%); }
 
 /*# sourceMappingURL=index.css.map */

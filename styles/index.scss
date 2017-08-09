@@ -67,6 +67,12 @@ $xlarge-breakpoint: 1280px;
   }
 }
 
+@media (max-width: 639px) {
+  .heading {
+    background-color: gold;
+  }
+}
+
 
 .heading__name {
   @include link-color();
@@ -352,4 +358,12 @@ $xlarge-breakpoint: 1280px;
 .text--generic {
   @include link-color();
   margin-top: 3rem;
+}
+
+// Button modifiers
+
+.button--back-arrow {
+  padding: 2rem 1rem 2rem 3rem;
+  -webkit-clip-path: polygon(25% 0, 25% 20%, 100% 20%, 100% 80%, 25% 80%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0, 25% 20%, 100% 20%, 100% 80%, 25% 80%, 25% 100%, 0% 50%);
 }
