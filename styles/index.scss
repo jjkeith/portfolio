@@ -170,21 +170,21 @@ $xlarge-breakpoint: 1280px;
     transform: rotate( 30deg );
   }
   @include medium-screens() {
-    width: 50%;
+    background-color: transparent;
+    width: auto;
+    color: $accent-color;
     position: relative;
     display: block;
-    font-size: 1.5rem;
-    padding: 0.75rem;
+    font-size: 2rem;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-clip-path: polygon(0% 0%, 85% 0, 100% 50%, 95% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: none;
     top: 0;
     left: 0;
-    margin: -1rem -1rem 3rem -1rem;
+    margin: 1rem -1rem 1rem -1rem;
     text-align: left;
     &:hover {
       -webkit-transform: none;
