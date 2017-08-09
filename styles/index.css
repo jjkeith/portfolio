@@ -94,13 +94,23 @@
   -moz-transform: rotate(330deg);
   -ms-transform: rotate(330deg);
   -o-transform: rotate(330deg);
-  transform: rotate(330deg); }
+  transform: rotate(330deg);
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms; }
   .container__heading:hover {
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(30deg); }
+    -webkit-transform: rotate(390deg);
+    -moz-transform: rotate(390deg);
+    -ms-transform: rotate(390deg);
+    -o-transform: rotate(390deg);
+    transform: rotate(390deg);
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms; }
   @media (max-width: 1023px) {
     .container__heading {
       background-color: transparent;
