@@ -266,11 +266,8 @@
 
 .card__body {
   padding: 0 1rem 1rem;
-  text-align: justify;
-  border-top: 1px solid #e1e1e1; }
-  @media (max-width: 1023px) {
-    .card__body {
-      text-align: left; } }
+  border-top: 1px solid #e1e1e1;
+  text-align: left; }
 
 .img--about {
   -webkit-border-radius: 100%;

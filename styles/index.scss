@@ -246,7 +246,6 @@ $xlarge-breakpoint: 1280px;
     @include small-screens {
       max-width: 100%;
       margin: 0;
-      //text-align: left;
     }
   }
 }
@@ -341,11 +340,8 @@ $xlarge-breakpoint: 1280px;
 
 .card__body {
   padding: 0 1rem 1rem;
-  text-align: justify;
   border-top: 1px solid $header-background;
-  @include medium-screens() {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 
