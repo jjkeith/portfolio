@@ -5,6 +5,7 @@
 $accent-color: #993366;
 $header-background: #e1e1e1;
 $body-background: #fff;
+$body-font-color: #333;
 $card-background: #fff;
 $accent-font-family: 'Comfortaa', cursive;
 $font-family: 'Oxygen', sans-serif;
@@ -342,6 +343,13 @@ $xlarge-breakpoint: 1280px;
   padding: 0 1rem 1rem;
   border-top: 1px solid $header-background;
   text-align: left;
+}
+
+.card__link {
+  text-decoration: none;
+  .card__description {
+    color: $body-font-color;
+  }
 }
 
 

@@ -269,6 +269,11 @@
   border-top: 1px solid #e1e1e1;
   text-align: left; }
 
+.card__link {
+  text-decoration: none; }
+  .card__link .card__description {
+    color: #333; }
+
 .img--about {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
