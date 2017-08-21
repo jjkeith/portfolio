@@ -1,6 +1,6 @@
 # JJ Keith's Portfolio Site
 
-[jjkeith.net](http://www.jjkeith.net) is a hand-coded portofolio site where I post my latest projects.
+[jjkeith.net](http://www.jjkeith.net) is a hand-coded site where I post my latest projects.
 
 ### Future Plans
 * Make it possible for users to customize color scheme
