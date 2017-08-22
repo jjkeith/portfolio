@@ -1,2 +1,5 @@
 .eslintrc.js
 node_modules
+.idea/inspectionProfiles/
+*css.map
+.idea/workspace.xml
