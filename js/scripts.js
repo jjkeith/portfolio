@@ -18,7 +18,7 @@ $(document).ready(function() {
   // Make links colors on hover
   $( ".topbar-link" ).hover(
     function() {
-      $( this ).css( {
+      $( this ).css({
         transition: 'color 1s ease-in-out',
         color: colors[ Math.floor( Math.random() * colors.length ) ]
       });
