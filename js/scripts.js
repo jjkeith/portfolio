@@ -9,9 +9,6 @@ $(document).ready(function() {
   ga('create', 'UA-81822884-1', 'auto');
   ga('send', 'pageview');
 
-  // Load Headers
-  $( ".topbar" ).load( "./_header.html" );
-
   // Make rainbows
   var colors = [ '#f00', '#ff0', '#00FF00', '#00ffff', '#0000ff', '#f0f' ];
 
