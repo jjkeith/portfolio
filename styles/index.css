@@ -13,11 +13,15 @@
 
 .topbar {
   background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0.5rem; }
   .topbar .topbar-title,
   .topbar .topbar-links {
     color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin: 0; }
   .topbar .topbar-links {
@@ -32,7 +36,11 @@
           padding: 0 0 0 0.75rem; } }
 
 .rainbow-bar {
+  -webkit-animation: rainbow-cycle 30s ease infinite;
   animation: rainbow-cycle 30s ease infinite;
+  background: -webkit-gradient(linear, right top, left top, from(#f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f));
+  background: -webkit-linear-gradient(right, #f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f);
+  background: -o-linear-gradient(right, #f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f);
   background: linear-gradient(270deg, #f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f);
   background-size: 1200% 1200%;
   display: block;
@@ -62,8 +70,13 @@
 
 .about,
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .card {
