@@ -15,8 +15,8 @@
   background-color: #000;
   display: flex;
   padding: 0.5rem; }
-  .topbar > .topbar-title,
-  .topbar > .topbar-links {
+  .topbar .topbar-title,
+  .topbar .topbar-links {
     color: #fff;
     flex: 1;
     margin: 0; }
@@ -27,6 +27,9 @@
       color: #fff;
       padding-right: 2rem;
       text-decoration: none; }
+      @media (max-width: 639px) {
+        .topbar .topbar-links .topbar-link {
+          padding: 0 0 0 0.75rem; } }
 
 .rainbow-bar {
   animation: rainbow-cycle 30s ease infinite;
@@ -44,10 +47,16 @@
 .salutation {
   font-size: 6rem;
   margin: 2rem 0; }
+  @media (max-width: 639px) {
+    .salutation {
+      font-size: 4rem; } }
 
 .intro {
   font-size: 1.25rem;
   margin-bottom: 2rem; }
+  @media (max-width: 639px) {
+    .intro {
+      font-size: 1rem; } }
   .intro li {
     padding-bottom: 1rem; }
 

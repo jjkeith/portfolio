@@ -78,8 +78,8 @@ $xlarge-breakpoint: 1280px;
     background-color: $accent-background;
     display: flex;
     padding: 0.5rem;
-    > .topbar-title,
-    > .topbar-links {
+    .topbar-title,
+    .topbar-links {
       color: $accent-font-color;
       flex: 1;
       margin: 0;
@@ -91,6 +91,9 @@ $xlarge-breakpoint: 1280px;
         color: $accent-font-color;
         padding-right: 2rem;
         text-decoration: none;
+        @include small-screens() {
+          padding: 0 0 0 0.75rem;
+        }
       }
     }
   }
@@ -111,11 +114,17 @@ $xlarge-breakpoint: 1280px;
   .salutation {
     font-size: 6rem;
     margin: 2rem 0;
+    @include small-screens() {
+      font-size: 4rem;
+    }
   }
 
   .intro {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    @include small-screens() {
+      font-size: 1rem;
+    }
     li {
       padding-bottom: 1rem;
     }
