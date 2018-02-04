@@ -9,8 +9,11 @@ $(document).ready(function() {
   ga('create', 'UA-81822884-1', 'auto');
   ga('send', 'pageview');
 
-  // Make rainbows
+  // Rainbow
   var colors = [ '#f00', '#ff0', '#00FF00', '#00ffff', '#0000ff', '#f0f' ];
+
+  // Greetings
+  var greetings = [ "Ciao", "Nǐ hǎo", "Hujambo", "Kon'nichiwa", "Hallo", "Hallo", "Hallo", "Hola", "Yá’át’ééh", "Svāgatam" ];
 
   // Make links colors on hover
   $( ".topbar-link" ).hover(
@@ -24,6 +27,15 @@ $(document).ready(function() {
       $( this ).css( "color", "#fff" );
     });
 
-
+    $( ".salutation" ).hover(
+      function() {
+        $( this )
+          .html( greetings[ Math.floor( Math.random() * greetings.length )] + '!' )
+          .css( "color", colors[ Math.floor( Math.random() * colors.length )])
+      },
+      function() {
+        $( this ).html( 'Hiya!' ).css( "color", "#000" );
+      }
+    )
 });
 

@@ -6,7 +6,7 @@
   100% {
     background-position: 90% 0; } }
 .body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   margin: 0;
   position: relative; }
@@ -36,7 +36,7 @@
           padding: 0 0 0 0.75rem; } }
 
 .rainbow-bar {
-  -webkit-animation: rainbow-cycle 30s ease infinite;
+  -webkit-animation: rainbow-cycle 10ms ease infinite;
   animation: rainbow-cycle 30s ease infinite;
   background: -webkit-gradient(linear, right top, left top, from(#f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f));
   background: -webkit-linear-gradient(right, #f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f);
@@ -53,20 +53,20 @@
   padding: 0.5rem; }
 
 .salutation {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 2rem 0; }
   @media (max-width: 639px) {
     .salutation {
-      font-size: 4rem; } }
+      font-size: 2rem; } }
 
 .intro {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-bottom: 2rem; }
   @media (max-width: 639px) {
     .intro {
       font-size: 1rem; } }
   .intro li {
-    padding-bottom: 1rem; }
+    padding-bottom: 0.75rem; }
 
 .about,
 .projects {
@@ -129,6 +129,9 @@
   background-color: #000;
   color: #fff;
   margin-top: 2rem;
-  padding: 2.5rem 0.5rem; }
+  padding: 1.5rem 0.5rem; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
 
 /*# sourceMappingURL=index.css.map */
