@@ -6,7 +6,7 @@
 
     <!-- Google search meta tags-->
     <meta name="Title" content="JJ Keith">
-    <meta name="Keywords" content="Web developer, front end, UX designer">
+    <meta name="Keywords" content="Web developer, front end, UX/UI developer">
     <meta name="Description" content="Portfolio of web developer JJ Keith">
     <meta name="Subject" content="Internet">
     <meta name="Language" content="English">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="JJ Keith" />
     <meta property="og:description" content="Portfolio of web developer JJ Keith">
-    <meta property="og:image" content="http://www.jjkeith.net/images/portfolio.png">
+    <meta property="og:image" content="http://www.jjkeith.net/images/portfolio.pngx`xx`">
     <meta property="og:url" content="http://www.jjkeith.net">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@jj_keith">
@@ -32,110 +32,84 @@
 
     <!-- Sourcing in Javascript-->
     <script src="https://code.jquery.com/jquery-3.1.0.js"
-            integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+            integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+            crossorigin="anonymous"
+    >
+    </script>
+    <script src="js/scripts.js"></script>
 
     <!-- Sourcing in fonts -->
-    <!-- display font -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <!-- primary font -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
     <!-- icon font -->
-    <script src="https://use.fontawesome.com/5a919c595e.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <title>JJ Keith</title>
 
 </head>
 <body class="body">
-
-<header class="heading">
-    <h1 class="heading__name"><a href="index.html">JJ Keith</a></h1>
-    <ul class="heading__menu menu">
-        <li class="menu__menu-item menu-item">
-            <a href="mailto:jj@jjkeith.net" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-        <li class="menu__menu-item menu-item">
-            <a href="http://www.linkedin.com/in/jjkeith" target="_blank" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        <li class="menu__menu-item menu-item">
-            <a href="http://github.com/jjkeith" target="_blank" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-    </ul>
-</header>
-
-<main>
-    <div class="container">
-        <div class="container__heading">Hello!</div>
-        <div class="container__img-wrapper img-wrapper--about">
-            <img class="img img--about " src="images/jj-keith.jpg" alt=""/>
-        </div>
-        <div class="container__text-wrapper">
-            <p class="text-wrapper__text text--paragraph">
-                I'm a web developer who works with HTML/JSX, Sass, Node, Foundation, JavaScript and React, with some
-                cameos from PHP, Laravel, JQuery and Bootstrap. I'm currently a junior engineer at Gigmor, where I'm
-                responsible for creating and styling enticing, responsive and reusable UI components and layouts. I also
-                have experience with Angular, hand-coded CSS/Sass, Wordpress and Ruby on Rails.
-            </p>
-            <p class="text-wrapper__text text--paragraph">
-                Before I became a full-time developer, I was a writer and an educator (with some development and
-                design work on the side), which basically means that I've shifted from talking too much about <a
-                    href="http://www.theonion.com/a rticle/4-copy-editors-killed-in-ongoing-ap-style-chicago--30806"
-                    target="_blank"> the Great Oxford Comma debate</a> to
-                discussing CSS nomenclature systems or comparing the merits of <code>rem</code> versus
-                <code>em</code>.
-            </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <h4 class="container__heading">Work</h4>
+<div class="topbar"></div>
+<div class="rainbow-bar"></div>
+<div class="wrapper">
+    <section class="intro">
+        <h2 class="salutation">Hiya!</h2>
+        <p>I'm a front-end web developer. Here are a few more things about me:</p>
+        <ul>
+            <li>
+                I've been the front-end dev at Gigmor since summer 2016, where I use ES6 JavaScript, React/Redux, Sass,
+                Foundation, NPM, GIT, Puppeteer, XD, and Photoshop.
+            </li>
+            <li>
+                Gigmor hired me right out of a full-stack developer bootcamp at General Assembly, where I learned
+                Ruby/Ruby on Rails, JQuery, Bootstrap, and the MEAN stack.
+            </li>
+            <li>
+                Before becoming a full-time developer, I was a writer, editor, and college instructor who made websites
+                for fun and shameless self-promotion.
+            </li>
+            <li>
+                I have degrees from U.C. Berkeley and USC in Anthropology and writing, respectively.
+            </li>
+            <li>
+                My commute is long and podcasts are my friends.
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <h2>Projects</h2>
+    <section class="projects">
         <div class="card">
-            <a class="card__link" href="https://www.gigmor.com/" target="_blank">
-                <img class="card__image" src="images/gigmor.png" alt=""/>
-                <div class="card__body">
-                    <p class="card__title">Gigmor</p>
-                    <p class="card__description">
-                        A jobs marketplace connecting musicians and talent bookers. Junior engineer on
-                        five-person team working in React.js. Responsible for all markup and styles and
-                        contributed to integration on the front end.
+            <a class="card-link" href="https://www.gigmor.com/" target="_blank">
+                <img class="card-image" src="images/gigmor.png" alt=""/>
+                <div class="card-body">
+                    <p class="card-title">Gigmor</p>
+                    <p>
+                        A jobs marketplace connecting musicians and venues, built from the ground up in React by three-
+                        to five-person team.
                     </p>
                 </div>
             </a>
         </div>
         <div class="card">
-            <a class="card__link" href="http://kaitlin.today" target="_blank">
-                <img class="card__image card__image--gif" src="images/kaitlin-dot-today.gif" alt=""/>
-                <!--<img class="card__image" src="images/kaitlin-dot-today.png" alt=""/>-->
-                    <div class="card__body">
-                        <p class="card__title">Kaitlin.Today</p>
-                        <p class="card__description">
-                            A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of
-                            delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash;
-                            every day.
-                        </p>
-                    </div>
+            <a class="card-link" href="http://kaitlin.today" target="_blank">
+                <img class="card-image" src="images/kaitlin-dot-today.gif" alt=""/>
+                <!--<img class="card-image" src="images/kaitlin-dot-today.png" alt=""/>-->
+                <div class="card-body">
+                    <p class="card-title">Kaitlin.Today</p>
+                    <p>
+                        A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of
+                        delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash;
+                        every day.
+                    </p>
+                </div>
             </a>
         </div>
         <div class="card">
-            <a class="card__link" href="https://nearhear.herokuapp.com/" target="_blank">
-                <img class="card__image" src="images/nearhear.png" alt=""/>
-                <div class="card__body">
-                    <p class="card__title">Near Hear</p>
-                    <p class="card__description">
+            <a class="card-link" href="https://nearhear.herokuapp.com/" target="_blank">
+                <img class="card-image" src="images/nearhear.png" alt=""/>
+                <div class="card-body">
+                    <p class="card-title">Near Hear</p>
+                    <p class="card-description">
                         A Node.js-based app built in a three-person team with the Google Maps and Bands in Town APIs,
                         allowing users to find what concerts are happening near them and get ticket
                         information.
@@ -144,11 +118,11 @@
             </a>
         </div>
         <div class="card">
-            <a class="card__link" href="http://www.pokemon-book.herokuapp.com" target="_blank">
-                <img class="card__image" src="images/pokemonbook.png" alt=""/>
-                <div class="card__body">
-                    <p class="card__title">Pokébook</p>
-                    <p class="card__description">
+            <a class="card-link" href="http://www.pokemon-book.herokuapp.com" target="_blank">
+                <img class="card-image" src="images/pokemonbook.png" alt=""/>
+                <div class="card-body">
+                    <p class="card-title">Pokébook</p>
+                    <p class="card-description">
                         A full-CRUD, Bootsrapped, Ruby on Rails app created during a one-week sprint that allows
                         users to make an account and maintain a list of their favorite Pokémon.
                     </p>
@@ -156,11 +130,11 @@
             </a>
         </div>
         <div class="card">
-            <a class="card__link" href="https://emojinationapp.herokuapp.com/#/" target="_blank">
-                <img class="card__image" src="images/emojination.png" alt=""/>
-                <div class="card__body">
-                    <p class="card__title">Emojination</p>
-                    <p class="card__description">
+            <a class="card-link" href="https://emojinationapp.herokuapp.com/#/" target="_blank">
+                <img class="card-image" src="images/emojination.png" alt=""/>
+                <div class="card-body">
+                    <p class="card-title">Emojination</p>
+                    <p class="card-description">
                         A MEAN-stack app that allows users to write stories based on emoji prompts. Featured
                         Materialize styling that cycled through color schemes with a click and
                         content that was served up with some randomization.
@@ -169,35 +143,33 @@
             </a>
         </div>
         <div class="card">
-            <a class="card__link" href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/" target="_blank">
-                <img class="card__image" src="images/bright-lights.png" alt=""/>
-                <div class="card__body">
-                    <p class="card__title">Bright Lights, Big Kitty</p>
-                    <p class="card__description">
+            <a class="card-link" href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/" target="_blank">
+                <img class="card-image" src="images/bright-lights.png" alt=""/>
+                <div class="card-body">
+                    <p class="card-title">Bright Lights, Big Kitty</p>
+                    <p class="card-description">
                         A logic-driven card game build with JavaScript, JQuery HTML, CSS, and a gratuitous quantity of
                         cat gifs.
                     </p>
                 </div>
             </a>
         </div>
-    </div>
-
-    <div class="container">
-        <hr>
-        <p class="container__subheading">Other Stuff</p>
-        <a href="JJ_Keith_Resume.pdf" download="JJ Keith's Resume" class="container__button">
-            <i class="fa fa-download fa-lg"></i>&ensp;Download My Resume
-        </a>
-        <p class="text--generic">
-            Prior to beginning my career in web development, I was a writer. I
-            contributed dozens of essays to publications as far ranging as <i>Reader's Digest</i> and <i>Bitch
+    </section>
+    <hr>
+    <h2>Other Work</h2>
+    <section class="other">
+        <p>
+            I have contributed dozens of essays to publications as far ranging as <i>Reader's Digest</i> and <i>Bitch
             Magazine</i>. At some point in the future, I'll get back to writing &mdash; hopefully about web development
             &mdash; but right now I'm using all of my creative and analytical juices on web development. In the
             meantime, for a partial list of my publications, go <a href="writing.html">here</a>, and for information
             about my book, go <a href="book.html">here</a>.
         </p>
-    </div>
+    </section>
+</div>
 
-</main>
+
+<footer class="footer">
+    &copy; JJ Keith, 2018
+</footer>
 </body>
-</html>
