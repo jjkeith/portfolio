@@ -150,6 +150,9 @@ $xlarge-breakpoint: 1280px;
 .salutation {
   font-size: 4rem;
   margin: 2rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   @include small-screens() {
     font-size: 2rem;
   }

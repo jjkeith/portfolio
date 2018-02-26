@@ -134,7 +134,10 @@
 
 .salutation {
   font-size: 4rem;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
   @media (max-width: 639px) {
     .salutation {
       font-size: 2rem; } }
