@@ -95,14 +95,13 @@ $xlarge-breakpoint: 1280px;
     .other a,
     .card-link {
       color: darken( nth($value, 1), 10% );
-      &:hover {
-        color: darken( nth($value, 1), 15% );
-        text-shadow: none;
-      }
     }
     .card {
       background-color: lighten( nth($value, 5), 5% );
       border: nth( $value, 5 );
+      &:hover {
+        background-color: lighten( nth($value, 5), 2.5% );
+      }
     }
   }
 }
@@ -218,6 +217,9 @@ $xlarge-breakpoint: 1280px;
   border: $card-border;
   margin-bottom: 2rem;
   width: calc( 33.3333% - 2rem );
+  &:hover {
+    background-color: darken( $card-background, 2.5% );
+  }
   @include medium-screens() {
     width: calc( 50% - 1rem );
   }
@@ -227,10 +229,6 @@ $xlarge-breakpoint: 1280px;
   .card-link {
     color: $body-font-color;
     text-decoration: none;
-    &:hover {
-      color: lighten( $body-font-color, 25% );
-      text-shadow: 0 0 10px lighten( $body-font-color, 75% );
-    }
     .card-image {
       border-bottom: $card-border;
       border-top-left-radius: $border-radius;
