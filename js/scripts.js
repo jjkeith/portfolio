@@ -42,8 +42,9 @@ $(document).ready(function() {
   //   } );
   // }
 
-  // TODO Dry this up
+  // TODO Dry this up; switch statement
   function handleChangeLinkColor() {
+    // TODO Attach one color per color scheme to one button
     if ( body.hasClass( 'mod-dawn' )) {
       $( this ).css({
         transition: 'color 1s ease-in-out',
