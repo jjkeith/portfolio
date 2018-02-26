@@ -229,6 +229,7 @@ $xlarge-breakpoint: 1280px;
 
   .theme-button {
     border: none;
+    border-radius: $border-radius;
     color: $body-background;
     font-size: 12px;
     font-weight: bold;
