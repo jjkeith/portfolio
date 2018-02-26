@@ -11,6 +11,82 @@
   margin: 0;
   position: relative; }
 
+.body.mod-dawn {
+  background-color: #F3E4E1;
+  color: #606581; }
+  .body.mod-dawn .rainbow-bar {
+    -webkit-animation: rainbow-cycle 10ms ease infinite;
+    animation: rainbow-cycle 30s ease infinite;
+    background: -webkit-gradient(linear, right top, left top, from(#606581, #718ec4, #dc8998, #fec5b9, #F3E4E1));
+    background: -webkit-linear-gradient(right, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background: -o-linear-gradient(right, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background: linear-gradient(270deg, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background-size: 1200% 1200%; }
+  .body.mod-dawn .other a {
+    color: #4a4e64; }
+    .body.mod-dawn .other a:hover {
+      text-shadow: 0 0 1px #718ec4; }
+  .body.mod-dawn .card {
+    background-color: #faf4f3;
+    border: #F3E4E1; }
+
+.body.mod-noon {
+  background-color: #FFF5B5;
+  color: #135984; }
+  .body.mod-noon .rainbow-bar {
+    -webkit-animation: rainbow-cycle 10ms ease infinite;
+    animation: rainbow-cycle 30s ease infinite;
+    background: -webkit-gradient(linear, right top, left top, from(#135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5));
+    background: -webkit-linear-gradient(right, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
+    background: -o-linear-gradient(right, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
+    background: linear-gradient(270deg, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
+    background-size: 1200% 1200%; }
+  .body.mod-noon .other a {
+    color: #0d3b57; }
+    .body.mod-noon .other a:hover {
+      text-shadow: 0 0 1px #a5f0ff; }
+  .body.mod-noon .card {
+    background-color: #fff8cf;
+    border: #FFF5B5; }
+
+.body.mod-dusk {
+  background-color: #FFECD1;
+  color: #1d205e; }
+  .body.mod-dusk .rainbow-bar {
+    -webkit-animation: rainbow-cycle 10ms ease infinite;
+    animation: rainbow-cycle 30s ease infinite;
+    background: -webkit-gradient(linear, right top, left top, from(#1d205e, #ffb85b, #874444, #2f2c47, #FFECD1));
+    background: -webkit-linear-gradient(right, #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1);
+    background: -o-linear-gradient(right, #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1);
+    background: linear-gradient(270deg, #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1);
+    background-size: 1200% 1200%; }
+  .body.mod-dusk .other a {
+    color: #111337; }
+    .body.mod-dusk .other a:hover {
+      text-shadow: 0 0 1px #ffb85b; }
+  .body.mod-dusk .card {
+    background-color: #fff7eb;
+    border: #FFECD1; }
+
+.body.mod-midnight {
+  background-color: #001519;
+  color: #ccf6ff; }
+  .body.mod-midnight .rainbow-bar {
+    -webkit-animation: rainbow-cycle 10ms ease infinite;
+    animation: rainbow-cycle 30s ease infinite;
+    background: -webkit-gradient(linear, right top, left top, from(#ccf6ff, #8da3a8, #026072, #00303a, #001519));
+    background: -webkit-linear-gradient(right, #ccf6ff, #8da3a8, #026072, #00303a, #001519);
+    background: -o-linear-gradient(right, #ccf6ff, #8da3a8, #026072, #00303a, #001519);
+    background: linear-gradient(270deg, #ccf6ff, #8da3a8, #026072, #00303a, #001519);
+    background-size: 1200% 1200%; }
+  .body.mod-midnight .other a {
+    color: #99edff; }
+    .body.mod-midnight .other a:hover {
+      text-shadow: 0 0 1px #8da3a8; }
+  .body.mod-midnight .card {
+    background-color: #002a33;
+    border: #001519; }
+
 .topbar {
   background-color: #000;
   display: -webkit-box;
@@ -18,21 +94,21 @@
   display: flex;
   padding: 0.5rem; }
   .topbar .topbar-title,
-  .topbar .topbar-links {
+  .topbar .main-links {
     color: #fff;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin: 0; }
-  .topbar .topbar-links {
+  .topbar .main-links {
     padding-top: 0.375rem;
     text-align: right; }
-    .topbar .topbar-links .topbar-link {
+    .topbar .main-links .main-link {
       color: #fff;
       padding-right: 2rem;
       text-decoration: none; }
       @media (max-width: 639px) {
-        .topbar .topbar-links .topbar-link {
+        .topbar .main-links .main-link {
           padding: 0 0 0 0.75rem; } }
 
 .rainbow-bar {
@@ -46,6 +122,57 @@
   display: block;
   height: 0.5rem;
   width: 100%; }
+
+.theme-bar {
+  padding: 0.5rem; }
+
+.theme-button {
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #4d4d4d;
+  margin: 0.5rem 0.25rem;
+  min-width: 4rem;
+  padding: 0.5rem; }
+
+.theme-button[value=dawn] {
+  background: #718ec4;
+  background: -moz-linear-gradient(-45deg, #718ec4 0%, #dc8998 100%);
+  background: -webkit-linear-gradient(-45deg, #718ec4 0%, #dc8998 100%);
+  background: -o-linear-gradient(-45deg, #718ec4 0%, #dc8998 100%);
+  background: -ms-linear-gradient(-45deg, #718ec4 0%, #dc8998 100%);
+  background: linear-gradient(135deg, #718ec4 0%, #dc8998 100%); }
+
+.theme-button[value=noon] {
+  background: #a5f0ff;
+  background: -moz-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
+  background: -webkit-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
+  background: -o-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
+  background: -ms-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
+  background: linear-gradient(135deg, #a5f0ff 0%, #fb9300 100%); }
+
+.theme-button[value=dusk] {
+  background: #ffb85b;
+  background: -moz-linear-gradient(-45deg, #ffb85b 0%, #874444 100%);
+  background: -webkit-linear-gradient(-45deg, #ffb85b 0%, #874444 100%);
+  background: -o-linear-gradient(-45deg, #ffb85b 0%, #874444 100%);
+  background: -ms-linear-gradient(-45deg, #ffb85b 0%, #874444 100%);
+  background: linear-gradient(135deg, #ffb85b 0%, #874444 100%); }
+
+.theme-button[value=midnight] {
+  background: #8da3a8;
+  background: -moz-linear-gradient(-45deg, #8da3a8 0%, #026072 100%);
+  background: -webkit-linear-gradient(-45deg, #8da3a8 0%, #026072 100%);
+  background: -o-linear-gradient(-45deg, #8da3a8 0%, #026072 100%);
+  background: -ms-linear-gradient(-45deg, #8da3a8 0%, #026072 100%);
+  background: linear-gradient(135deg, #8da3a8 0%, #026072 100%); }
+
+.theme-button[value=clear] {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  text-shadow: none; }
 
 .wrapper {
   margin: 0 auto;

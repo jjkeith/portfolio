@@ -11,6 +11,16 @@ $font-family: 'Poppins', sans-serif;
 $border-radius: 2px;
 $rainbow: #f00, #ff0, #00FF00, #00ffff, #0000ff, #f0f;
 
+$dawn: #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1;
+$noon: #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5;
+$dusk: #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1;
+$midnight: #ccf6ff, #8da3a8, #026072, #00303a, #001519;
+$themes: (
+    dawn: $dawn,
+    noon: $noon,
+    dusk: $dusk,
+    midnight: $midnight
+);
 
 // Media Queries
 $small-screens: "only screen and ( max-width: 640px )";
@@ -56,13 +66,13 @@ $xlarge-breakpoint: 1280px;
 
 // Mixins
 
-@mixin m-rainbow-background() {
+@mixin m-color-bar( $theme: $rainbow ) {
   -webkit-animation: rainbow-cycle 10ms ease infinite;
   animation: rainbow-cycle 30s ease infinite;
-  background: -webkit-gradient(linear, right top, left top, from($rainbow) );
-  background: -webkit-linear-gradient(right, $rainbow );
-  background: -o-linear-gradient(right, $rainbow );
-  background: linear-gradient(270deg, $rainbow );
+  background: -webkit-gradient(linear, right top, left top, from( $theme ) );
+  background: -webkit-linear-gradient(right, $theme );
+  background: -o-linear-gradient(right, $theme );
+  background: linear-gradient(270deg, $theme );
   background-size: 1200% 1200%;
 }
 
@@ -75,6 +85,26 @@ $xlarge-breakpoint: 1280px;
   position: relative;
 }
 
+@each $name, $value in $themes {
+  .body.mod-#{$name} {
+    background-color: nth($value, 5);
+    color: nth($value, 1);
+    .rainbow-bar {
+      @include m-color-bar($value);
+    }
+    .other a {
+      color: darken( nth($value, 1), 10% );
+      &:hover {
+        text-shadow: 0 0 1px nth($value, 2);
+      }
+    }
+    .card {
+      background-color: lighten( nth($value, 5), 5% );
+      border: nth( $value, 5 );
+    }
+  }
+}
+
 .topbar {
   background-color: $accent-background;
   display: -webkit-box;
@@ -82,17 +112,17 @@ $xlarge-breakpoint: 1280px;
   display: flex;
   padding: 0.5rem;
   .topbar-title,
-  .topbar-links {
+  .main-links {
     color: $accent-font-color;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin: 0;
   }
-  .topbar-links {
+  .main-links {
     padding-top: 0.375rem;
     text-align: right;
-    .topbar-link {
+    .main-link {
       color: $accent-font-color;
       padding-right: 2rem;
       text-decoration: none;
@@ -104,10 +134,43 @@ $xlarge-breakpoint: 1280px;
 }
 
 .rainbow-bar {
-  @include m-rainbow-background();
+  @include m-color-bar();
   display: block;
   height: 0.5rem;
   width: 100%;
+}
+
+.theme-bar{
+  padding: 0.5rem;
+}
+
+.theme-button {
+  border: none;
+  color: $body-background;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 0 10px lighten( $body-font-color, 30% );
+  margin: 0.5rem 0.25rem;
+  min-width: 4rem;
+  padding: 0.5rem;
+}
+
+@each $name, $value in $themes {
+  .theme-button[value=#{$name}] {
+    background: nth( $value, 2 );
+    background: -moz-linear-gradient(-45deg, nth( $value, 2 ) 0%, nth( $value, 3 ) 100%);
+    background: -webkit-linear-gradient(-45deg, nth( $value, 2 ) 0%, nth( $value, 3 ) 100%);
+    background: -o-linear-gradient(-45deg, nth( $value, 2 ) 0%, nth( $value, 3 ) 100%);
+    background: -ms-linear-gradient(-45deg, nth( $value, 2 ) 0%, nth( $value, 3 ) 100%);
+    background: linear-gradient(135deg, nth( $value, 2 ) 0%, nth( $value, 3 ) 100%);
+  }
+}
+
+.theme-button[value=clear] {
+  background-color: $body-background;
+  border: 1px solid $body-font-color;
+  color: $body-font-color;
+  text-shadow: none;
 }
 
 .wrapper {
