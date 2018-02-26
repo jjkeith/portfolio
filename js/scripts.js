@@ -82,8 +82,7 @@ $(document).ready(function() {
 
   mainLink.hover( handleChangeLinkColor, restoreLinkColor );
 
-
-    $( ".salutation" ).hover(
+ $( '.salutation' ).hover(
       function() {
         $( this )
           .html( greetings[ Math.floor( Math.random() * greetings.length )] + '!' )
