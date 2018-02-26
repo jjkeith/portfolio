@@ -22,9 +22,11 @@
     background: -o-linear-gradient(right, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
     background: linear-gradient(270deg, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
     background-size: 1200% 1200%; }
-  .body.mod-dawn .other a {
+  .body.mod-dawn .other a,
+  .body.mod-dawn .card-link {
     color: #4a4e64; }
-    .body.mod-dawn .other a:hover {
+    .body.mod-dawn .other a:hover,
+    .body.mod-dawn .card-link:hover {
       text-shadow: 0 0 1px #718ec4; }
   .body.mod-dawn .card {
     background-color: #faf4f3;
@@ -41,9 +43,11 @@
     background: -o-linear-gradient(right, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
     background: linear-gradient(270deg, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
     background-size: 1200% 1200%; }
-  .body.mod-noon .other a {
+  .body.mod-noon .other a,
+  .body.mod-noon .card-link {
     color: #0d3b57; }
-    .body.mod-noon .other a:hover {
+    .body.mod-noon .other a:hover,
+    .body.mod-noon .card-link:hover {
       text-shadow: 0 0 1px #a5f0ff; }
   .body.mod-noon .card {
     background-color: #fff8cf;
@@ -60,9 +64,11 @@
     background: -o-linear-gradient(right, #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1);
     background: linear-gradient(270deg, #1d205e, #ffb85b, #874444, #2f2c47, #FFECD1);
     background-size: 1200% 1200%; }
-  .body.mod-dusk .other a {
+  .body.mod-dusk .other a,
+  .body.mod-dusk .card-link {
     color: #111337; }
-    .body.mod-dusk .other a:hover {
+    .body.mod-dusk .other a:hover,
+    .body.mod-dusk .card-link:hover {
       text-shadow: 0 0 1px #ffb85b; }
   .body.mod-dusk .card {
     background-color: #fff7eb;
@@ -79,9 +85,11 @@
     background: -o-linear-gradient(right, #ccf6ff, #8da3a8, #026072, #00303a, #001519);
     background: linear-gradient(270deg, #ccf6ff, #8da3a8, #026072, #00303a, #001519);
     background-size: 1200% 1200%; }
-  .body.mod-midnight .other a {
+  .body.mod-midnight .other a,
+  .body.mod-midnight .card-link {
     color: #99edff; }
-    .body.mod-midnight .other a:hover {
+    .body.mod-midnight .other a:hover,
+    .body.mod-midnight .card-link:hover {
       text-shadow: 0 0 1px #8da3a8; }
   .body.mod-midnight .card {
     background-color: #002a33;
@@ -221,6 +229,9 @@
   .card .card-link {
     color: #000;
     text-decoration: none; }
+    .card .card-link:hover {
+      color: #404040;
+      text-shadow: 0 0 10px #bfbfbf; }
     .card .card-link .card-image {
       border-bottom: 1px solid #e6e6e6;
       border-top-left-radius: 2px;

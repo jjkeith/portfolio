@@ -92,7 +92,8 @@ $xlarge-breakpoint: 1280px;
     .rainbow-bar {
       @include m-color-bar($value);
     }
-    .other a {
+    .other a,
+    .card-link {
       color: darken( nth($value, 1), 10% );
       &:hover {
         text-shadow: 0 0 1px nth($value, 2);
@@ -225,6 +226,10 @@ $xlarge-breakpoint: 1280px;
   .card-link {
     color: $body-font-color;
     text-decoration: none;
+    &:hover {
+      color: lighten( $body-font-color, 25% );
+      text-shadow: 0 0 10px lighten( $body-font-color, 75% );
+    }
     .card-image {
       border-bottom: $card-border;
       border-top-left-radius: $border-radius;
