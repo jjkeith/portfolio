@@ -27,7 +27,8 @@
     color: #4a4e64; }
     .body.mod-dawn .other a:hover,
     .body.mod-dawn .card-link:hover {
-      text-shadow: 0 0 1px #718ec4; }
+      color: #3f4355;
+      text-shadow: none; }
   .body.mod-dawn .card {
     background-color: #faf4f3;
     border: #F3E4E1; }
@@ -48,7 +49,8 @@
     color: #0d3b57; }
     .body.mod-noon .other a:hover,
     .body.mod-noon .card-link:hover {
-      text-shadow: 0 0 1px #a5f0ff; }
+      color: #092c41;
+      text-shadow: none; }
   .body.mod-noon .card {
     background-color: #fff8cf;
     border: #FFF5B5; }
@@ -69,7 +71,8 @@
     color: #111337; }
     .body.mod-dusk .other a:hover,
     .body.mod-dusk .card-link:hover {
-      text-shadow: 0 0 1px #ffb85b; }
+      color: #0b0c24;
+      text-shadow: none; }
   .body.mod-dusk .card {
     background-color: #fff7eb;
     border: #FFECD1; }
@@ -90,7 +93,8 @@
     color: #99edff; }
     .body.mod-midnight .other a:hover,
     .body.mod-midnight .card-link:hover {
-      text-shadow: 0 0 1px #8da3a8; }
+      color: #80e9ff;
+      text-shadow: none; }
   .body.mod-midnight .card {
     background-color: #002a33;
     border: #001519; }

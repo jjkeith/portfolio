@@ -96,7 +96,8 @@ $xlarge-breakpoint: 1280px;
     .card-link {
       color: darken( nth($value, 1), 10% );
       &:hover {
-        text-shadow: 0 0 1px nth($value, 2);
+        color: darken( nth($value, 1), 15% );
+        text-shadow: none;
       }
     }
     .card {
