@@ -37,10 +37,10 @@
   .body.mod-noon .rainbow-bar {
     -webkit-animation: rainbow-cycle 10ms ease infinite;
     animation: rainbow-cycle 30s ease infinite;
-    background: -webkit-gradient(linear, right top, left top, from(#135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5));
-    background: -webkit-linear-gradient(right, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
-    background: -o-linear-gradient(right, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
-    background: linear-gradient(270deg, #135984, #a5f0ff, #fb9300, #dd8c08, #FFF5B5);
+    background: -webkit-gradient(linear, right top, left top, from(#135984, #83C0CB, #fb9300, #dd8c08, #FFF5B5));
+    background: -webkit-linear-gradient(right, #135984, #83C0CB, #fb9300, #dd8c08, #FFF5B5);
+    background: -o-linear-gradient(right, #135984, #83C0CB, #fb9300, #dd8c08, #FFF5B5);
+    background: linear-gradient(270deg, #135984, #83C0CB, #fb9300, #dd8c08, #FFF5B5);
     background-size: 1200% 1200%; }
   .body.mod-noon .other a,
   .body.mod-noon .card-link {
@@ -220,12 +220,12 @@
   background: linear-gradient(135deg, #718ec4 0%, #dc8998 100%); }
 
 .theme-button[value=noon] {
-  background: #a5f0ff;
-  background: -moz-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
-  background: -webkit-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
-  background: -o-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
-  background: -ms-linear-gradient(-45deg, #a5f0ff 0%, #fb9300 100%);
-  background: linear-gradient(135deg, #a5f0ff 0%, #fb9300 100%); }
+  background: #83C0CB;
+  background: -moz-linear-gradient(-45deg, #83C0CB 0%, #fb9300 100%);
+  background: -webkit-linear-gradient(-45deg, #83C0CB 0%, #fb9300 100%);
+  background: -o-linear-gradient(-45deg, #83C0CB 0%, #fb9300 100%);
+  background: -ms-linear-gradient(-45deg, #83C0CB 0%, #fb9300 100%);
+  background: linear-gradient(135deg, #83C0CB 0%, #fb9300 100%); }
 
 .theme-button[value=dusk] {
   background: #ffb85b;
