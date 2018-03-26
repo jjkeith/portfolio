@@ -13,18 +13,18 @@
 
 .body.mod-dawn {
   background-color: #F3E4E1;
-  color: #606581; }
+  color: #4C5167; }
   .body.mod-dawn .rainbow-bar {
     -webkit-animation: rainbow-cycle 10ms ease infinite;
     animation: rainbow-cycle 30s ease infinite;
-    background: -webkit-gradient(linear, right top, left top, from(#606581, #718ec4, #dc8998, #fec5b9, #F3E4E1));
-    background: -webkit-linear-gradient(right, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
-    background: -o-linear-gradient(right, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
-    background: linear-gradient(270deg, #606581, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background: -webkit-gradient(linear, right top, left top, from(#4C5167, #718ec4, #dc8998, #fec5b9, #F3E4E1));
+    background: -webkit-linear-gradient(right, #4C5167, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background: -o-linear-gradient(right, #4C5167, #718ec4, #dc8998, #fec5b9, #F3E4E1);
+    background: linear-gradient(270deg, #4C5167, #718ec4, #dc8998, #fec5b9, #F3E4E1);
     background-size: 1200% 1200%; }
   .body.mod-dawn .other a,
   .body.mod-dawn .card-link {
-    color: #4a4e64; }
+    color: #363a4a; }
   .body.mod-dawn .card {
     background-color: #faf4f3;
     border: #F3E4E1; }
