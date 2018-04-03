@@ -158,14 +158,18 @@ $xlarge-breakpoint: 1280px;
   }
 }
 
-.intro {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
+.intro,
+.skills {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   @include small-screens() {
     font-size: 1rem;
   }
   li {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -217,15 +221,9 @@ $xlarge-breakpoint: 1280px;
 }
 
 .theme-bar{
+  margin-bottom: 1.5rem;
   padding: 0.5rem 0;
 }
-
-  .theme-text {
-    font-size: 1.125rem;
-    @include small-screens() {
-      font-size: 1rem;
-    }
-  }
 
   .theme-button {
     border: none;
@@ -293,7 +291,6 @@ $xlarge-breakpoint: 1280px;
 .footer {
   background-color: $accent-background;
   color: $accent-font-color;
-  margin: 2rem auto 0;
   padding: 1.5rem 0.5rem;
   text-align: center;
   a {

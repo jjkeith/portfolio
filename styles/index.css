@@ -142,14 +142,20 @@
     .salutation {
       font-size: 2rem; } }
 
-.intro {
-  font-size: 1.125rem;
-  margin-bottom: 2rem; }
+.intro,
+.skills {
+  font-size: 1rem;
+  margin-bottom: 1.5rem; }
   @media (max-width: 639px) {
-    .intro {
+    .intro,
+    .skills {
       font-size: 1rem; } }
-  .intro li {
-    padding-bottom: 0.75rem; }
+  .intro li,
+  .skills li {
+    padding-bottom: 0.5rem; }
+    .intro li:last-child,
+    .skills li:last-child {
+      padding-bottom: 0; }
 
 .about,
 .projects {
@@ -192,13 +198,8 @@
         font-weight: 700; }
 
 .theme-bar {
+  margin-bottom: 1.5rem;
   padding: 0.5rem 0; }
-
-.theme-text {
-  font-size: 1.125rem; }
-  @media (max-width: 639px) {
-    .theme-text {
-      font-size: 1rem; } }
 
 .theme-button {
   border: none;
@@ -275,7 +276,6 @@
 .footer {
   background-color: #000;
   color: #fff;
-  margin: 2rem auto 0;
   padding: 1.5rem 0.5rem;
   text-align: center; }
   .footer a {
