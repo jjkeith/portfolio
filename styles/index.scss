@@ -176,13 +176,14 @@ $xlarge-breakpoint: 1280px;
 .about,
 .projects {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: space-evenly;
 }
 
 .card {
@@ -203,19 +204,19 @@ $xlarge-breakpoint: 1280px;
   .card-link {
     color: $body-font-color;
     text-decoration: none;
-    .card-image {
-      border-bottom: $card-border;
-      border-top-left-radius: $border-radius;
-      border-top-right-radius: $border-radius;
-      height: auto;
-      width: 100%;
-    }
-    .card-body {
-      padding: 0.5rem;
-      .card-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-      }
+  }
+  .card-image {
+    border-bottom: $card-border;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    height: auto;
+    width: 100%;
+  }
+  .card-body {
+    padding: 0.5rem;
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
     }
   }
 }
