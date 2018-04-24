@@ -3,3 +3,4 @@ node_modules
 .idea/inspectionProfiles/
 *css.map
 .idea/workspace.xml
+.idea/markdown-exported-files.xml
