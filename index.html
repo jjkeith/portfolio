@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="JJ Keith" />
     <meta property="og:description" content="Portfolio of web developer JJ Keith">
-    <meta property="og:image" content="http://www.jjkeith.net/images/portfolio.pngx`xx`">
+    <meta property="og:image" content="http://www.jjkeith.net/images/portfolio.png">
     <meta property="og:url" content="http://www.jjkeith.net">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@jj_keith">
@@ -24,19 +25,14 @@
     <meta name="twitter:image:alt" content="JJ Keith">
 
     <!-- Load Favicons -->
-    <link rel="icon" href="favicon.jpg" type="image/jpg"/>
-    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg"/>
+    <link rel="icon" href="favicon.jpg" type="image/jpg" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg" />
 
     <!-- Sourcing in CSS -->
     <link rel='stylesheet' type="text/css" href="./styles/index.css">
 
-    <!-- Sourcing in jQuery-->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"
-            integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
-            crossorigin="anonymous"
-    >
-    </script>
-    <script src="js/scripts.js"></script>
+    <!-- Sourcing in Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
     <!-- Sourcing in fonts -->
     <!-- font -->
@@ -44,215 +40,134 @@
     <!-- icon font -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <title>JJ Keith</title>
+    <title>JJ Keith, web dev</title>
 
 </head>
-<body class="body">
-<header class="topbar">
-    <h1 class="topbar-title">JJ Keith</h1>
-    <h1 style="display: none">Front-end web developer</h1>
-    <div class="main-links">
-        <a href="mailto:jj@jjkeith.net" class="main-link">
-            <i class="fas fa-envelope fa-2x" title="send me an email"></i>
-        </a>
-        <a href="http://github.com/jjkeith" target="_blank" class="main-link">
-            <i class="fab fa-github fa-2x" title="Go to my github"></i>
-        </a>
-        <a href="http://www.linkedin.com/in/jjkeith" target="_blank" class="main-link">
-            <i class="fab fa-linkedin fa-2x" title="go to my linkedin"></i>
-        </a>
-    </div>
-</header>
-<div class="rainbow-bar"></div>
-<div class="wrapper">
-    <section class="intro">
-        <h2 class="salutation">Hiya!</h2>
-        <p>I'm a front-end web developer in Los Angeles, CA.</p>
-        <ul>
-            <li>
-                My specialty is perfecting the view layer, but I can work up and down the stack. My focus is on scalability, accessability, and responsiveness. 
-            </li>
-            <li>
-                I currently freelance for a few clients, but am also open to full-time and contract work. 
-            </li>
-        </ul>
-    </section>
-    <hr>
-    <h2>Skills</h2>
-    <section class="skills">
-        <ul>
-            <li><strong>HTML5, CSS3, JavaScript | Vue | React | Sass | UI/UX, responsiveness, accessibility </strong></li>
-            <li>Foundation, Bootstrap, Material Design | Adobe XD, Sketch | Git and Github | Vuex, Redux</li>
-            <li>Agile workflow | Kanban, Trello, Jira | npm and Node ecosystems | Node, Express | PHP5, Laravel, WordPress</li>
-        </ul>
-    </section>
-    <hr>
-    <h2>Projects</h2>
-    <section class="projects">
-        <div class="card">
-            <a class="card-link" href="https://heartcup.com/" target="_blank">
-                <img class="card-image" src="images/heartcup.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Heart Cup</p>
-                    <p>
-                        A social network emphasizing nonprofits and charitable giving; contributed to the Vue-based front end as part of a
-                        small team. Worked with the founder/designer to ideate new features, improve accessability, and create more consistent,
-                        faster loading, and intuitive styles.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="https://vue-component-demos.netlify.com/#/" target="_blank">
-                <img class="card-image" src="images/vue-component-library.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Vue Component Library</p>
-                    <p>
-                        A collection of custom-coded, style-light Vue.js-based components meant for reuse. Includes 
-                        a handful of <code>.scss</code> functions to quickly generate css grids and white space classes.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="https://www.gigmor.com/" target="_blank">
-                <img class="card-image" src="images/gigmor.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Gigmor</p>
-                    <p>
-                        A jobs marketplace connecting musicians and venues; rebuilt from the ground up in React with a
-                        team of three to five devs, no designer, and intense product requirements.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="https://jjkeith.github.io/npr-politics-podcast-directory/" target="_blank">
-                <img class="card-image" src="images/npr-pol-pod-dir.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">The NPR Politics Podcast Directory</p>
-                    <p>
-                        A single-page, React-based, Bootstrapped, front-end-only app that sorts and filters contributors
-                        to the NPR Politics Podcast.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="http://kaitlin.today" target="_blank">
-                <img class="card-image" src="images/kaitlin-dot-today.gif" alt=""/>
-                <!--<img class="card-image" src="images/kaitlin-dot-today.png" alt=""/>-->
-                <div class="card-body">
-                    <p class="card-title">Kaitlin.today</p>
-                    <p>
-                        A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of
-                        delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash;
-                        every day.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <img class="card-image" src="images/fashion-landing-page.png" alt=""/>
-            <div class="card-body">
-                <p class="card-title">Fashion Industry Client</p>
-                <p>
-                    <i>(Image is a page detail.)</i><br>
-                    Coded and maintained the landing page for a high-profile fashion-industry client, including creating
-                    a countdown clock for New York Fashion Week.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <a class="card-link" href="https://nearhear.herokuapp.com/" target="_blank">
-                <img class="card-image" src="images/nearhear.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Near Hear</p>
-                    <p class="card-description">
-                        A Node.js-based app built in a three-person team with the Google Maps and Bands in Town APIs that
-                        allows users to find what concerts are happening near them and get ticket information.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="http://pokemon-book.herokuapp.com/" target="_blank">
-                <img class="card-image" src="images/pokemonbook.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Pokébook</p>
-                    <p class="card-description">
-                        A full-CRUD, Bootsrapped, Ruby on Rails app created during a one-week sprint that allows
-                        users to make an account and maintain a list of their favorite Pokémon.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="https://emojinationapp.herokuapp.com/#/" target="_blank">
-                <img class="card-image" src="images/emojination.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Emojination</p>
-                    <p class="card-description">
-                        A MEAN-stack app that allows users to write stories based on emoji prompts. Features
-                        a Material Design-based layout that cycles through color schemes with a click and
-                        content served up with some randomization.
-                    </p>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a class="card-link" href="http://jjkeith.github.io/Bright-Lights-Big-Kitty/" target="_blank">
-                <img class="card-image" src="images/bright-lights.png" alt=""/>
-                <div class="card-body">
-                    <p class="card-title">Bright Lights, Big Kitty</p>
-                    <p class="card-description">
-                        A logic-driven card game built with JavaScript, JQuery HTML, CSS, and a gratuitous quantity of
-                        cat gifs.
-                    </p>
-                </div>
-            </a>
-        </div>
-    </section>
-    <hr>
-    <h2>Other Work</h2>
-    <section class="other">
-        <p>
-            I have contributed essays to dozens of publications, ranging from <i>Reader's Digest</i> to <i>Bitch
-            Magazine</i> and published a book of essays. At some point in the future, I'll get back to writing &mdash; hopefully about coding
-            &mdash; but right now I'm using all of my creative and analytical juices on web development. In the
-            meantime, for a partial list of my publications go <a href="writing.html">here</a> and for information
-            about my book go <a href="book.html">here</a>.
-        </p>
-    </section>
-    <hr>
-    <h2>Choose a Page Theme</h2>
-    <section class="theme-bar">
-        <button value="dawn"  class="theme-button mod-dawn">Dawn</button>
-        <button value="noon" class="theme-button">Noon</button>
-        <button value="dusk" class="theme-button">Dusk</button>
-        <button value="midnight" class="theme-button">Midnight</button>
-        <button value="clear" class="theme-button">Clear</button>
-    </section>
-</div>
 
-<div class="rainbow-bar"></div>
-<footer class="footer">
-    <p>&copy; JJ Keith, 2018
-        &emsp;|&emsp;
-        <a href="mailto:jj@jjkeith.net" class="main-link">
-            <i class="fas fa-envelope"></i>&ensp;Email
-        </a>
-        &emsp;|&emsp;
-        <a href="http://github.com/jjkeith" target="_blank" class="main-link">
-            <i class="fab fa-github"></i>&ensp;Github
-        </a>
-        &emsp;|&emsp;
-        <a href="http://www.linkedin.com/in/jjkeith" target="_blank" class="main-link">
-            <i class="fab fa-linkedin"></i>&ensp;LinkedIn
-        </a>
-        &emsp;|&emsp;
-        <a href="./JJ_Keith_Front-end_Developer_March.pdf" class="main-link" download="JJ Keith's resume" >
-            <i class="fas fa-download"></i>&ensp;Download Résumé
-        </a>
-</footer>
+<body class="body">
+    <script>
+        // Google Analytics
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-81822884-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <div id="portfolio" class="outer-wrapper" :class="{ 'mod-dark-theme': (theme === 'dark') }">
+        <header class="topbar">
+            <div class="topbar-content-wrapper">
+                <h1 class="topbar-title">JJ Keith</h1>
+                <h2 style="display: none">Front-end web developer</h2>
+                <div class="main-links">
+                    <!-- TODO abstract out link icon -->
+                    <a v-for="(link, index) in navLinks" :key="index" :href="link.href" target="_blank"
+                        class="main-link" :alt="link.alt" @mouseover="selectLink('header-' + index)"
+                        @mouseleave="selectLink(null)" :style="getLinkStyle('header-' + index)">
+                        <i class="fa-2x" :class="link.iconClass"></i>
+                    </a>
+                    <button class="main-menu-trigger" @click="toggleMenu" aria-ignore="true"
+                        @mouseover="selectLink('menu')" @mouseleave="selectLink(null)" :style="getLinkStyle('menu')">
+                        <i class="fas fa-chevron-down fa-3x"></i>
+                    </button>
+                    <div class="main-menu-wrapper" v-if="showMenu" id="menu" role="menu" aria-ignore="true">
+                        <button class="main-menu-button" @click="toggleTheme(), showMenu = false"
+                            @mouseover="selectLink('theme-toggle')" @mouseleave="selectLink(null)"
+                            :style="getLinkStyle('theme-toggle')">
+                            Change to {{ theme === 'light' ? 'dark' : 'light' }} theme
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="rainbow-bar"></div>
+        <div class="wrapper">
+            <section class="about" id="about">
+                <h2 class="salutation">Hiya!</h2>
+                <p>I'm a front-end web developer in Los Angeles, CA, with a passion for clean, readable code;
+                    mobile-first development; accessability; and excellent user experiences.</p>
+                <p>This site was built with Vue and hand-coded styles, and is a work-in-progress.</p>
+            </section>
+            <hr>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>HTML5, CSS3, JavaScript ES6 | Vue, Vuex | React, Redux | Sass</strong></li>
+                    <li>UI/UX | responsivity, mobile-first development | WCAG compliance/a11y</li>
+                    <li>Foundation, Bootstrap | Adobe XD, Sketch | Version control, Github</li>
+                    <li>Agile workflow | Kanban, Trello, Jira, Asana | npm and Node ecosystems</li>
+                </ul>
+            </section>
+            <hr>
+
+            <!-- TODO abstract out card component -->
+            <section class="content-block" id="experience">
+                <h2 class="content-block-header">Front-end Development Experience</h2>
+                <div class="card" v-for="(company, index) in companies" :key="index">
+                    <a class="card-link" :href="company.href" target="_blank">
+                        <img class="card-image" :src="company.imgSrc" alt="" />
+                        <div class="card-body">
+                            <h3 class="card-title" v-text="company.name"></h3>
+                            <ul>
+                                <li v-for="bullet in company.bullets" v-html="bullet"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <hr>
+            <section class="content-block" id="projects">
+                <h2 class="content-block-header">Projects/Freelance</h2>
+                <div class="card" v-for="(project, index) in projects" :key="index">
+                    <a class="card-link" :href="project.href" target="_blank">
+                        <img class="card-image" :src="project.imgSrc" alt="" />
+                        <div class="card-body">
+                            <p class="card-title" v-text="project.name"></p>
+                            <p class="card-caption" v-if="project.imgCaption" v-text="project.imgCaption"></p>
+                            <p v-text="project.description" :style="project.imgCaption ? {'margin-top': '0'} : ''"></p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <hr>
+            <!-- TODO Move these pages into the vue framework -->
+            <section class="other">
+                <h2>Writing</h2>
+                <p>
+                    I have contributed essays to dozens of publications, ranging from <i>Reader's Digest</i> to <i>Bitch
+                        Magazine</i> and published a book of essays. At some point in the future, I'll get back to
+                    writing &mdash; hopefully about coding
+                    &mdash; but right now I'm using all of my creative and analytical energy on web development. In the
+                    meantime, for a partial list of my publications go <a class="body-link" href="writing.html">here</a>
+                    and for
+                    information
+                    about my book go <a class="body-link" href="book.html">here</a>.
+                </p>
+            </section>
+        </div>
+
+        <div class="rainbow-bar"></div>
+        <footer class="footer">
+            <p>&copy; JJ Keith, 2019
+                <a v-for="(link, index) in navLinks" :key="index" :href="link.href" target="_blank" class="main-link"
+                    :alt="link.alt" @mouseover="selectLink('footer-' + index)" @mouseleave="selectLink(null)"
+                    :style="getLinkStyle('footer-' + index)">
+                    <i :class="link.iconClass"></i>&ensp;<span v-text="link.alt"></span>
+                </a>
+                <a href="./JJ_Keith_Front-end_Developer_August.pdf" class="main-link" download="JJ Keith's resume"
+                    @mouseover="selectLink('footer-download')" @mouseleave="selectLink(null)"
+                    :style="getLinkStyle('footer-download')">
+                    <i class="fas fa-download"></i>&ensp;Download Résumé
+                </a>
+        </footer>
+    </div>
+    <script src="js/scripts.vue"></script>
 </body>
