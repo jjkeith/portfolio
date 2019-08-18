@@ -137,7 +137,6 @@
                 return this.showMenu = !this.showMenu;
             },
             toggleTheme() {
-                console.log(this.theme === 'light')
                 return this.theme === 'light' ? this.theme = 'dark' : this.theme = 'light';
             }
         }
