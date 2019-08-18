@@ -24,13 +24,20 @@
                 },
                 {
                     name: 'hi5.agency',
-                    href: 'https://hi5.agency/#home/',
+                    href: 'http://hi5.agency/#home/',
                     imgSrc: 'images/hi5.png',
                     bullets: [
                         'An innovative ad agency active in the entertainment industry',
                         'Utilized <strong>Vue</strong> to create web-based games for children, sweepstakes sites, and fan pages',
                         'Initialized server-less builds with <strong>AWS Lambda</strong> and <strong>Amazon Dynamo DB</strong>'
                     ]
+                },
+                {
+                    name: 'Fashion Industry Client',
+                    href: '',
+                    imgSrc: 'images/fashion-landing-page.png',
+                    imgCaption: '(Image is a page detail)',
+                    bullets: ['Coded and maintained the landing page for a high-profile fashion-industry client, including creating a countdown clock for New York Fashion Week.']
                 },
                 {
                     name: 'Gigmor',
@@ -64,13 +71,6 @@
                     imgSrc: 'images/kaitlin-dot-today.gif',
                     imgCaption: '',
                     description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash; every day.'
-                },
-                {
-                    name: 'Fashion Industry Client',
-                    href: '',
-                    imgSrc: 'images/fashion-landing-page.png',
-                    imgCaption: '(Image is a page detail)',
-                    description: 'Coded and maintained the landing page for a high-profile fashion-industry client, including creating a countdown clock for New York Fashion Week.'
                 },
                 {
                     name: 'Near Hear',

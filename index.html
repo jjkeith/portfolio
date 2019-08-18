@@ -32,7 +32,7 @@
     <link rel='stylesheet' type="text/css" href="./styles/index.css">
 
     <!-- Sourcing in Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
 
     <!-- Sourcing in fonts -->
     <!-- font -->
@@ -112,11 +112,12 @@
             <section class="content-block" id="experience">
                 <h2 class="content-block-header">Front-end Development Experience</h2>
                 <div class="card" v-for="(company, index) in companies" :key="index">
-                    <a class="card-link" :href="company.href" target="_blank">
+                    <a class="card-link" :href="company.href" :target="[ company.href !== '' ? '_blank' : '_self' ]">
                         <img class="card-image" :src="company.imgSrc" alt="" />
                         <div class="card-body">
                             <h3 class="card-title" v-text="company.name"></h3>
-                            <ul>
+                            <p class="card-caption" v-if="company.imgCaption" v-text="company.imgCaption"></p>
+                            <ul :style="company.imgCaption ? {'margin-top': '0'} : ''">
                                 <li v-for="bullet in company.bullets" v-html="bullet"></li>
                             </ul>
                         </div>
@@ -127,11 +128,10 @@
             <section class="content-block" id="projects">
                 <h2 class="content-block-header">Projects/Freelance</h2>
                 <div class="card" v-for="(project, index) in projects" :key="index">
-                    <a class="card-link" :href="project.href" target="_blank">
+                    <a class="card-link" :href="project.href" :target="[ project.href !== '' ? '_blank' : '_self' ]">
                         <img class="card-image" :src="project.imgSrc" alt="" />
                         <div class="card-body">
                             <p class="card-title" v-text="project.name"></p>
-                            <p class="card-caption" v-if="project.imgCaption" v-text="project.imgCaption"></p>
                             <p v-text="project.description" :style="project.imgCaption ? {'margin-top': '0'} : ''"></p>
                         </div>
                     </a>
