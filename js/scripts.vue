@@ -72,13 +72,13 @@
                     imgCaption: '',
                     description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash; every day.'
                 },
-                {
-                    name: 'Near Hear',
-                    href: 'https://nearhear.herokuapp.com/',
-                    imgSrc: 'images/nearhear.png',
-                    imgCaption: '',
-                    description: 'A Node.js-based app built in a three-person team with the Google Maps and Bands in Town APIs that allows users to find what concerts are happening near them and get ticket information.'
-                },
+                // {
+                //     name: 'Near Hear',
+                //     href: 'https://nearhear.herokuapp.com/',
+                //     imgSrc: 'images/nearhear.png',
+                //     imgCaption: '',
+                //     description: 'A Node.js-based app built in a three-person team with the Google Maps and Bands in Town APIs that allows users to find what concerts are happening near them and get ticket information.'
+                // },
                 {
                     name: 'Pokébook',
                     href: 'http://pokemon-book.herokuapp.com/',

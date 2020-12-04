@@ -69,19 +69,18 @@
                 <h2 style="display: none">Front-end web developer</h2>
                 <div class="main-links">
                     <!-- TODO abstract out link icon -->
-                    <a v-for="(link, index) in navLinks" :key="index" :href="link.href" target="_blank"
-                        class="main-link" :alt="link.alt" @mouseover="selectLink('header-' + index)"
-                        @mouseleave="selectLink(null)" :style="getLinkStyle('header-' + index)">
+                    <a v-for="(link, index) in navLinks" :key="index" :href="link.href" target="_blank" class="main-link"
+                        :alt="link.alt" @mouseover="selectLink('header-' + index)" @mouseleave="selectLink(null)"
+                        :style="getLinkStyle('header-' + index)">
                         <i class="fa-2x" :class="link.iconClass"></i>
                     </a>
-                    <button class="main-menu-trigger" @click="toggleMenu" aria-ignore="true"
-                        @mouseover="selectLink('menu')" @mouseleave="selectLink(null)" :style="getLinkStyle('menu')">
+                    <button class="main-menu-trigger" @click="toggleMenu" aria-ignore="true" @mouseover="selectLink('menu')"
+                        @mouseleave="selectLink(null)" :style="getLinkStyle('menu')">
                         <i class="fas fa-chevron-down fa-3x"></i>
                     </button>
                     <div class="main-menu-wrapper" v-if="showMenu" id="menu" role="menu" aria-ignore="true">
-                        <button class="main-menu-button" @click="toggleTheme(), showMenu = false"
-                            @mouseover="selectLink('theme-toggle')" @mouseleave="selectLink(null)"
-                            :style="getLinkStyle('theme-toggle')">
+                        <button class="main-menu-button" @click="toggleTheme(), showMenu = false" @mouseover="selectLink('theme-toggle')"
+                            @mouseleave="selectLink(null)" :style="getLinkStyle('theme-toggle')">
                             Change to {{ theme === 'light' ? 'dark' : 'light' }} theme
                         </button>
                     </div>
@@ -156,16 +155,14 @@
 
         <div class="rainbow-bar"></div>
         <footer class="footer">
-            <p>&copy; JJ Keith, 2019
+            <p>&copy; JJ Keith, 2020
                 <a v-for="(link, index) in navLinks" :key="index" :href="link.href" target="_blank" class="main-link"
-                    :alt="link.alt" @mouseover="selectLink('footer-' + index)" @mouseleave="selectLink(null)"
-                    :style="getLinkStyle('footer-' + index)">
+                    :alt="link.alt" @mouseover="selectLink('footer-' + index)" @mouseleave="selectLink(null)" :style="getLinkStyle('footer-' + index)">
                     <i :class="link.iconClass"></i>&ensp;<span v-text="link.alt"></span>
                 </a>
-                <a href="./JJ_Keith_Front-end_Developer_August.pdf" class="main-link" download="JJ Keith's resume"
-                    @mouseover="selectLink('footer-download')" @mouseleave="selectLink(null)"
-                    :style="getLinkStyle('footer-download')">
-                    <i class="fas fa-download"></i>&ensp;Download Résumé
+                <a href="./JJ_Keith_Front-end_Developer_September.pdf" class="main-link" download="JJ Keith's resume"
+                    @mouseover="selectLink('footer-download')" @mouseleave="selectLink(null)" :style="getLinkStyle('footer-download')">
+                    <i class="fas fa-download"></i>&ensp;Résumé
                 </a>
         </footer>
     </div>
