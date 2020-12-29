@@ -51,6 +51,13 @@
                 },
             ],
             projects: [
+                 {
+                    name: 'Time Elapsed',
+                    href: 'https://jjkeith.github.io/time-elapsed/',
+                    imgSrc: 'images/time-elapsed.png',
+                    imgCaption: '',
+                    description: 'A calculator that tells you what percentage of your life has been spent in lockdown so far. It utilizes the "prefers-color-scheme" feature.'
+                },
                 {
                     name: 'The NPR Politics Podcast Directory',
                     href: 'https://jjkeith.github.io/npr-politics-podcast-directory/',
@@ -70,7 +77,7 @@
                     href: 'http://kaitlin.today',
                     imgSrc: 'images/kaitlin-dot-today.gif',
                     imgCaption: '',
-                    description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person &mdash; the titular Kaitlin &mdash; every day.'
+                    description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person — the titular Kaitlin — every day.'
                 },
                 // {
                 //     name: 'Near Hear',
