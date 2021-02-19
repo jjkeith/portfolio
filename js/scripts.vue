@@ -7,10 +7,9 @@
                     href: 'https://friendbuy.com/',
                     imgSrc: 'images/friendbuy.png',
                     bullets: [ 
-                        'A referral marketing company!', 
-                        'Built encapsulated blocks of code that directed users of e-commerce sites to share referral links',
-                        'Required <strong>pixel-perfect</strong> recreations of mockups',
-                        'Updated the templates to be more <strong>responsive</strong>and <strong>WCAG compliant</strong>' 
+                        'Build pixel-perfect, accessible referral widgets for embedding on e-commerce sites',
+                        'Collaborated with design team to create advertisements that were performant, scalable, and accessible',
+                        'Updated the templates to be more <strong>responsive</strong>and <strong>ADA/WCAG compliant</strong>' 
                     ]
                 },
                 { 
@@ -72,13 +71,13 @@
                     imgCaption: '',
                     description: 'A collection of custom-coded, style-light Vue.js-based components meant for reuse. Includes a handful of Sass functions to quickly generate css grids and white space classes.'
                 },
-                {
-                    name: 'Kaitlin.today',
-                    href: 'http://kaitlin.today',
-                    imgSrc: 'images/kaitlin-dot-today.gif',
-                    imgCaption: '',
-                    description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person — the titular Kaitlin — every day.'
-                },
+                // {
+                //     name: 'Kaitlin.today',
+                //     href: 'http://kaitlin.today',
+                //     imgSrc: 'images/kaitlin-dot-today.gif',
+                //     imgCaption: '',
+                //     description: 'A hand-coded minimalist blog with a custom flexbox grid created with the narrow purpose of delivering a digestible quantity of news to one person — the titular Kaitlin — every day.'
+                // },
                 // {
                 //     name: 'Near Hear',
                 //     href: 'https://nearhear.herokuapp.com/',
