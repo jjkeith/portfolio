@@ -7,9 +7,9 @@
                     href: 'https://friendbuy.com/',
                     imgSrc: 'images/friendbuy.png',
                     bullets: [ 
-                        'Build pixel-perfect, accessible referral widgets for embedding on e-commerce sites',
-                        'Collaborated with design team to create advertisements that were performant, scalable, and accessible',
-                        'Updated the templates to be more <strong>responsive</strong>and <strong>ADA/WCAG compliant</strong>' 
+                        'Build pixel-perfect referral widgets for embedding on e-commerce sites',
+                        'Collaborated with designers to create advertisements that were performant on mobile, scalable, easy to use, and ADA compliant',
+                        'Implement widgets on <strong>Shopify</strong> sites and created <strong>HubSpot</strong> templates' 
                     ]
                 },
                 { 
