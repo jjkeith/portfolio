@@ -96,13 +96,13 @@ $xlarge-breakpoint: 1280px;
     background-color: invert($card-background);
     border: 1px solid invert($card-border);
 
-    &:hover {
-      background-color: invert(lighten($card-background, 2.5%));
-      box-shadow: 0 0 11px invert($card-border);
-    }
-
     .card-link {
       color: invert($body-font-color);
+        &:hover {
+          background-color: invert(lighten($card-background, 2.5%));
+          box-shadow: 0 0 11px invert($card-border);
+      }
+
     }
 
     .card-image {
