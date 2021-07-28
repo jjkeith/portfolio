@@ -29,11 +29,11 @@
   .outer-wrapper.mod-dark-theme .card {
     background-color: #191919;
     border: 1px solid #333333; }
-    .outer-wrapper.mod-dark-theme .card:hover {
-      background-color: #131313;
-      box-shadow: 0 0 11px #333333; }
     .outer-wrapper.mod-dark-theme .card .card-link {
       color: white; }
+      .outer-wrapper.mod-dark-theme .card .card-link:hover {
+        background-color: #131313;
+        box-shadow: 0 0 11px #333333; }
     .outer-wrapper.mod-dark-theme .card .card-image {
       border-bottom: #333333; }
   .outer-wrapper.mod-dark-theme .body-link {
@@ -167,8 +167,8 @@
   .card:hover {
     background-color: #dfdfdf;
     box-shadow: 0 0 11px #cccccc;
-    transition: all 0.2s ease-in;
-    transform: scale(1.025); }
+    transform: translate(2px, 2px);
+    transition: all 0.2s ease-in; }
   @media (min-width: 640px) {
     .card {
       margin: 0 3rem 2rem 0;

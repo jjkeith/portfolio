@@ -102,7 +102,6 @@ $xlarge-breakpoint: 1280px;
           background-color: invert(lighten($card-background, 2.5%));
           box-shadow: 0 0 11px invert($card-border);
       }
-
     }
 
     .card-image {
@@ -265,8 +264,8 @@ $xlarge-breakpoint: 1280px;
   &:hover {
     background-color: darken($card-background, 2.5%);
     box-shadow: 0 0 11px $card-border;
+    transform: translate(2px, 2px);
     transition: all 0.2s ease-in;
-    transform: scale(1.025);
   }
 
   @include medium-screens-up() {
