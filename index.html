@@ -114,14 +114,14 @@
                 <div class="card" v-for="(company, index) in companies" :key="index">
                     <a class="card-link" :href="company.href" :target="[ company.href !== '' ? '_blank' : '_self' ]">
                         <img class="card-image" :src="company.imgSrc" alt="" />
-                        <div class="card-body">
-                            <h3 class="card-title" v-text="company.name"></h3>
-                            <p class="card-caption" v-if="company.imgCaption" v-text="company.imgCaption"></p>
-                            <ul :style="company.imgCaption ? {'margin-top': '0'} : ''">
-                                <li v-for="bullet in company.bullets" v-html="bullet"></li>
-                            </ul>
-                        </div>
                     </a>
+                    <div class="card-body">
+                        <h3 class="card-title" v-text="company.name"></h3>
+                        <p class="card-caption" v-if="company.imgCaption" v-text="company.imgCaption"></p>
+                        <ul :style="company.imgCaption ? {'margin-top': '0'} : ''">
+                            <li v-for="bullet in company.bullets" v-html="bullet"></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr>
