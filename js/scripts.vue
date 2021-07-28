@@ -14,8 +14,8 @@
                 },
                 { 
                     name: 'Heart Cup',
-                    href: 'https://heartcup.com',
                     imgSrc: 'images/heartcup.png',
+                    imgCaption: '(Site is no longer live)',
                     bullets: [ 
                         'Contributed to the <strong>Vue</strong>-based front end as part of a small team', 
                         'Collaborated with the founder/designer to ideate new features, improve <strong>accessability</strong>, and create more consistent, performant, and intuitive styles',
