@@ -14,6 +14,7 @@
                 },
                 { 
                     name: 'Heart Cup',
+                    href: '#',
                     imgSrc: 'images/heartcup.png',
                     imgCaption: '(Site is no longer live)',
                     bullets: [ 
