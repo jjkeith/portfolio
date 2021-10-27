@@ -1,8 +1,0 @@
-.eslintrc.js
-node_modules
-.idea/inspectionProfiles/
-*css.map
-*index.scssc
-.idea/workspace.xml
-.idea/markdown-exported-files.xml
-.DS_Store
