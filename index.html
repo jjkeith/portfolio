@@ -29,24 +29,27 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <style type="text/css">
-        @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Spartan:wght@300;500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Montserrat:wght@400;500&display=swap");
 
         :root {
-            --background-color: #ffffff;
-            --text-color: #241c15;
-            --link-color: #007c89;
-            --footer-color: #ffe01b;
+            --background-color: #fff9f6;
+            --text-color: #000000;
+            --link-color: #0c5a46;
+            --hr-color: #d2c1fa;
+            --footer-color: #d2fb3e;
+            --accent-color: #d2fb3e;
             --footer-link-color: var(--text-color);
             --header-font: "Shrikhand", cursive;
-            --body-font: "Spartan", sans-serif;
+            --body-font: "Montserrat", sans-serif;
             --hover-brightness: 0.75;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --background-color: #241c15;
-                --text-color: #ffffff;
-                --link-color: #1bffe0;
+                --background-color: #000000;
+                --text-color: #fff9f6;
+                --link-color: #d2fb3e;
+                --accent-color: #d2c1fa;
                 --footer-link-color: var(--background-color);
             }
         }
@@ -94,26 +97,34 @@
             margin: 0 0 1rem;
         }
 
-        a {
-            text-decoration: none;
+        a:after {
+            background-color: transparent;
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            transition: 0.2s all ease-in;
         }
 
-        .list-item__header a {
+        a:hover:after {
+            background-color: var(--accent-color);
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+        }
+
+        .list-item__link {
             border-bottom: 1px solid transparent;
             color: var(--link-color);
             padding: 0 0 3px;
             text-decoration: none;
         }
 
-        .list-item__header a:hover,
-        .list-item__header a:active,
-        .list-item__header a:focus {
-            border-bottom: 1px solid var(--link-color);
-            filter: brightness(var(--hover-brightness));
-            transition: all 0.2s linear;
-        }
-
         hr {
+            background-color: var(--hr-color);
+            border: 0;
+            height: 2px;
             margin: 2rem 0 1rem;
         }
 
@@ -130,8 +141,13 @@
             margin: 0.75rem 0;
         }
 
-        .list-item__header {
+        .list-item__link-wrapper {
+            display: flex;
+        }
+
+        .list-item__link {
             margin: 0;
+            padding: 0 0 3px;
         }
 
         .list-item__value {
@@ -154,8 +170,9 @@
         }
 
         .footer-links {
-            width: 540px;
+            display: flex;
             margin: 0 auto;
+            width: 540px;
         }
 
         .footer-icon:not(:last-of-type) {
@@ -200,7 +217,7 @@
         <h2 class="subheader">Front End Developer</h2>
         <p class="text">
             Hiya! As a developer, I prioritize accessibility, clean code, and great user experiences. In 2016 I
-            completed an immersive web development program and transitioned from freelance writing to development. I
+            completed an immersive web development program and transitioned from writing to development. I
             was hired by a small startup right out the program and honed my front end skills under the guidance of a
             senior developer for two years. I have gone on to work for startups of all sizes, an ad agency, and
             freelance clients.</p>
@@ -209,12 +226,11 @@
         <section>
             <h3 class="section-header">Technologies</h3>
             <ul class="list-wrapper">
-                <li class="list-item">JavaScript, CSS/SCSS, HTML</li>
-                <li class="list-item">React/Redux, Vue/Vuex</li>
-                <li class="list-item">Foundation, Bootstrap, Material Design,<br>Accessibility / WAI-ARIA</li>
-                <li class="list-item">Agile workflow, Kanban, Jira, Asana</li>
-                <li class="list-item">Shopify, HubSpot, WordPress</li>
-                <li class="list-item">Git/GitHub, Bitbucket</li>
+                <li class="list-item"><strong>JavaScript, CSS/SCSS, HTML, UX/UI</strong></li>
+                <li class="list-item">React, Redux, NextJS, Vue, Vuex, NuxtJS, TypeScript</li>
+                <li class="list-item">Accessibility, Animations, Bootstrap, Material UI, Framer Motion</li>
+                <li class="list-item">Git/GitHub, Agile workflows, Kanban, Jira, Asana, Monday, Sketch, Figma</li>
+                <li class="list-item">Shopify, HubSpot, ButterCMS, WordPress</li>
             </ul>
         </section>
         <hr>
@@ -222,20 +238,19 @@
             <h3 class="section-header">Experience</h3>
             <ul class="list-wrapper">
                 <li class="list-item">
-                    <h4 class="list-item__header"><a href="http://friendbuy.com" target="_blank">Friendbuy</a></h4>
-                    <span class="list-item__value">May 2019 – present</span>
+                    <a class="list-item__link" href="http://edify.cx" target="_blank">Edify Labs</a>
+                    <span class="list-item__value">Nov 2022 – present</span>
                 </li>
                 <li class="list-item">
-                    <h4 class="list-item__header"><a href="https://www.bizapedia.com/ca/heart-cup-inc.html" target="_blank">Heart
-                            Cup</a></h4>
-                    <span class="list-item__value">Oct 2018 – Apr 2019</span>
+                    <a class="list-item__link" href="http://friendbuy.com" target="_blank">Friendbuy</a>
+                    <span class="list-item__value">May 2019 – Nov 2022</span>
                 </li>
                 <li class="list-item">
-                    <h4 class="list-item__header"><a href="http://hi5.agency/#home" target="_blank">Hi5.agency</a></h4>
-                    <span class="list-item__value">May 2018 – Sep 2018</span>
+                    <span class="list-item__link-wrapper"><a class="list-item__link" href="https://www.bizapedia.com/ca/heart-cup-inc.html" target="_blank">Freelance</a>&nbsp;/&nbsp;<a class="list-item__link" href="http://hi5.agency/#home" target="_blank">Contract</a></span>
+                    <span class="list-item__value">May 2018 – Apr 2019</span>
                 </li>
                 <li class="list-item">
-                    <h4 class="list-item__header"><a href="http://gigmor.com" target="_blank">Gigmor</a></h4>
+                    <a class="list-item__link" href="http://gigmor.com" target="_blank">Gigmor</a>
                     <span class="list-item__value">Aug 2016 – May 2018</span>
                 </li>
             </ul>
@@ -245,16 +260,16 @@
             <h3 class="section-header">Education</h3>
             <ul class="list-wrapper">
                 <li class="list-item">
-                    <h4 class="list-item__header">General Assembly</h4>
-                    <p class="list-item__value">Web Development Immersive</p>
+                    <span class="list-item__link">General Assembly</span>
+                    <span class="list-item__value">Web Development Immersive</span>
                 </li>
                 <li class="list-item">
-                    <h4 class="list-item__header">University of Southern California</h4>
-                    <p class="list-item__value">M.A.</p>
+                    <span class="list-item__link">University of Southern California</span>
+                    <span class="list-item__value">M.A.</span>
                 </li>
                 <li class="list-item">
-                    <h4 class="list-item__header">UC Berkeley</h4>
-                    <p class="list-item__value">B.A.</p>
+                    <span class="list-item__link">UC Berkeley</span>
+                    <span class="list-item__value">B.A.</span>
                 </li>
             </ul>
         </section>
@@ -275,7 +290,8 @@
             <a href="mailto:jj@hiyajj.com" target="_blank" class="footer-icon" v-html="emailIcon" aria-label="email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
                     <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
-                </svg></a>
+                </svg>
+            </a>
         </div>
     </footer>
 </body>
