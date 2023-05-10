@@ -136,27 +136,43 @@
 
         .list-item {
             align-items: center;
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 1fr;
             justify-content: space-between;
             margin: 0.75rem 0;
         }
 
         .list-item__link-wrapper {
-            display: flex;
+            grid-column: 1/2;
         }
 
         .list-item__link {
+            display: inline-block;
             margin: 0;
             padding: 0 0 3px;
         }
 
         .list-item__value {
-            float: right;
             font-family: var(--body-font);
             font-size: 0.825rem;
+            grid-column: 2/3;
             margin: 0;
             text-align: right;
             text-transform: uppercase;
+        }
+
+        .sub-list {
+            grid-column: 1/3;
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+        }
+
+        .sub-list-item:before {
+            display: inline-block;
+            content: "-";
+            margin-left: -1em;
+            width: 1em;
         }
 
         .footer {
@@ -200,6 +216,7 @@
     <title>JJ Keith, web dev</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Older Tag Code; phasing out -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81822884-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -208,6 +225,16 @@
 
         gtag('config', 'UA-81822884-1');
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJFQTD68H6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BJFQTD68H6');
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJFQTD68H6"></script>
     <script>
@@ -249,18 +276,36 @@
                 <li class="list-item">
                     <a class="list-item__link" href="http://edify.cx" target="_blank">Edify Labs</a>
                     <span class="list-item__value">Nov 2022 – present</span>
+                    <ul class="sub-list">
+                        <li class="sub-list-item">Developed a new NextJS/React site paired with ButterCMS; worked on a small team with tight deadlines</li>
+                        <li class="sub-list-item">Improved site accessibility, added animations and integrated technologies to boost the efforts of sales and marketing
+                        teams</li>
+                    </ul>
                 </li>
                 <li class="list-item">
                     <a class="list-item__link" href="http://friendbuy.com" target="_blank">Friendbuy</a>
                     <span class="list-item__value">May 2019 – Nov 2022</span>
+                    <ul class="sub-list">
+                        <li class="sub-list-item">Built pixel-perfect referral widgets with attention to accessibility and responsivity</li>
+                        <li class="sub-list-item">Acted as a technical liaison between customer success team and clients</li>
+                        <li class="sub-list-item">Created documentation to support company-wide adaptation of new technologies and streamlined procedures</li>
+                    </ul>
                 </li>
                 <li class="list-item">
                     <span class="list-item__link-wrapper"><a class="list-item__link" href="https://www.bizapedia.com/ca/heart-cup-inc.html" target="_blank">Freelance</a>&nbsp;/&nbsp;<a class="list-item__link" href="http://hi5.agency/#home" target="_blank">Contract</a></span>
                     <span class="list-item__value">May 2018 – Apr 2019</span>
+                    <ul class="sub-list">
+                        <li class="sub-list-item">For Heart Cup, a charity-focused startup, developed new mobile-first features, increased accessibility, and improved UX</li>
+                        <li class="sub-list-item">Working with an ad agency, created consumer-facing mobile-first apps and games</li>
+                    </ul>
                 </li>
                 <li class="list-item">
                     <a class="list-item__link" href="http://gigmor.com" target="_blank">Gigmor</a>
                     <span class="list-item__value">Aug 2016 – May 2018</span>
+                    <ul class="sub-list">
+                        <li class="sub-list-item">Built a new app from the ground up in React, including creating responsive and reusable UI components</li>
+                        <li class="sub-list-item">Iterated on initial release; worked collaboratively on a small international team</li>
+                    </ul>
                 </li>
             </ul>
         </section>
