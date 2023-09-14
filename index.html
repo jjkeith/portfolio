@@ -29,17 +29,17 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <style type="text/css">
-        @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Montserrat:wght@400;500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
         :root {
             --background-color: #fff9f6;
             --text-color: #1b1b1d;
             --link-color: #0c5a46;
-            --hr-color: #d2c1fa;
+            --hr-color: #d2fb3e;
             --footer-color: #d2fb3e;
-            --accent-color: #d2fb3e;
+            --accent-color: #9387af;
             --footer-link-color: var(--text-color);
-            --header-font: "Shrikhand", cursive;
+            --header-font: "Montserrat", sans-serif;
             --body-font: "Montserrat", sans-serif;
             --hover-brightness: 0.75;
         }
@@ -47,6 +47,7 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 --background-color: #1b1b1d;
+                --hr-color: #d2c1fa;
                 --text-color: #fff9f6;
                 --link-color: #d2fb3e;
                 --accent-color: #d2c1fa;
@@ -73,6 +74,7 @@
         }
 
         .header {
+            color: var(--accent-color);
             font-family: var(--header-font);
             font-size: 2rem;
             font-weight: bold;
@@ -82,6 +84,7 @@
         }
 
         .subheader {
+            color: var(--accent-color);
             font-family: var(--header-font);
             font-size: 1.5rem;
             letter-spacing: 1.5px;
@@ -89,6 +92,7 @@
         }
 
         .section-header {
+            color: var(--accent-color);
             font-family: var(--header-font);
             letter-spacing: 1.5px;
         }
@@ -255,9 +259,10 @@
             <ul class="list-wrapper">
                 <li class="list-item"><strong>JavaScript, CSS/SCSS, HTML, UX/UI</strong></li>
                 <li class="list-item">React, Redux, NextJS, Vue, Vuex, NuxtJS, TypeScript</li>
-                <li class="list-item">Accessibility, Animations, Bootstrap, Material UI, Framer Motion</li>
-                <li class="list-item">Git/GitHub, Agile workflows, Kanban, Jira, Asana, Monday, Sketch, Figma</li>
-                <li class="list-item">Shopify, HubSpot, ButterCMS, WordPress</li>
+                <li class="list-item">A11Y accessibility, headless content management systems, styled components</li>
+                <li class="list-item">Bootstrap, Material UI, Framer Motion, Tailwind</li>
+                <li class="list-item">Git/GitHub, Agile workflows, Kanban, Jira, Sketch, Figma</li>
+                <li class="list-item">Shopify, HubSpot, ButterCMS, Gatsby, WordPress, AWS</li>
             </ul>
         </section>
         <hr>
@@ -266,20 +271,19 @@
             <ul class="list-wrapper">
                 <li class="list-item">
                     <a class="list-item__link" href="http://edify.cx" target="_blank">Edify Labs</a>
-                    <span class="list-item__value">Nov 2022 – present</span>
+                    <span class="list-item__value">Nov 2022 – September 2023</span>
                     <ul class="sub-list">
-                        <li class="sub-list-item">Developed a new NextJS/React site paired with ButterCMS; worked on a small team with tight deadlines</li>
-                        <li class="sub-list-item">Improved site accessibility, added animations and integrated technologies to boost the efforts of sales and marketing
-                        teams</li>
+                        <li class="sub-list-item">Developed a new NextJS/React front end paired with ButterCMS; collaborated on a small team with tight deadlines</li>
+                        <li class="sub-list-item">Improved site accessibility, added animations and integrated technologies to boost the efforts of sales and marketing teams</li>
                     </ul>
                 </li>
                 <li class="list-item">
                     <a class="list-item__link" href="http://friendbuy.com" target="_blank">Friendbuy</a>
                     <span class="list-item__value">May 2019 – Nov 2022</span>
                     <ul class="sub-list">
-                        <li class="sub-list-item">Built pixel-perfect referral widgets with attention to accessibility and responsivity</li>
-                        <li class="sub-list-item">Acted as a technical liaison between customer success team and clients</li>
-                        <li class="sub-list-item">Created documentation to support company-wide adaptation of new technologies and streamlined procedures</li>
+                        <li class="sub-list-item">Built pixel-perfect referral widgets with attention to accessibility and mobile performance</li>
+                        <li class="sub-list-item">Created new company website on Hubspot, including reusable components and templates</li>
+                        <li class="sub-list-item">Supported clients with Shopify implementation of marketing technologies</li>
                     </ul>
                 </li>
                 <li class="list-item">
@@ -287,7 +291,7 @@
                     <span class="list-item__value">May 2018 – Apr 2019</span>
                     <ul class="sub-list">
                         <li class="sub-list-item">For Heart Cup, a charity-focused startup, developed new mobile-first features, increased accessibility, and improved UX</li>
-                        <li class="sub-list-item">Working with an ad agency, created consumer-facing mobile-first apps and games</li>
+                        <li class="sub-list-item">Worked with an ad agency to create consumer-facing mobile-first apps and games</li>
                     </ul>
                 </li>
                 <li class="list-item">
