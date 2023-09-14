@@ -121,6 +121,8 @@
         .list-item__link {
             border-bottom: 1px solid transparent;
             color: var(--link-color);
+            display: inline-block;
+            margin: 0;
             padding: 0 0 3px;
             text-decoration: none;
         }
@@ -148,12 +150,6 @@
 
         .list-item__link-wrapper {
             grid-column: 1/2;
-        }
-
-        .list-item__link {
-            display: inline-block;
-            margin: 0;
-            padding: 0 0 3px;
         }
 
         .list-item__value {
@@ -309,15 +305,15 @@
             <h3 class="section-header">Education</h3>
             <ul class="list-wrapper">
                 <li class="list-item">
-                    <span class="list-item__link">General Assembly</span>
+                    <a class="list-item__link" href="https://generalassemb.ly/" target="_blank">General Assembly</a>
                     <span class="list-item__value">Web Development Immersive</span>
                 </li>
                 <li class="list-item">
-                    <span class="list-item__link">University of Southern California</span>
+                    <a class="list-item__link" href="https://www.usc.edu/" target="_blank">University of Southern California</a>
                     <span class="list-item__value">M.A.</span>
                 </li>
                 <li class="list-item">
-                    <span class="list-item__link">UC Berkeley</span>
+                    <a class="list-item__link" href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>
                     <span class="list-item__value">B.A.</span>
                 </li>
             </ul>
