@@ -1,414 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Google search meta tags-->
-    <meta name="Title"
-          content="JJ Keith">
-    <meta name="Keywords"
-          content="Front-end Web developer">
-    <meta name="Description"
-          content="Portfolio of web developer JJ Keith">
-    <meta name="Subject"
-          content="Internet">
-    <meta name="Language"
-          content="English">
-    <link rel="logo"
-          type="image/jpg"
-          href="http://www.hiyajj.com/logo.png">
+    <meta name="Title" content="JJ Keith" />
+    <meta name="Keywords" content="Frontend Web developer" />
+    <meta name="Description" content="Portfolio of web developer JJ Keith" />
+    <meta name="Subject" content="Internet" />
+    <meta name="Language" content="English" />
+    <link rel="logo" type="image/jpg" href="http://www.hiyajj.com/logo.png" />
 
     <!-- Social media unfurling -->
-    <meta property="og:type"
-          content="website" />
-    <meta property="og:title"
-          content="JJ Keith" />
-    <meta property="og:description"
-          content="Portfolio of web developer JJ Keith">
-    <meta property="og:image"
-          content="http://www.hiyajj.com/logo.png">
-    <meta property="og:url"
-          content="http://www.hiyajj.com">
-    <meta name="twitter:card"
-          content="summary">
-    <meta name="twitter:site"
-          content="@jj_keith">
-    <meta name="twitter:image"
-          content="http://www.hiyajj.com/logo.png">
-    <meta name="twitter:image:alt"
-          content="JJ Keith">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JJ Keith" />
+    <meta
+      property="og:description"
+      content="Portfolio of web developer JJ Keith"
+    />
+    <meta property="og:image" content="http://www.hiyajj.com/logo.png" />
+    <meta property="og:url" content="http://www.hiyajj.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@jj_keith" />
+    <meta name="twitter:image" content="http://www.hiyajj.com/logo.png" />
+    <meta name="twitter:image:alt" content="JJ Keith" />
 
     <!-- Load Favicons -->
-    <link rel="icon"
-          href="favicon.png"
-          type="image/jpg" />
-    <link rel="shortcut icon"
-          href="favicon.png"
-          type="image/png" />
+    <link rel="icon" href="favicon.png" type="image/jpg" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <style type="text/css">
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
+      :root {
+        --background-color: #fff9f6;
+        --text-color: #1b1b1d;
+        --link-color: #0c5a46;
+        --hr-color: #d2fb3e;
+        --footer-color: #d2fb3e;
+        --accent-color: #9387af;
+        --footer-link-color: var(--text-color);
+        --header-font: "Montserrat", sans-serif;
+        --body-font: "Montserrat", sans-serif;
+        --hover-brightness: 0.75;
+      }
+
+      @media (prefers-color-scheme: dark) {
         :root {
-            --background-color: #fff9f6;
-            --text-color: #1b1b1d;
-            --link-color: #0c5a46;
-            --hr-color: #d2fb3e;
-            --footer-color: #d2fb3e;
-            --accent-color: #9387af;
-            --footer-link-color: var(--text-color);
-            --header-font: "Montserrat", sans-serif;
-            --body-font: "Montserrat", sans-serif;
-            --hover-brightness: 0.75;
+          --background-color: #1b1b1d;
+          --hr-color: #d2c1fa;
+          --text-color: #fff9f6;
+          --link-color: #d2fb3e;
+          --accent-color: #d2c1fa;
+          --footer-link-color: var(--background-color);
         }
+      }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --background-color: #1b1b1d;
-                --hr-color: #d2c1fa;
-                --text-color: #fff9f6;
-                --link-color: #d2fb3e;
-                --accent-color: #d2c1fa;
-                --footer-link-color: var(--background-color);
-            }
-        }
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: var(--body-font);
+        font-size: 1rem;
+        height: 100%;
+        line-height: 1.5;
+        min-height: calc(100vh - 160px);
+        margin: 0;
+        padding: 40px 20px 120px;
+        position: relative;
+      }
 
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: var(--body-font);
-            font-size: 1rem;
-            height: 100%;
-            line-height: 1.5;
-            min-height: calc(100vh - 160px);
-            margin: 0;
-            padding: 40px 20px 120px;
-            position: relative;
-        }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+      }
 
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-        }
+      .header {
+        color: var(--accent-color);
+        font-family: var(--header-font);
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 0;
+        text-transform: uppercase;
+      }
 
-        .header {
-            color: var(--accent-color);
-            font-family: var(--header-font);
-            font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin: 0;
-            text-transform: uppercase;
-        }
+      .subheader {
+        color: var(--accent-color);
+        font-family: var(--header-font);
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        margin: 0 0 1rem;
+      }
 
-        .subheader {
-            color: var(--accent-color);
-            font-family: var(--header-font);
-            font-size: 1.5rem;
-            letter-spacing: 1.5px;
-            margin: 0 0 1rem;
-        }
+      .section-header {
+        color: var(--accent-color);
+        font-family: var(--header-font);
+        letter-spacing: 1.5px;
+      }
 
-        .section-header {
-            color: var(--accent-color);
-            font-family: var(--header-font);
-            letter-spacing: 1.5px;
-        }
+      .text {
+        margin: 0 0 1rem;
+      }
 
-        .text {
-            margin: 0 0 1rem;
-        }
+      a:after {
+        background-color: transparent;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: 0.2s all ease-in;
+      }
 
-        a:after {
-            background-color: transparent;
-            content: '';
-            display: block;
-            height: 2px;
-            width: 0;
-            transition: 0.2s all ease-in;
-        }
+      a:hover:after {
+        background-color: var(--accent-color);
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+      }
 
-        a:hover:after {
-            background-color: var(--accent-color);
-            content: '';
-            display: block;
-            height: 2px;
-            width: 100%;
-        }
+      .list-item__link {
+        border-bottom: 1px solid transparent;
+        color: var(--link-color);
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 3px;
+        text-decoration: none;
+      }
 
-        .list-item__link {
-            border-bottom: 1px solid transparent;
-            color: var(--link-color);
-            display: inline-block;
-            margin: 0;
-            padding: 0 0 3px;
-            text-decoration: none;
-        }
+      hr {
+        background-color: var(--hr-color);
+        border: 0;
+        height: 2px;
+        margin: 2rem 0 1rem;
+      }
 
-        hr {
-            background-color: var(--hr-color);
-            border: 0;
-            height: 2px;
-            margin: 2rem 0 1rem;
-        }
+      .list-wrapper {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-        .list-wrapper {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+      .list-item {
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: space-between;
+        margin: 0.75rem 0;
+      }
 
-        .list-item {
-            align-items: center;
-            display: grid;
-            grid-template-columns: auto 1fr;
-            justify-content: space-between;
-            margin: 0.75rem 0;
-        }
+      .list-item__link-wrapper {
+        grid-column: 1/2;
+      }
 
-        .list-item__link-wrapper {
-            grid-column: 1/2;
-        }
+      .list-item__value {
+        font-family: var(--body-font);
+        font-size: 0.825rem;
+        grid-column: 2/3;
+        margin: 0;
+        text-align: right;
+        text-transform: uppercase;
+      }
 
-        .list-item__value {
-            font-family: var(--body-font);
-            font-size: 0.825rem;
-            grid-column: 2/3;
-            margin: 0;
-            text-align: right;
-            text-transform: uppercase;
-        }
+      .sub-list {
+        grid-column: 1/3;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1em;
+      }
 
-        .sub-list {
-            grid-column: 1/3;
-            list-style: none;
-            margin-left: 0;
-            padding-left: 1em;
-        }
+      .sub-list-item:before {
+        display: inline-block;
+        content: "-";
+        margin-left: -1em;
+        width: 1em;
+      }
 
-        .sub-list-item:before {
-            display: inline-block;
-            content: "-";
-            margin-left: -1em;
-            width: 1em;
-        }
+      .footer {
+        background-color: var(--footer-color);
+        padding: 30px 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+      }
 
-        .footer {
-            background-color: var(--footer-color);
-            padding: 30px 20px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 30px;
-        }
+      .footer-links {
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+        width: 540px;
+      }
 
-        .footer-links {
-            display: flex;
-            margin: 0 auto;
-            width: 540px;
-        }
+      .footer-icon:not(:last-of-type) {
+        margin-right: 60px;
+      }
 
-        .footer-icon:not(:last-of-type) {
-            margin-right: 60px;
-        }
+      .footer-icon svg {
+        height: 30px;
+        width: auto;
+      }
 
-        .footer-icon svg {
-            height: 30px;
-            width: auto;
-        }
+      .footer-icon path {
+        fill: var(--footer-link-color);
+      }
 
-        .footer-icon path {
-            fill: var(--footer-link-color);
-        }
-
-        .footer-icon:focus svg,
-        .footer-icon:hover svg,
-        .footer-icon:active svg {
-            opacity: 0.8;
-            transform: scale(1.15);
-            transition: 0.2s all linear;
-        }
+      .footer-icon:focus svg,
+      .footer-icon:hover svg,
+      .footer-icon:active svg {
+        opacity: 0.8;
+        transform: scale(1.15);
+        transition: 0.2s all linear;
+      }
     </style>
 
     <title>JJ Keith, web dev</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Older Tag Code; phasing out -->
-    <script async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-81822884-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-81822884-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-81822884-1');
+      gtag("config", "UA-81822884-1");
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async
-            src="https://www.googletagmanager.com/gtag/js?id=G-XY1FW4STVT"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XY1FW4STVT"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-XY1FW4STVT');
+      gtag("config", "G-XY1FW4STVT");
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <main class="container">
-        <h1 class="header">JJ Keith</h1>
-        <p class="subheader">Senior Frontend Engineer | CMS-Driven Web Platforms | React &amp; Vue</p>
+      <h1 class="header">JJ Keith</h1>
+      <p class="subheader">
+        Senior Frontend Engineer | CMS-Driven Web Platforms | React &amp; Vue
+      </p>
+      <p class="text">
+        Senior frontend engineer with a track record of leading CMS-driven web
+        platforms, partnering across teams, and delivering accessible,
+        high-performing digital experiences.
+      </p>
+      <p class="text">
+        <a class="list-item__link" href="mailto:jj@hiyajj.com">jj@hiyajj.com</a>
+        &nbsp;|&nbsp;
+        <a class="list-item__link" href="tel:+13234045894">(323) 404-5894</a>
+        &nbsp;|&nbsp;
+        <a class="list-item__link" href="https://www.hiyajj.com" target="_blank"
+          >www.hiyajj.com</a
+        >
+        &nbsp;|&nbsp;
+        <a
+          class="list-item__link"
+          href="https://www.linkedin.com/in/jjkeith/"
+          target="_blank"
+          >linkedin.com/in/jjkeith/</a
+        >
+      </p>
+      <hr />
+      <section>
+        <h3 class="section-header">Skills</h3>
+        <ul class="list-wrapper">
+          <li class="list-item">
+            React · Vue.js · Next.js · JavaScript · TypeScript
+          </li>
+          <li class="list-item">
+            HTML5 · CSS3/SCSS · Responsive Design · Accessibility (WCAG)
+          </li>
+          <li class="list-item">
+            Frontend Architecture · UI Component Systems · Design-to-development
+            Translation
+          </li>
+          <li class="list-item">
+            Contentful · HubSpot · Headless CMS · CMS Migration
+          </li>
+          <li class="list-item">
+            Martech Integration · UX Collaboration · Cross-functional
+            Communication
+          </li>
+          <li class="list-item">
+            Version Control · Git/GitHub · Agile workflows
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3 class="section-header">Experience</h3>
+        <ul class="list-wrapper">
+          <li class="list-item">
+            <a
+              class="list-item__link"
+              href="http://www.kcrw.org"
+              target="_blank"
+              >KCRW</a
+            >
+            <span class="list-item__value">Jan 2024 – Present</span>
+            <ul class="sub-list">
+              <li class="sub-list-item">
+                Lead frontend development, spearheading a full redesign and
+                migration of decades of content with reusable components in
+                Next.js and React.
+              </li>
+              <li class="sub-list-item">
+                Manage agency developers across simultaneous web and native app
+                buildouts.
+              </li>
+              <li class="sub-list-item">
+                Partner with editorial, membership, and marketing to launch
+                digital products and seasonal campaigns.
+              </li>
+              <li class="sub-list-item">
+                Train staff on content workflows and collaborate on visual
+                design iterations.
+              </li>
+              <li class="sub-list-item">
+                <em
+                  >Next.js · React · Contentful · SCSS · Git · Accessibility ·
+                  Cross-team Collaboration</em
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="list-item">
+            <a class="list-item__link" href="http://edify.cx" target="_blank"
+              >Edify Labs</a
+            >
+            <span class="list-item__value">Nov 2022 – Sep 2023</span>
+            <ul class="sub-list">
+              <li class="sub-list-item">
+                Developed a Next.js/React frontend powered by a headless CMS for
+                a SaaS customer service platform.
+              </li>
+              <li class="sub-list-item">
+                Improved mobile performance, accessibility, and overall UX
+                across the application.
+              </li>
+              <li class="sub-list-item">
+                Integrated marketing and analytics tools to support lead
+                generation and sales workflows.
+              </li>
+              <li class="sub-list-item">
+                <em
+                  >Next.js · React · Headless CMS · HubSpot · Tailwind CSS ·
+                  Accessibility · Analytics</em
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="list-item">
+            <a
+              class="list-item__link"
+              href="http://friendbuy.com"
+              target="_blank"
+              >Friendbuy</a
+            >
+            <span class="list-item__value">May 2019 – Nov 2022</span>
+            <ul class="sub-list">
+              <li class="sub-list-item">
+                Built pixel-accurate, brand-compliant iframe implementations for
+                a SaaS referral product across client Shopify sites.
+              </li>
+              <li class="sub-list-item">
+                Led development of a new marketing website on HubSpot with
+                reusable components and templates.
+              </li>
+              <li class="sub-list-item">
+                Managed and mentored developers, bridging product requirements
+                and marketing goals.
+              </li>
+              <li class="sub-list-item">
+                <em
+                  >HubSpot · Shopify · UI implementation · Frontend leadership ·
+                  SEO · Analytics</em
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="list-item">
+            <a class="list-item__link" href="http://gigmor.com" target="_blank"
+              >Gigmor</a
+            >
+            <span class="list-item__value">Aug 2016 – May 2018</span>
+            <ul class="sub-list">
+              <li class="sub-list-item">
+                Built a React application with responsive, reusable UI
+                components.
+              </li>
+              <li class="sub-list-item">
+                Led feature development from wireframing to implementation and
+                code reviews.
+              </li>
+              <li class="sub-list-item">
+                <em
+                  >React · Redux · HTML5/CSS · JavaScript · Git · SEO · AWS ·
+                  Web Accessibility</em
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3 class="section-header">Additional Experience</h3>
         <p class="text">
-            Senior frontend engineer with a track record of leading CMS-driven web platforms, managing cross-functional teams, and delivering accessible, performant digital experiences.
-            Currently leading frontend at KCRW and partnering with editorial, membership, and marketing teams to ship high-impact products.</p>
-        <p class="text">
-            <a class="list-item__link"
-               href="mailto:jj@hiyajj.com">jj@hiyajj.com</a>
-            &nbsp;|&nbsp;
-            <a class="list-item__link"
-               href="tel:+13234045894">(323) 404-5894</a>
-            &nbsp;|&nbsp;
-            <a class="list-item__link"
-               href="https://www.hiyajj.com"
-               target="_blank">www.hiyajj.com</a>
-            &nbsp;|&nbsp;
-            <a class="list-item__link"
-               href="https://www.linkedin.com/in/jjkeith/"
-               target="_blank">linkedin.com/in/jjkeith/</a>
+          Former USC Writing Program lecturer and Anthropology TA; experienced
+          in teaching, mentoring, and guiding junior practitioners through
+          complex technical and conceptual material. Published author and
+          essayist with deep familiarity in editorial workflows, deadlines, and
+          audience-focused content systems.
         </p>
-        <hr>
-        <section>
-            <h3 class="section-header">Skills</h3>
-            <ul class="list-wrapper">
-                <li class="list-item">React · Vue.js · Next.js · JavaScript · TypeScript</li>
-                <li class="list-item">HTML5 · CSS3/SCSS · Responsive Design · Accessibility (WCAG)</li>
-                <li class="list-item">Frontend Architecture · UI Component Systems · Design-to-Development Translation</li>
-                <li class="list-item">Contentful · HubSpot · Headless CMS · CMS Migration</li>
-                <li class="list-item">Martech Integration · UX Collaboration · Cross-functional Communication</li>
-                <li class="list-item">Version Control · Git/GitHub · Agile workflows</li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h3 class="section-header">Experience</h3>
-            <ul class="list-wrapper">
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="http://www.kcrw.org"
-                       target="_blank">KCRW</a>
-                    <span class="list-item__value">Jan 2024 – Present</span>
-                    <ul class="sub-list">
-                        <li class="sub-list-item">Lead frontend development, spearheading a full redesign and migration of decades of content with reusable components in Next.js and React.</li>
-                        <li class="sub-list-item">Manage agency developers across simultaneous web and native app buildouts.</li>
-                        <li class="sub-list-item">Partner with editorial, membership, and marketing to launch digital products and seasonal campaigns.</li>
-                        <li class="sub-list-item">Train staff on content workflows and collaborate on visual design iterations.</li>
-                        <li class="sub-list-item"><em>Next.js · React · Contentful · SCSS · Git · Accessibility · Cross-Team Collaboration</em></li>
-                    </ul>
-                </li>
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="http://edify.cx"
-                       target="_blank">Edify Labs</a>
-                    <span class="list-item__value">Nov 2022 – Sep 2023</span>
-                    <ul class="sub-list">
-                        <li class="sub-list-item">Developed a Next.js/React frontend powered by a headless CMS for a SaaS customer service platform.</li>
-                        <li class="sub-list-item">Improved mobile performance, accessibility, and overall UX across the application.</li>
-                        <li class="sub-list-item">Integrated marketing and analytics tools to support lead generation and sales workflows.</li>
-                        <li class="sub-list-item"><em>Next.js · React · Headless CMS · HubSpot · Tailwind CSS · Accessibility · Analytics</em></li>
-                    </ul>
-                </li>
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="http://friendbuy.com"
-                       target="_blank">Friendbuy</a>
-                    <span class="list-item__value">May 2019 – Nov 2022</span>
-                    <ul class="sub-list">
-                        <li class="sub-list-item">Built pixel-accurate, brand-compliant iframe implementations for a SaaS referral product across client Shopify sites.</li>
-                        <li class="sub-list-item">Led development of a new marketing website on HubSpot with reusable components and templates.</li>
-                        <li class="sub-list-item">Managed and mentored developers, bridging product requirements and marketing goals.</li>
-                        <li class="sub-list-item"><em>HubSpot · Shopify · UI implementation · Frontend leadership · SEO · Analytics</em></li>
-                    </ul>
-                </li>
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="http://gigmor.com"
-                       target="_blank">Gigmor</a>
-                    <span class="list-item__value">Aug 2016 – May 2018</span>
-                    <ul class="sub-list">
-                        <li class="sub-list-item">Built a React application with responsive, reusable UI components.</li>
-                        <li class="sub-list-item">Led feature development from wireframing to implementation and code reviews.</li>
-                        <li class="sub-list-item"><em>React · Redux · HTML5/CSS · JavaScript · Git · SEO · AWS · Web Accessibility</em></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h3 class="section-header">Additional Experience</h3>
-            <p class="text">
-                Former USC Writing Program lecturer and Anthropology TA; experienced in teaching, mentoring, and guiding junior practitioners through complex technical and conceptual material.
-                Published author and essayist with deep familiarity in editorial workflows, deadlines, and audience-focused content systems.</p>
-        </section>
-        <hr>
-        <section>
-            <h3 class="section-header">Education</h3>
-            <ul class="list-wrapper">
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="https://www.usc.edu/"
-                       target="_blank">University of Southern California</a>
-                    <span class="list-item__value">M.P.W. (Non-fiction Writing), 2008</span>
-                </li>
-                <li class="list-item">
-                    <a class="list-item__link"
-                       href="https://www.berkeley.edu/"
-                       target="_blank">UC Berkeley</a>
-                    <span class="list-item__value">B.A. (Biological Anthropology), 2000</span>
-                </li>
-            </ul>
-        </section>
-
+      </section>
+      <hr />
+      <section>
+        <h3 class="section-header">Education</h3>
+        <ul class="list-wrapper">
+          <li class="list-item">
+            <a
+              class="list-item__link"
+              href="https://www.usc.edu/"
+              target="_blank"
+              >University of Southern California</a
+            >
+            <span class="list-item__value"
+              >M.P.W. (Nonfiction Writing), 2008</span
+            >
+          </li>
+          <li class="list-item">
+            <a
+              class="list-item__link"
+              href="https://www.berkeley.edu/"
+              target="_blank"
+              >University of California, Berkeley</a
+            >
+            <span class="list-item__value"
+              >B.A. (Biological Anthropology), 2000</span
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer-links">
-            <a href="https://github.com/jjkeith/"
-               target="_blank"
-               class="footer-icon"
-               aria-label="github">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 480 512"
-                     aria-hidden="true">
-                    <path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/jjkeith/"
-               target="_blank"
-               class="footer-icon"
-               aria-label="linkedin">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 448 512"
-                     aria-hidden="true">
-                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                </svg>
-            </a>
-            <a href="mailto:jj@hiyajj.com"
-               target="_blank"
-               class="footer-icon"
-               v-html="emailIcon"
-               aria-label="email">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 512 512"
-                     aria-hidden="true">
-                    <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
-                </svg>
-            </a>
-        </div>
+      <div class="footer-links">
+        <a
+          href="https://github.com/jjkeith/"
+          target="_blank"
+          class="footer-icon"
+          aria-label="github"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 480 512"
+            aria-hidden="true"
+          >
+            <path
+              d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jjkeith/"
+          target="_blank"
+          class="footer-icon"
+          aria-label="linkedin"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            aria-hidden="true"
+          >
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+            />
+          </svg>
+        </a>
+        <a
+          href="mailto:jj@hiyajj.com"
+          target="_blank"
+          class="footer-icon"
+          v-html="emailIcon"
+          aria-label="email"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+          >
+            <path
+              d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+            />
+          </svg>
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
