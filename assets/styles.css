@@ -9,6 +9,7 @@
   --accent-color: #5847a6;
   --muted-accent: #8b7acb;
   --footer-link-color: var(--text-color);
+  --footer-icon-filter: none;
   --header-font: "Righteous", cursive;
   --body-font: "Poppins", sans-serif;
   --hover-brightness: 0.85;
@@ -26,6 +27,7 @@
     --muted-accent: #a799e7;
     --footer-color: #161828;
     --footer-link-color: var(--text-color);
+    --footer-icon-filter: invert(1);
     --card-bg: #151826;
     --pill-bg: rgba(196, 181, 253, 0.12);
   }
@@ -239,6 +241,7 @@ section {
 .footer-icon img {
   height: 30px;
   width: auto;
+  filter: var(--footer-icon-filter);
 }
 
 .footer-icon path {
