@@ -31,29 +31,36 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <style type="text/css">
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&display=swap");
 
       :root {
-        --background-color: #fff9f6;
-        --text-color: #1b1b1d;
-        --link-color: #0c5a46;
-        --hr-color: #d2fb3e;
-        --footer-color: #d2fb3e;
-        --accent-color: #9387af;
+        --background-color: #f7f6fb;
+        --text-color: #1c1a27;
+        --link-color: #115d4a;
+        --hr-color: #c3b4ff;
+        --footer-color: #ece8ff;
+        --accent-color: #5847a6;
+        --muted-accent: #8b7acb;
         --footer-link-color: var(--text-color);
-        --header-font: "Montserrat", sans-serif;
-        --body-font: "Montserrat", sans-serif;
-        --hover-brightness: 0.75;
+        --header-font: "Righteous", cursive;
+        --body-font: "Poppins", sans-serif;
+        --hover-brightness: 0.85;
+        --card-bg: #ffffff;
+        --pill-bg: rgba(139, 122, 203, 0.1);
       }
 
       @media (prefers-color-scheme: dark) {
         :root {
-          --background-color: #1b1b1d;
-          --hr-color: #d2c1fa;
-          --text-color: #fff9f6;
-          --link-color: #d2fb3e;
-          --accent-color: #d2c1fa;
-          --footer-link-color: var(--background-color);
+          --background-color: #0f1119;
+          --hr-color: #7f6bd6;
+          --text-color: #f1eefc;
+          --link-color: #7ae0bf;
+          --accent-color: #c4b5fd;
+          --muted-accent: #a799e7;
+          --footer-color: #161828;
+          --footer-link-color: var(--text-color);
+          --card-bg: #151826;
+          --pill-bg: rgba(196, 181, 253, 0.12);
         }
       }
 
@@ -63,44 +70,57 @@
         font-family: var(--body-font);
         font-size: 1rem;
         height: 100%;
-        line-height: 1.5;
+        line-height: 1.6;
         min-height: calc(100vh - 160px);
         margin: 0;
-        padding: 40px 20px 120px;
+        padding: 60px 20px 140px;
         position: relative;
       }
 
       .container {
-        max-width: 500px;
+        max-width: 760px;
         margin: 0 auto;
       }
 
       .header {
         color: var(--accent-color);
         font-family: var(--header-font);
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: clamp(2rem, 2.8vw, 2.6rem);
+        font-weight: 400;
         letter-spacing: 2px;
         margin: 0;
         text-transform: uppercase;
       }
 
       .subheader {
-        color: var(--accent-color);
+        color: var(--muted-accent);
         font-family: var(--header-font);
-        font-size: 1.5rem;
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
         letter-spacing: 1.5px;
-        margin: 0 0 1rem;
+        margin: 0 0 0.75rem;
+      }
+
+      .intro {
+        background: var(--card-bg);
+        border-radius: 16px;
+        box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1.5rem;
       }
 
       .section-header {
         color: var(--accent-color);
         font-family: var(--header-font);
-        letter-spacing: 1.5px;
+        letter-spacing: 1.4px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
       }
 
       .text {
-        margin: 0 0 1rem;
+        margin: 0 0 0.75rem;
       }
 
       a:after {
@@ -121,60 +141,109 @@
       }
 
       .list-item__link {
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
         color: var(--link-color);
         display: inline-block;
         margin: 0;
         padding: 0 0 3px;
         text-decoration: none;
+        font-weight: 600;
       }
 
       hr {
         background-color: var(--hr-color);
         border: 0;
-        height: 2px;
-        margin: 2rem 0 1rem;
+        height: 3px;
+        margin: 2.4rem 0 1.4rem;
+        width: 80px;
+        border-radius: 4px;
+      }
+
+      section {
+        margin-bottom: 2.4rem;
       }
 
       .list-wrapper {
         list-style: none;
         margin: 0;
         padding: 0;
+        display: grid;
+        gap: 1rem;
       }
 
       .list-item {
-        align-items: center;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: space-between;
-        margin: 0.75rem 0;
+        background: var(--card-bg);
+        border-radius: 14px;
+        padding: 1rem 1.2rem;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
       }
 
-      .list-item__link-wrapper {
-        grid-column: 1/2;
+      .list-item__top {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: baseline;
       }
 
       .list-item__value {
         font-family: var(--body-font);
-        font-size: 0.825rem;
-        grid-column: 2/3;
+        font-size: 0.85rem;
         margin: 0;
-        text-align: right;
         text-transform: uppercase;
+        color: var(--muted-accent);
+        letter-spacing: 0.08em;
+      }
+
+      .experience-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      @media (min-width: 720px) {
+        .experience-grid {
+          grid-template-columns: 2fr 1fr;
+          align-items: start;
+        }
+      }
+
+      .experience-figure {
+        margin: 0;
+        background: var(--pill-bg);
+        border-radius: 12px;
+        padding: 0.5rem;
+        display: grid;
+        gap: 0.35rem;
+        align-content: start;
+      }
+
+      .experience-figure img {
+        width: 100%;
+        border-radius: 8px;
+        display: block;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .experience-figure figcaption {
+        font-size: 0.8rem;
+        color: var(--muted-accent);
+        text-align: center;
       }
 
       .sub-list {
-        grid-column: 1/3;
         list-style: none;
-        margin-left: 0;
-        padding-left: 1em;
+        margin: 0.5rem 0 0;
+        padding-left: 0;
+        display: grid;
+        gap: 0.4rem;
       }
 
-      .sub-list-item:before {
-        display: inline-block;
-        content: "-";
-        margin-left: -1em;
-        width: 1em;
+      .sub-list-item {
+        background: var(--pill-bg);
+        border-radius: 10px;
+        padding: 0.6rem 0.75rem;
+        margin: 0;
       }
 
       .footer {
@@ -191,7 +260,8 @@
         justify-content: center;
         display: flex;
         margin: 0 auto;
-        width: 540px;
+        width: min(540px, 100%);
+        gap: 2.5rem;
       }
 
       .footer-icon:not(:last-of-type) {
@@ -256,30 +326,36 @@
       <p class="subheader">
         Senior Frontend Engineer | CMS-Driven Web Platforms | React &amp; Vue
       </p>
-      <p class="text">
-        Senior frontend engineer with a track record of leading CMS-driven web
-        platforms, partnering across teams, and delivering accessible,
-        high-performing digital experiences.
-      </p>
-      <p class="text">
-        <a class="list-item__link" href="mailto:jj@hiyajj.com">jj@hiyajj.com</a>
-        &nbsp;|&nbsp;
-        <a class="list-item__link" href="tel:+13234045894">(323) 404-5894</a>
-        &nbsp;|&nbsp;
-        <a class="list-item__link" href="https://www.hiyajj.com" target="_blank"
-          >www.hiyajj.com</a
-        >
-        &nbsp;|&nbsp;
-        <a
-          class="list-item__link"
-          href="https://www.linkedin.com/in/jjkeith/"
-          target="_blank"
-          >linkedin.com/in/jjkeith/</a
-        >
-      </p>
+      <section class="intro">
+        <p class="text">
+          Hiya! I'm JJ and I build UI architectures and presentation layers for
+          content platforms that need to work for real people.
+        </p>
+        <p class="text">
+          Senior frontend engineer with a track record of leading CMS-driven web
+          platforms, partnering across teams, and delivering accessible,
+          high-performing digital experiences.
+        </p>
+        <p class="text">
+          <a class="list-item__link" href="mailto:jj@hiyajj.com">jj@hiyajj.com</a>
+          &nbsp;|&nbsp;
+          <a class="list-item__link" href="tel:+13234045894">(323) 404-5894</a>
+          &nbsp;|&nbsp;
+          <a class="list-item__link" href="https://www.hiyajj.com" target="_blank"
+            >www.hiyajj.com</a
+          >
+          &nbsp;|&nbsp;
+          <a
+            class="list-item__link"
+            href="https://www.linkedin.com/in/jjkeith/"
+            target="_blank"
+            >linkedin.com/in/jjkeith/</a
+          >
+        </p>
+      </section>
       <hr />
       <section>
-        <h3 class="section-header">Skills</h3>
+        <h3 class="section-header">🛠️ Skills</h3>
         <ul class="list-wrapper">
           <li class="list-item">
             React · Vue.js · Next.js · JavaScript · TypeScript
@@ -305,102 +381,133 @@
       </section>
       <hr />
       <section>
-        <h3 class="section-header">Experience</h3>
+        <h3 class="section-header">💼 Experience</h3>
         <ul class="list-wrapper">
           <li class="list-item">
-            <a
-              class="list-item__link"
-              href="http://www.kcrw.org"
-              target="_blank"
-              >KCRW</a
-            >
-            <span class="list-item__value">Jan 2024 – Present</span>
-            <ul class="sub-list">
-              <li class="sub-list-item">
-                Lead frontend development, spearheading a full redesign and
-                migration of decades of content with reusable components in
-                Next.js and React.
-              </li>
-              <li class="sub-list-item">
-                Manage agency developers across simultaneous web and native app
-                buildouts.
-              </li>
-              <li class="sub-list-item">
-                Partner with editorial, membership, and marketing to launch
-                digital products and seasonal campaigns.
-              </li>
-              <li class="sub-list-item">
-                Train staff on content workflows and collaborate on visual
-                design iterations.
-              </li>
-              <li class="sub-list-item">
-                <em
-                  >Next.js · React · Contentful · SCSS · Git · Accessibility ·
-                  Cross-team Collaboration</em
-                >
-              </li>
-            </ul>
+            <div class="list-item__top">
+              <a
+                class="list-item__link"
+                href="http://www.kcrw.com"
+                target="_blank"
+                >KCRW</a
+              >
+              <span class="list-item__value">Jan 2024 – Present</span>
+            </div>
+            <div class="experience-grid">
+              <ul class="sub-list">
+                <li class="sub-list-item">
+                  Lead frontend development, spearheading a full redesign and
+                  migration of decades of content with reusable components in
+                  Next.js and React.
+                </li>
+                <li class="sub-list-item">
+                  Manage agency developers across simultaneous web and native
+                  app buildouts.
+                </li>
+                <li class="sub-list-item">
+                  Partner with editorial, membership, and marketing to launch
+                  digital products and seasonal campaigns.
+                </li>
+                <li class="sub-list-item">
+                  Train staff on content workflows and collaborate on visual
+                  design iterations.
+                </li>
+                <li class="sub-list-item">
+                  <em
+                    >Next.js · React · Contentful · SCSS · Git · Accessibility
+                    · Cross-team Collaboration</em
+                  >
+                </li>
+              </ul>
+              <figure class="experience-figure">
+                <a href="https://www.kcrw.com" target="_blank">
+                  <img src="assets/kcrw-showcase.jpg" alt="KCRW site preview" />
+                </a>
+              </figure>
+            </div>
           </li>
           <li class="list-item">
-            <a class="list-item__link" href="http://edify.cx" target="_blank"
-              >Edify Labs</a
-            >
-            <span class="list-item__value">Nov 2022 – Sep 2023</span>
-            <ul class="sub-list">
-              <li class="sub-list-item">
-                Developed a Next.js/React frontend powered by a headless CMS for
-                a SaaS customer service platform.
-              </li>
-              <li class="sub-list-item">
-                Improved mobile performance, accessibility, and overall UX
-                across the application.
-              </li>
-              <li class="sub-list-item">
-                Integrated marketing and analytics tools to support lead
-                generation and sales workflows.
-              </li>
-              <li class="sub-list-item">
-                <em
-                  >Next.js · React · Headless CMS · HubSpot · Tailwind CSS ·
-                  Accessibility · Analytics</em
-                >
-              </li>
-            </ul>
+            <div class="list-item__top">
+              <a class="list-item__link" href="http://edify.cx" target="_blank"
+                >Edify Labs</a
+              >
+              <span class="list-item__value">Nov 2022 – Sep 2023</span>
+            </div>
+            <div class="experience-grid">
+              <ul class="sub-list">
+                <li class="sub-list-item">
+                  Developed a Next.js/React frontend powered by a headless CMS
+                  for a SaaS customer service platform.
+                </li>
+                <li class="sub-list-item">
+                  Improved mobile performance, accessibility, and overall UX
+                  across the application.
+                </li>
+                <li class="sub-list-item">
+                  Integrated marketing and analytics tools to support lead
+                  generation and sales workflows.
+                </li>
+                <li class="sub-list-item">
+                  <em
+                    >Next.js · React · Headless CMS · HubSpot · Tailwind CSS ·
+                    Accessibility · Analytics</em
+                  >
+                </li>
+              </ul>
+              <figure class="experience-figure">
+                <img src="assets/edify-showcase.jpg" alt="Edify experience preview" />
+                <figcaption>No longer online.</figcaption>
+              </figure>
+            </div>
           </li>
           <li class="list-item">
-            <a
-              class="list-item__link"
-              href="http://friendbuy.com"
-              target="_blank"
-              >Friendbuy</a
-            >
-            <span class="list-item__value">May 2019 – Nov 2022</span>
-            <ul class="sub-list">
-              <li class="sub-list-item">
-                Built pixel-accurate, brand-compliant iframe implementations for
-                a SaaS referral product across client Shopify sites.
-              </li>
-              <li class="sub-list-item">
-                Led development of a new marketing website on HubSpot with
-                reusable components and templates.
-              </li>
-              <li class="sub-list-item">
-                Managed and mentored developers, bridging product requirements
-                and marketing goals.
-              </li>
-              <li class="sub-list-item">
-                <em
-                  >HubSpot · Shopify · UI implementation · Frontend leadership ·
-                  SEO · Analytics</em
-                >
-              </li>
-            </ul>
+            <div class="list-item__top">
+              <a
+                class="list-item__link"
+                href="http://friendbuy.com"
+                target="_blank"
+                >Friendbuy</a
+              >
+              <span class="list-item__value">May 2019 – Nov 2022</span>
+            </div>
+            <div class="experience-grid">
+              <ul class="sub-list">
+                <li class="sub-list-item">
+                  Built pixel-accurate, brand-compliant iframe implementations
+                  for a SaaS referral product across client Shopify sites.
+                </li>
+                <li class="sub-list-item">
+                  Led development of a new marketing website on HubSpot with
+                  reusable components and templates.
+                </li>
+                <li class="sub-list-item">
+                  Managed and mentored developers, bridging product requirements
+                  and marketing goals.
+                </li>
+                <li class="sub-list-item">
+                  <em
+                    >HubSpot · Shopify · UI implementation · Frontend leadership
+                    · SEO · Analytics</em
+                  >
+                </li>
+              </ul>
+              <figure class="experience-figure">
+                <a href="https://friendbuy.com" target="_blank">
+                  <img
+                    src="assets/friendbuy-showcase.jpg"
+                    alt="Friendbuy success stories preview"
+                  />
+                </a>
+              </figure>
+            </div>
           </li>
           <li class="list-item">
-            <a class="list-item__link" href="http://gigmor.com" target="_blank"
-              >Gigmor</a
-            >
-            <span class="list-item__value">Aug 2016 – May 2018</span>
+            <div class="list-item__top">
+              <a class="list-item__link" href="http://gigmor.com" target="_blank"
+                >Gigmor</a
+              >
+              <span class="list-item__value">Aug 2016 – May 2018</span>
+            </div>
             <ul class="sub-list">
               <li class="sub-list-item">
                 Built a React application with responsive, reusable UI
@@ -422,7 +529,7 @@
       </section>
       <hr />
       <section>
-        <h3 class="section-header">Additional Experience</h3>
+        <h3 class="section-header">🧭 Additional Experience</h3>
         <p class="text">
           Former USC Writing Program lecturer and Anthropology TA; experienced
           in teaching, mentoring, and guiding junior practitioners through
@@ -433,7 +540,7 @@
       </section>
       <hr />
       <section>
-        <h3 class="section-header">Education</h3>
+        <h3 class="section-header">🎓 Education</h3>
         <ul class="list-wrapper">
           <li class="list-item">
             <a
