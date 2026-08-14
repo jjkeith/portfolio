@@ -217,6 +217,7 @@ section {
 
 .site-footer {
   background-color: var(--footer-color);
+  box-sizing: border-box;
   padding: 30px 20px;
   position: absolute;
   bottom: 0;
