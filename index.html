@@ -4,367 +4,842 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google search meta tags-->
-    <meta name="Title" content="JJ Keith" />
-    <meta name="Keywords" content="Frontend Web developer" />
-    <meta name="Description" content="Portfolio of web developer JJ Keith" />
-    <meta name="Subject" content="Internet" />
-    <meta name="Language" content="English" />
-    <link rel="logo" type="image/jpg" href="https://www.jjkeith.net/logo.png" />
+    <title>JJ Keith — Web Developer, Writer, Designer, Maker</title>
 
-    <!-- Social media unfurling -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="JJ Keith" />
     <meta
-      property="og:description"
-      content="Portfolio of web developer JJ Keith"
+      name="description"
+      content="JJ Keith is a web developer, writer, designer, and maker in Los Angeles."
     />
-    <meta property="og:image" content="https://www.jjkeith.net/logo.png" />
-    <meta property="og:url" content="https://www.jjkeith.net" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@jj_keith" />
-    <meta name="twitter:image" content="https://www.jjkeith.net/logo.png" />
-    <meta name="twitter:image:alt" content="JJ Keith" />
 
-    <!-- Load Favicons -->
-    <link rel="icon" href="favicon.png" type="image/jpg" />
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <link rel="stylesheet" href="assets/styles.css" />
-    <title>JJ Keith, web dev</title>
+    <link rel="stylesheet" href="https://use.typekit.net/veu5xub.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Older Tag Code; phasing out -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-81822884-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+    <style>
+      :root {
+        color-scheme: light;
+        --accent-ink: #171717;
+        --paper: #f1f1f1;
+        --ink: #171717;
+        /* sanzo wado's palette 306 */
+        /* https://sanzo-wada.dmbk.io/combination/306 */
+        --accent: #f2ff26; /* lemon yellow */
+        --accent-2: #19cc33; /* dull viridian green */
+        --accent-3: #00d973; /* bonzol green */
+        --accent-4: #bfffe6; /* nile blue */
+        --rule: rgba(23, 23, 23, 0.22);
+
+        --page-width: 1240px;
+        --gutter: clamp(20px, 4vw, 56px);
       }
-      gtag("js", new Date());
 
-      gtag("config", "UA-81822884-1");
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XY1FW4STVT"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+      .palette-dark {
+        display: none;
       }
-      gtag("js", new Date());
 
-      gtag("config", "G-XY1FW4STVT");
-    </script>
+      @media (prefers-color-scheme: dark) {
+        .palette-light {
+          display: none;
+        }
+        .palette-dark {
+          display: inline;
+        }
+        :root {
+          color-scheme: dark;
+          --paper: #171717;
+          --ink: #f1f1f1;
+          /* sanzo wado's palette 306 */
+          /* https://sanzo-wada.dmbk.io/combination/327 */
+          --accent: #bfabcc; /* grayish lavender */
+          --accent-2: #ff5ec4; /* eosine pink */
+          --accent-3: #c0b490; /* ecru */
+          --accent-4: #b85e00; /* raw sienna */
+          --rule: rgba(241, 241, 241, 0.22);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "source-sans-3", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.35;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.15em;
+      }
+
+      a:hover {
+        color: var(--accent-2);
+      }
+
+      .page {
+        width: min(100%, var(--page-width));
+        margin: 0 auto;
+        padding: var(--gutter);
+      }
+
+      /* ---------- Header ---------- */
+
+      header {
+        padding: 1.5rem 0 3rem;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      .name {
+        color: var(--accent-2);
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        line-height: 0.82;
+        letter-spacing: 0.025em;
+        font-family: "margot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      .descriptor {
+        margin: 1.5rem 0 0;
+        font-size: clamp(1rem, 1.7vw, 1.4rem);
+        font-weight: 400;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem 1.4rem;
+        margin-top: 2.5rem;
+        font-size: 1rem;
+      }
+
+      /* ---------- Main grid ---------- */
+
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.9fr);
+        gap: 0;
+      }
+
+      .section {
+        min-width: 0;
+      }
+
+      .content-column {
+        min-width: 0;
+      }
+
+      .column-primary {
+        border-right: 2px solid var(--ink);
+      }
+
+      .section {
+        padding: clamp(2rem, 3.5vw, 3.5rem) clamp(1.5rem, 3.5vw, 3.5rem);
+        border-bottom: 2px solid var(--ink);
+      }
+
+      .section-left {
+        padding-left: 0;
+      }
+
+      .section-right {
+        padding-right: 0;
+      }
+
+      .section-title {
+        margin: 0 0 2rem;
+        font-size: clamp(1rem, 1.4vw, 1.2rem);
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-family: "margot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .section-title::before {
+        content: "";
+        display: inline-block;
+        width: 0.85em;
+        height: 0.85em;
+        margin-right: 0.45em;
+        vertical-align: -0.05em;
+        background: var(--accent-3);
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        margin: 0;
+      }
+
+      /* ---------- Things Made ---------- */
+
+      .made li {
+        padding: 1.05rem 0;
+        border-top: 1px solid var(--rule);
+        font-size: clamp(1rem, 1.4vw, 1.15rem);
+        line-height: 1.3;
+        letter-spacing: 0.05em;
+      }
+
+      .made li:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      /* ---------- Things Used ---------- */
+
+      .used {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+      }
+
+      .used li {
+        padding: 0.58rem 0.78rem 0.54rem;
+        border: 1.5px solid var(--ink);
+        border-radius: 999px;
+        font-size: clamp(1rem, 1.4vw, 1.15rem);
+        background: transparent;
+      }
+
+      .used li:last-child {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+
+      /* ---------- Things Done ---------- */
+
+      .done {
+        display: grid;
+        gap: 2.2rem;
+      }
+
+      .done-item {
+        display: grid;
+        grid-template-columns: 8rem minmax(0, 1fr);
+        gap: 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+      }
+
+      .done-item:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .done-label {
+        font-size: 0.76rem;
+        line-height: 1.15;
+        font-family: "margot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .done-copy {
+        font-size: clamp(1rem, 1.25vw, 1.1rem);
+        line-height: 1.35;
+      }
+
+      .done-copy em {
+        /* font-family: Georgia, "Times New Roman", serif; */
+        font-style: italic;
+      }
+
+      /* ---------- Things To Do ---------- */
+
+      .todo .section-title::before {
+        background: var(--accent-3);
+      }
+
+      .todo-list {
+        max-width: 38rem;
+        display: grid;
+      }
+
+      .todo-list li {
+        display: flex;
+        align-items: baseline;
+        gap: 0.9rem;
+        padding: 0.9rem 0;
+        border-bottom: 1px solid var(--rule);
+        font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+        line-height: 1.4;
+      }
+
+      .todo-box {
+        width: 1.05rem;
+        height: 1.05rem;
+        flex: 0 0 1.05rem;
+        border: 1.5px solid var(--ink);
+        border-radius: 2px;
+        transform: translateY(0.1rem);
+      }
+
+      /* ---------- Footer ---------- */
+
+      footer {
+        border-top: 2px solid var(--ink);
+        padding: 1.4rem 0 2.5rem;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .footer-socials {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .footer-socials a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 4px;
+      }
+      .footer-socials svg {
+        width: 23px;
+        height: 23px;
+      }
+      .footer-socials a:hover {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      .footer-socials a:focus-visible {
+        outline: 3px solid var(--accent-4);
+        outline-offset: 3px;
+      }
+
+      /* ---------- Responsive ---------- */
+
+      @media (max-width: 820px) {
+        header {
+          padding-bottom: 3rem;
+        }
+
+        main {
+          display: block;
+        }
+
+        .column-primary {
+          border-right: 0;
+        }
+
+        .section-left,
+        .section-right {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .done-item {
+          grid-template-columns: 1fr;
+          gap: 0.55rem;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .contact {
+          flex-direction: column;
+        }
+
+        .name {
+          font-size: clamp(3rem, 15vw, 4rem);
+        }
+
+        .made li {
+          font-size: 1rem;
+        }
+
+        footer {
+          flex-direction: column;
+        }
+      }
+
+      @media print {
+        .palette-light {
+          display: inline;
+        }
+        .palette-dark {
+          display: none;
+        }
+        :root {
+          color-scheme: light;
+          --paper: #fff;
+          --ink: #171717;
+          --accent: #f2ff26;
+          --accent-2: #171717;
+          --accent-3: #a6d40d;
+          --accent-4: #bfffe6;
+          --rule: rgba(23, 23, 23, 0.22);
+        }
+        body {
+          background: white;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .page {
+          max-width: none;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="assets/previews.css" />
+    <script src="assets/previews.js" defer></script>
   </head>
 
   <body>
-    <main class="container">
-      <h1 class="page-title">JJ Keith</h1>
-      <p class="page-subtitle">
-        Senior Frontend Engineer | Design Systems &amp; UI Platforms | React &amp;
-        TypeScript
-      </p>
-      <section class="intro-card">
-        <p class="body-text">
-          I'm JJ and I build design systems, reusable UI component
-          libraries, and frontend platforms for high-traffic, content-rich
-          products.
-        </p>
-        <p class="body-text">
-          I partner closely with designers to translate visual systems into
-          scalable, well-documented React components, mentor engineers on
-          frontend standards, and support multiple teams through shared UI
-          foundations.
-        </p>
-        <p class="body-text">
-          <a class="accent-link" href="mailto:jj@jjkeith.net"
-            >jj@jjkeith.net</a
+    <div class="page">
+      <header>
+        <h1 class="name">
+          <button
+            type="button"
+            class="preview-trigger"
+            data-preview="portrait"
+            aria-expanded="false"
+            aria-controls="image-preview"
           >
-          &nbsp;|&nbsp;
-          <a class="accent-link" href="tel:+13234045894">(323) 404-5894</a>
-          &nbsp;|&nbsp;
-          <a
-            class="accent-link"
-            href="https://www.jjkeith.net"
-            target="_blank"
-            >www.jjkeith.net</a
-          >
-          &nbsp;|&nbsp;
-          <a
-            class="accent-link"
-            href="https://www.linkedin.com/in/jjkeith/"
-            target="_blank"
-            >linkedin.com/in/jjkeith/</a
-          >
+            JJ Keith
+          </button>
+        </h1>
+
+        <p class="descriptor">
+          Web Developer <span aria-hidden="true">|</span> Writer
+          <span aria-hidden="true">|</span> Designer
+          <span aria-hidden="true">|</span>
+          Maker
         </p>
-      </section>
-      <hr />
-      <section>
-        <h3 class="section-header">🛠️ Skills</h3>
-        <ul class="card-list">
-          <li class="card">
-            React · TypeScript · JavaScript · HTML5 · CSS3/SCSS · Responsive
-            Design · Accessibility (WCAG) · UI Component Libraries · Design
-            Systems · Design Tokens · Theming · Frontend Architecture
-          </li>
-          <li class="card">
-            Design-to-Development Translation · UX / UI Collaboration ·
-            Cross-functional Leadership · Frontend Standards &amp; Documentation ·
-            Developer Experience (DX) · Mentorship
-          </li>
-          <li class="card">
-            Git · CI/CD (GitHub Actions, Vercel deployments) · API Integration ·
-            REST APIs · Contentful · HubSpot · Salesforce · Headless CMS ·
-            Performance Optimization
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section>
-        <h3 class="section-header">💼 Experience</h3>
-        <ul class="card-list">
-          <li class="card">
-            <div class="card-header">
-              <a
-                class="accent-link"
-                href="http://www.kcrw.com"
-                target="_blank"
-                >KCRW</a
-              >
-              <span class="card-meta">Jan 2024 – Present</span>
-            </div>
-            <div class="experience-grid">
-              <ul class="detail-list">
-                <li class="detail-item">
-                  Lead frontend architecture for KCRW’s web platform, including
-                  a full redesign and migration of decades of content to a React
-                  / Next.js + Contentful stack.
-                </li>
-                <li class="detail-item">
-                  Design and implement reusable component systems and
-                  presentation layers used across editorial, marketing, and
-                  membership experiences.
-                </li>
-                <li class="detail-item">
-                  Partner closely with designers and product stakeholders to
-                  translate visual design into accessible, performant React
-                  components.
-                </li>
-                <li class="detail-item">
-                  Establish frontend patterns, accessibility standards, and
-                  component conventions adopted across teams.
-                </li>
-                <li class="detail-item">
-                  Mentor engineers and agency partners on frontend craft,
-                  accessibility, performance, and modular design.
-                </li>
-                <li class="detail-item">
-                  Integrate multiple APIs (Contentful, custom playlist APIs,
-                  HubSpot, Salesforce) to support complex content and
-                  fan-facing workflows.
-                </li>
-                <li class="detail-item">
+
+        <div class="contact">
+          <a href="mailto:jj@hiyajj.com">jj@hiyajj.com</a>
+
+          <a href="tel:+13234045894">
+            (323) 404-5894
+          </a>
+
+          <a href="resumes/tech/index.html">Technical résumé</a>
+          <a href="resumes/generalist/index.html">Generalist résumé</a>
+        </div>
+      </header>
+
+      <main>
+        <div class="content-column column-primary">
+          <section class="section section-left">
+            <h2 class="section-title">Things Done</h2>
+
+            <div class="done">
+              <div class="done-item">
+                <div class="done-label">Degrees</div>
+
+                <div class="done-copy">
+                  Earned a bachelor’s degree in Biological Anthropology from UC
+                  Berkeley and a master’s in Professional Writing from USC.
+                </div>
+              </div>
+              <div class="done-item">
+                <div class="done-label">Engineering</div>
+                <div class="done-copy">
+                  Spent ten years building websites and applications for media
+                  organizations, startups, and ecommerce clients, including
+                  KCRW, Edify, Friendbuy, and Gigmor.
+                </div>
+              </div>
+
+              <div class="done-item">
+                <div class="done-label">Teaching</div>
+
+                <div class="done-copy">
+                  Taught for four years at USC across the Anthropology
+                  Department and Writing Program as a teaching assistant and
+                  lecturer.
+                </div>
+              </div>
+
+              <div class="done-item">
+                <div class="done-label">Essays</div>
+                <div class="done-copy">
                   <em
-                    >React · TypeScript · Next.js · Design Systems ·
-                    Accessibility · Frontend Architecture</em
-                  >
-                </li>
-              </ul>
-              <figure class="experience-figure">
-                <a href="https://www.kcrw.com" target="_blank">
-                  <img src="assets/kcrw.png" alt="Screenshot of KCRW.com" />
-                </a>
-              </figure>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-header">
-              <a class="accent-link" href="http://edify.cx" target="_blank"
-                >Edify Labs</a
-              >
-              <span class="card-meta">Nov 2022 – Sep 2023</span>
-            </div>
-            <div class="experience-grid">
-              <ul class="detail-list">
-                <li class="detail-item">
-                  Built a React / Next.js frontend for a SaaS customer
-                  experience platform using a headless CMS.
-                </li>
-                <li class="detail-item">
-                  Developed reusable UI components and layout systems to support
-                  rapid iteration across marketing and product surfaces.
-                </li>
-                <li class="detail-item">
-                  Collaborated with design and product teams to improve
-                  usability, responsiveness, and accessibility.
-                </li>
-                <li class="detail-item">
-                  Improved frontend performance and consistency across mobile
-                  and desktop breakpoints.
-                </li>
-                <li class="detail-item">
+                    ><button
+                      type="button"
+                      class="preview-trigger"
+                      data-preview="salon"
+                      aria-expanded="false"
+                      aria-controls="image-preview"
+                    >
+                      Salon
+                    </button></em
+                  >,
                   <em
-                    >React · TypeScript · Headless CMS · Component Systems ·
-                    Accessibility</em
-                  >
-                </li>
-              </ul>
-              <figure class="experience-figure">
-                <img src="assets/edify.png" alt="Screenshot of Edify.cx" />
-                <figcaption>No longer online.</figcaption>
-              </figure>
-            </div>
-          </li>
-          <li class="card">
-            <div class="card-header">
-              <a
-                class="accent-link"
-                href="http://friendbuy.com"
-                target="_blank"
-                >Friendbuy</a
-              >
-              <span class="card-meta">May 2019 – Nov 2022</span>
-            </div>
-            <div class="experience-grid">
-              <ul class="detail-list">
-                <li class="detail-item">
-                  Led frontend development for customer-facing and internal
-                  marketing platforms, emphasizing pixel-accurate UI and brand
-                  consistency.
-                </li>
-                <li class="detail-item">
-                  Built and maintained reusable UI components deployed across
-                  SaaS embeds, client implementations, and a HubSpot-based
-                  marketing site.
-                </li>
-                <li class="detail-item">
-                  Served as a bridge between design, product, and engineering,
-                  ensuring shared UI patterns and consistent implementation.
-                </li>
-                <li class="detail-item">
-                  Managed and mentored junior developers, establishing frontend
-                  best practices and review standards.
-                </li>
-                <li class="detail-item">
+                    ><button
+                      type="button"
+                      class="preview-trigger"
+                      data-preview="huffpost"
+                      aria-expanded="false"
+                      aria-controls="image-preview"
+                    >
+                      HuffPost
+                    </button></em
+                  >,
                   <em
-                    >React · UI Component Systems · Design Consistency ·
-                    Frontend Leadership</em
+                    ><button
+                      type="button"
+                      class="preview-trigger"
+                      data-preview="readers-digest"
+                      aria-expanded="false"
+                      aria-controls="image-preview"
+                    >
+                      Reader’s Digest
+                    </button></em
+                  >, <em>The Sydney Morning Herald</em>, <em>Alternet</em>,
+                  <em>The Hairpin</em>, <em>Thought Catalog</em>,
+                  <em>xoJane</em>, <em>Bitch Magazine</em>, and
+                  <button
+                    type="button"
+                    class="preview-trigger"
+                    data-preview="more-writing"
+                    aria-expanded="false"
+                    aria-controls="image-preview"
                   >
-                </li>
-              </ul>
-              <figure class="experience-figure">
-                <a href="https://friendbuy.com" target="_blank">
-                  <img
-                    src="assets/friendbuy.png"
-                    alt="Screenshot of Friendbuy success stories"
-                  />
-                </a>
-              </figure>
+                    others</button
+                  >.
+                </div>
+              </div>
+
+              <div class="done-item">
+                <div class="done-label">Books</div>
+
+                <div class="done-copy">
+                  <em
+                    ><button
+                      type="button"
+                      class="preview-trigger"
+                      data-preview="book"
+                      aria-expanded="false"
+                      aria-controls="image-preview"
+                    >
+                      Motherhood Smotherhood
+                    </button></em
+                  >
+                  (Skyhorse Publishing), published in Australia as
+                  <em
+                    ><button
+                      type="button"
+                      class="preview-trigger"
+                      data-preview="australian-book"
+                      aria-expanded="false"
+                      aria-controls="image-preview"
+                    >
+                      Stop Reading Baby Books
+                    </button></em
+                  >
+                  (Nero Books), with an audiobook edition from Audible.
+                </div>
+              </div>
+
+              <div class="done-item">
+                <div class="done-label">On Stage</div>
+
+                <div class="done-copy">
+                  Panelist at the Los Angeles Times Festival of Books, reader at
+                  Skylight Books, and presenter at
+                  <em>Expressing Motherhood</em>.
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="card">
-            <div class="card-header">
-              <a
-                class="accent-link"
-                href="http://gigmor.com"
-                target="_blank"
-                >Gigmor</a
-              >
-              <span class="card-meta">Aug 2016 – May 2018</span>
-            </div>
-            <ul class="detail-list">
-              <li class="detail-item">
-                Built a React application from the ground up, focusing on
-                reusable components, responsive layouts, and accessibility.
-              </li>
-              <li class="detail-item">
-                Collaborated in design reviews, sprint planning, and code
-                reviews to ship features end to end.
-              </li>
-              <li class="detail-item">
-                <em
-                  >React · Redux · HTML / CSS · Accessibility</em
+          </section>
+          <section class="section section-left">
+            <h2 class="section-title">Things Made</h2>
+
+            <ul class="made">
+              <li>
+                Dozens of
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="edify"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
                 >
+                  marketing websites</button
+                >,
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="gigmor"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  apps</button
+                >, and
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="friendbuy"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  “widgets”
+                </button>
+                over ten years of professional web development experience,
+                including a ground-up relaunch of
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="kcrw"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  KCRW.com
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="riso"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  Risograph prints
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="resin"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  Resin jelly molds for no particular reason, but they might
+                  work as Christmas ornaments?
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="tiktok"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  Short-form videos (this one's a new skill)
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="drapes"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  Curtains, but, like, with pleats, so it was hard
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="lego"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  An entire LEGO Christmas village, including two trains and a
+                  vintage 1980s monorail
+                </button>
               </li>
             </ul>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section>
-        <h3 class="section-header">🧭 Additional Experience</h3>
-        <p class="body-text">
-          Former Lecturer in the USC Writing Program and Anthropology Teaching
-          Assistant; extensive experience teaching, mentoring, and communicating
-          complex systems clearly. Published author and essayist, bringing a
-          strong editorial sensibility and attention to language, structure, and
-          audience to UI work.
-        </p>
-      </section>
-      <hr />
-      <section>
-        <h3 class="section-header">🎓 Education</h3>
-        <ul class="card-list">
-          <li class="card">
-            <a
-              class="accent-link"
-              href="https://www.usc.edu/"
-              target="_blank"
-              >University of Southern California</a
-            >
-            <span class="card-meta"
-              >M.P.W. (Nonfiction Writing), 2008</span
-            >
-          </li>
-          <li class="card">
-            <a
-              class="accent-link"
-              href="https://www.berkeley.edu/"
-              target="_blank"
-              >University of California, Berkeley</a
-            >
-            <span class="card-meta"
-              >B.A. (Biological Anthropology), 2000</span
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-links">
-        <a
-          href="https://github.com/jjkeith/"
-          target="_blank"
-          class="footer-icon"
-          aria-label="github"
+          </section>
+        </div>
+        <div class="content-column">
+          <section class="section section-right">
+            <h2 class="section-title">Things Used</h2>
+
+            <ul class="used">
+              <li>Adobe Photoshop, Premiere &amp; InDesign</li>
+              <li>JavaScript: React, Vue &amp; vanilla</li>
+              <li>HTML + CSS</li>
+              <li>RISO RZ390UI</li>
+              <li>Cricut Explore 3 and a sewing machine</li>
+              <li>Epoxy resin</li>
+              <li>An unholy quantity of LEGO</li>
+              <li>
+                An exciting variety of glues, ranging from hot to room
+                temperature
+              </li>
+            </ul>
+          </section>
+          <section class="section section-right todo">
+            <h2 class="section-title">Things To Do</h2>
+
+            <ul class="todo-list">
+              <li>
+                <span class="todo-box" aria-hidden="true"></span
+                ><span>Learn how to make more things</span>
+              </li>
+              <li>
+                <span class="todo-box" aria-hidden="true"></span
+                ><span>Meet more people</span>
+              </li>
+              <li>
+                <span class="todo-box" aria-hidden="true"></span
+                ><span>Design and sell useful things</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <span
+          >&copy; JJ Keith,
+          <script>
+            document.currentScript.after(
+              document.createTextNode(new Date().getFullYear())
+            );
+          </script></span
         >
-          <img src="assets/github.svg" alt="GitHub" aria-hidden="true" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jjkeith/"
-          target="_blank"
-          class="footer-icon"
-          aria-label="linkedin"
+        <span>
+          Accent colors selected from Sanzo Wada’s
+          <em>A Dictionary of Color Combinations</em>>. This is combination
+          <span class="palette-light">306</span
+          ><span class="palette-dark">327</span>.</span
         >
-          <img src="assets/linkedin.svg" alt="LinkedIn" aria-hidden="true" />
-        </a>
-        <a
-          href="mailto:jj@jjkeith.net"
-          target="_blank"
-          class="footer-icon"
-          v-html="emailIcon"
-          aria-label="email"
-        >
-          <img src="assets/email.svg" alt="Email" aria-hidden="true" />
-        </a>
-      </div>
-    </footer>
+        <nav class="footer-socials" aria-label="Find JJ online">
+          <a
+            href="https://www.hiyajj.com"
+            aria-label="hiyajj.com"
+            title="hiyajj.com"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <ellipse cx="12" cy="12" rx="4" ry="9" />
+              <path d="M3 12h18M5 6h14M5 18h14" /></svg
+          ></a>
+          <a
+            href="https://linkedin.com/in/jjkeith/"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            ><svg
+              aria-hidden="true"
+              focusable="false"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/cultivish/"
+            aria-label="Cultivish on Instagram"
+            title="Cultivish on Instagram"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              /></svg
+          ></a>
+          <a
+            href="https://www.tiktok.com/@cultivish"
+            aria-label="Cultivish on TikTok"
+            title="Cultivish on TikTok"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M16.7 1h-3.5v15a3.1 3.1 0 1 1-2.7-3.1V9.3a6.7 6.7 0 1 0 6.2 6.7V8.4a9 9 0 0 0 5.3 1.7V6.6A5.5 5.5 0 0 1 16.7 1Z"
+              /></svg
+          ></a>
+        </nav>
+      </footer>
+    </div>
+    <span
+      id="image-preview"
+      class="image-preview"
+      role="region"
+      aria-label="Image preview"
+      hidden
+    >
+      <span class="preview-bar"
+        ><strong id="preview-title"></strong
+        ><button type="button" id="preview-close" aria-label="Close preview">
+          ×
+        </button></span
+      >
+      <img id="preview-image" alt="" />
+      <span id="preview-caption"></span>
+      <span class="preview-controls"
+        ><button type="button" id="preview-prev" aria-label="Previous image">
+          ←</button
+        ><span id="preview-count"></span
+        ><button type="button" id="preview-next" aria-label="Next image">
+          →
+        </button></span
+      >
+      <a id="preview-link" hidden></a>
+      <span id="preview-credit" class="preview-credit"></span>
+    </span>
+    <span
+      id="preview-status"
+      class="sr-only"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></span>
   </body>
 </html>

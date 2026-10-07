@@ -1,0 +1,14 @@
+/* Shared résumé navigation and semantic heading refinements. */
+.resume-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.85rem; }
+.resume-nav [aria-current="page"] { border-bottom-color: var(--accent-color); }
+.resume-role { font-size: 1rem; margin: 0 0 0.5rem; }
+.resume-contact { font-size: 0.85rem; overflow-wrap: anywhere; }
+.card > .body-text:last-child { margin-bottom: 0; }
+.site-footer { box-sizing: border-box; height: auto; }
+a:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px; }
+@media print {
+  .resume-nav, .site-footer { display: none; }
+  body { padding: 0; color: #000; background: #fff; }
+  .card, .intro-card { box-shadow: none; break-inside: avoid; }
+  .section-header { break-after: avoid; }
+}
