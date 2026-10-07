@@ -8,6 +8,7 @@
 a:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px; }
 @media print {
   .resume-nav, .site-footer { display: none; }
+  :root { --paper: #fff; --ink: #000; --accent-2: #000; --accent-3: #000; --rule: #aaa; }
   body { padding: 0; color: #000; background: #fff; }
   .card, .intro-card { box-shadow: none; break-inside: avoid; }
   .section-header { break-after: avoid; }

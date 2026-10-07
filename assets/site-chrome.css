@@ -1,0 +1,55 @@
+/* Common header, navigation, and footer for all content pages. */
+.site-header {
+  box-sizing: border-box;
+  padding: 1.5rem 0 2rem;
+  margin: 0 auto 2rem;
+  border-bottom: 2px solid var(--ink);
+}
+.site-header .name {
+  color: var(--accent-2);
+  margin: 0;
+  font: normal 400 clamp(3rem, 8vw, 6.5rem)/0.95 var(--header-font);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.site-descriptor { margin: 1.5rem 0 0; font: 400 1.125rem/1.4 var(--body-font); }
+.site-contact, .site-nav { display: flex; flex-wrap: wrap; gap: 0.65rem 1.4rem; font-size: 1rem; }
+.site-contact { margin-top: 1.5rem; }
+.site-nav { margin-top: 1rem; }
+.site-header a, .site-end a { color: inherit; text-underline-offset: 0.2em; }
+.site-nav [aria-current="page"] { text-decoration-thickness: 3px; text-decoration-color: var(--accent-3); }
+body > .site-header, .footer-container { max-width: 760px; margin-left: auto; margin-right: auto; }
+body:has(> .site-header) { padding-bottom: 2rem; }
+.site-end {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 2px solid var(--ink);
+  padding: 1.4rem 0;
+  font: 400 0.78rem/1.4 var(--body-font);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.footer-socials { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.footer-socials a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 4px; }
+.footer-socials svg, .footer-socials img { width: 23px; height: 23px; }
+.footer-socials img { filter: var(--footer-icon-filter, none); }
+.footer-socials a:hover { background: var(--ink); color: var(--paper); }
+.site-header a:focus-visible, .footer-socials a:focus-visible { outline: 3px solid var(--accent-3); outline-offset: 3px; }
+.palette-note { display: block; font: 400 0.8rem/1.4 var(--body-font); }
+.palette-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .palette-light { display: none; }
+  .palette-dark { display: inline; }
+}
+@media (max-width: 560px) {
+  .site-end { flex-direction: column; align-items: flex-start; }
+}
+@media print {
+  .site-nav, .site-end, .palette-note { display: none; }
+  .site-header .name { color: var(--ink); font-size: 3rem; }
+  .site-header { padding-top: 0; }
+}

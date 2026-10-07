@@ -1,36 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Righteous&display=swap");
-
+/* Résumé layout; palette and fonts come from theme.css. */
 :root {
-  --background-color: #f7f6fb;
-  --text-color: #1c1a27;
-  --link-color: #115d4a;
-  --hr-color: #c3b4ff;
-  --footer-color: #ece8ff;
-  --accent-color: #5847a6;
-  --muted-accent: #8b7acb;
-  --footer-link-color: var(--text-color);
+  --background-color: var(--paper);
+  --text-color: var(--ink);
+  --link-color: var(--ink);
+  --hr-color: var(--accent-3);
+  --footer-color: var(--paper);
+  --accent-color: var(--accent-2);
+  --muted-accent: var(--ink);
+  --footer-link-color: var(--ink);
   --footer-icon-filter: none;
-  --header-font: "Righteous", cursive;
-  --body-font: "Poppins", sans-serif;
-  --hover-brightness: 0.85;
-  --card-bg: #ffffff;
-  --pill-bg: rgba(139, 122, 203, 0.1);
+  --card-bg: var(--paper);
+  --pill-bg: transparent;
 }
-
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #0f1119;
-    --hr-color: #7f6bd6;
-    --text-color: #f1eefc;
-    --link-color: #7ae0bf;
-    --accent-color: #c4b5fd;
-    --muted-accent: #a799e7;
-    --footer-color: #161828;
-    --footer-link-color: var(--text-color);
-    --footer-icon-filter: invert(1);
-    --card-bg: #151826;
-    --pill-bg: rgba(196, 181, 253, 0.12);
-  }
+  :root { --footer-icon-filter: invert(1); }
 }
 
 body {
@@ -38,6 +21,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: 1rem;
+  font-weight: 400;
   height: 100%;
   line-height: 1.6;
   min-height: calc(100vh - 160px);
@@ -54,7 +38,8 @@ body {
 .page-title {
   color: var(--accent-color);
   font-family: var(--header-font);
-  font-size: clamp(2rem, 2.8vw, 2.6rem);
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0;
@@ -64,15 +49,16 @@ body {
 .page-subtitle {
   color: var(--muted-accent);
   font-family: var(--header-font);
-  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
   letter-spacing: 1.5px;
   margin: 0 0 0.75rem;
 }
 
 .intro-card {
   background: var(--card-bg);
-  border-radius: 16px;
-  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -86,28 +72,16 @@ body {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--ink);
 }
 
 .body-text {
   margin: 0 0 0.75rem;
 }
 
-a:after {
-  background-color: transparent;
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0;
-  transition: 0.2s all ease-in;
-}
-
-a:hover:after {
-  background-color: var(--accent-color);
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-}
+a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
 
 .accent-link {
   border-bottom: 2px solid transparent;
@@ -142,9 +116,9 @@ section {
 
 .card {
   background: var(--card-bg);
-  border-radius: 14px;
+  border-top: 1px solid var(--rule);
   padding: 1rem 1.2rem;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
 }
 
 .card-header {
@@ -233,9 +207,7 @@ section {
   gap: 2.5rem;
 }
 
-.footer-icon:not(:last-of-type) {
-  margin-right: 60px;
-}
+.site-footer { border-top: 2px solid var(--ink); }
 
 .footer-icon svg,
 .footer-icon img {
