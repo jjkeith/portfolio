@@ -5,15 +5,14 @@
     caption
   });
   const previews = {
+    hydroponics: {
+      title: "Kratky hydroponics",
+      images: [image("hydroponics.webp", "Leafy plants growing in cobalt-blue jars under indoor grow lights.", "This is less than half of them.")]
+    },
     portrait: {
       title: "JJ Keith",
-      images: [
-        image(
-          "jj-portrait.webp",
-          "Portrait of JJ Keith with long blonde hair, gold jewelry, and a black top against a light background.",
-          "It me"
-        )
-      ]
+      captionUrl: "https://www.aureumhairstudio.com/book",
+      images: [image("jj-amina-portrait.webp", "Portrait of JJ Keith with blonde hair and bangs, wearing a colorful patterned top and gold jewelry.", "Photo: Amina Persson")]
     },
     "readers-digest": {
       title: "Reader’s Digest · Micro-memoir",
@@ -35,7 +34,9 @@
           "lego.webp",
           "A LEGO Christmas village beneath a Christmas tree, with illuminated buildings, a carousel, and train tracks.",
           "This implementation is microscopic in comparison to what I am going to do this year"
-        )
+        ),
+        image("lego2.webp", "A LEGO town with elevated monorail tracks, a red train, an airport, and a Ferris wheel.", "LEGO town and monorail"),
+        image("lego3.webp", "A row of LEGO buildings on a mantel, illuminated with small colorful lights.", "LEGO village, lit up")
       ]
     },
     salon: {
@@ -119,7 +120,7 @@
         image(
           "drapes.webp",
           "Handmade pleated curtains with blue and cream geometric and floral patterns, hanging from rings.",
-          "Yes, with pleats."
+          "They're not crooked; your eye is twitching"
         )
       ]
     },
@@ -183,42 +184,10 @@
       link: "View the book on Amazon ↗",
       images: [
         image(
-          "book.jpg",
+          "motherhood-published.webp",
           "Cover of Motherhood Smotherhood by JJ Keith, published by Skyhorse.",
           "US edition · Skyhorse Publishing"
         )
-      ]
-    },
-    berkeley: {
-      title: "UC Berkeley",
-      url: "https://www.berkeley.edu/",
-      link: "Visit UC Berkeley ↗",
-      images: [
-        image(
-          "sather.jpg",
-          "Sather Gate at the University of California, Berkeley."
-        )
-      ],
-      credit: [
-        "Minesweeper · CC BY-SA 3.0",
-        "https://commons.wikimedia.org/wiki/File:Sather-Gate.jpg",
-        "https://creativecommons.org/licenses/by-sa/3.0/"
-      ]
-    },
-    usc: {
-      title: "University of Southern California",
-      url: "https://www.usc.edu/",
-      link: "Visit USC ↗",
-      images: [
-        image(
-          "tommy.jpg",
-          "The Tommy Trojan statue at sunset on the USC campus."
-        )
-      ],
-      credit: [
-        "EEJCC · CC BY-SA 4.0",
-        "https://commons.wikimedia.org/wiki/File:Tommy_Trojan_at_sunset.jpg",
-        "https://creativecommons.org/licenses/by-sa/4.0/"
       ]
     }
   };
@@ -250,11 +219,21 @@
   function render() {
     const data = previews[active.dataset.preview],
       item = data.images[index];
+    panel.dataset.preview = active.dataset.preview;
     photo.hidden = false;
     photo.src = item.src;
     photo.alt = item.alt;
     document.getElementById("preview-title").textContent = data.title;
-    document.getElementById("preview-caption").textContent = item.caption;
+    const caption = document.getElementById("preview-caption");
+    caption.replaceChildren();
+    if (data.captionUrl) {
+      const captionLink = document.createElement("a");
+      captionLink.href = data.captionUrl;
+      captionLink.target = "_blank";
+      captionLink.rel = "noopener noreferrer";
+      captionLink.textContent = item.caption;
+      caption.append(captionLink);
+    } else caption.textContent = item.caption;
     document.getElementById("preview-count").textContent = `${index + 1} / ${
       data.images.length
     }`;
@@ -263,23 +242,10 @@
     link.hidden = !data.url;
     if (data.url) {
       link.href = data.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
       link.textContent = data.link;
     } else link.removeAttribute("href");
-    const credit = document.getElementById("preview-credit");
-    credit.replaceChildren();
-    if (data.credit) {
-      const source = document.createElement("a");
-      source.href = data.credit[1];
-      source.textContent = data.credit[0];
-      credit.append(source);
-      if (data.credit[2]) {
-        const license = document.createElement("a");
-        license.href = data.credit[2];
-        license.textContent = "License";
-        credit.append(" · ", license);
-      }
-      credit.append(" · Resized");
-    }
     clearTimeout(announceTimer);
     announceTimer = setTimeout(() => {
       status.textContent = `${data.title}. Image ${index + 1} of ${

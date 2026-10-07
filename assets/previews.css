@@ -17,12 +17,6 @@
   outline: 3px solid var(--accent-2);
   outline-offset: 4px;
 }
-.project-previews {
-  display: block;
-  margin-top: 0.65rem;
-  font-size: 0.85rem;
-  letter-spacing: 0;
-}
 .image-preview {
   position: fixed;
   z-index: 10;
@@ -75,9 +69,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.preview-credit {
-  font-size: 0.72rem;
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -96,10 +87,7 @@
 }
 @media print {
   .image-preview,
-  .project-previews {
-    display: none !important;
-  }
-  .preview-trigger {
+    .preview-trigger {
     text-decoration: none;
   }
 }
@@ -109,3 +97,12 @@
 }
 
 .name > .preview-trigger { text-decoration: none; letter-spacing: inherit; text-transform: inherit; }
+
+.image-preview[data-preview="portrait"] #preview-image {
+  width: min(100%, 290px, 43dvh);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 35%;
+  align-self: center;
+}

@@ -49,8 +49,8 @@
           /* sanzo wado's palette 306 */
           /* https://sanzo-wada.dmbk.io/combination/327 */
           --accent: #bfabcc; /* grayish lavender */
-          --accent-2: #ff5ec4; /* eosine pink */
-          --accent-3: #b85e00; /* raw sienna */
+          --accent-2: #b85e00; /* raw sienna */
+          --accent-3: #ff5ec4; /* eosine pink */
           --accent-4: #c0b490; /* ecru */
           --rule: rgba(241, 241, 241, 0.22);
         }
@@ -111,7 +111,7 @@
 
       .descriptor {
         margin: 1.5rem 0 0;
-        font-size: clamp(1rem, 1.7vw, 1.4rem);
+        font-size: 1.25rem;
         font-weight: 400;
       }
 
@@ -192,7 +192,7 @@
       .made li {
         padding: 1.05rem 0;
         border-top: 1px solid var(--rule);
-        font-size: clamp(1rem, 1.4vw, 1.15rem);
+        font-size: 1rem;
         line-height: 1.3;
         letter-spacing: 0.05em;
       }
@@ -214,7 +214,7 @@
         padding: 0.58rem 0.78rem 0.54rem;
         border: 1.5px solid var(--ink);
         border-radius: 999px;
-        font-size: clamp(1rem, 1.4vw, 1.15rem);
+        font-size: clamp(0.825rem, 1vw, 0.825rem);
         background: transparent;
       }
 
@@ -254,12 +254,11 @@
       }
 
       .done-copy {
-        font-size: clamp(1rem, 1.25vw, 1.1rem);
+        font-size: 1rem;
         line-height: 1.35;
       }
 
       .done-copy em {
-        /* font-family: Georgia, "Times New Roman", serif; */
         font-style: italic;
       }
 
@@ -280,7 +279,7 @@
         gap: 0.9rem;
         padding: 0.9rem 0;
         border-bottom: 1px solid var(--rule);
-        font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+        font-size: 1.125rem;
         line-height: 1.4;
       }
 
@@ -409,7 +408,7 @@
         }
       }
     </style>
-    <link rel="stylesheet" href="assets/previews.css" />
+    <link rel="stylesheet" href="assets/previews.css?v=portrait-square" />
     <script src="assets/previews.js" defer></script>
   </head>
 
@@ -442,8 +441,18 @@
             (323) 404-5894
           </a>
 
-          <a href="resumes/tech/index.html">Technical résumé</a>
-          <a href="resumes/generalist/index.html">Generalist résumé</a>
+          <a
+            href="resumes/tech/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Technical résumé</a
+          >
+          <a
+            href="resumes/generalist/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Generalist résumé</a
+          >
         </div>
       </header>
 
@@ -565,8 +574,8 @@
                 <div class="done-label">On Stage</div>
 
                 <div class="done-copy">
-                  Panelist at the Los Angeles Times Festival of Books, reader at
-                  Skylight Books, and presenter at
+                  Panelist at the <em>Los Angeles Times</em> Festival of Books,
+                  reader at Skylight Books, and presenter at
                   <em>Expressing Motherhood</em>.
                 </div>
               </div>
@@ -617,6 +626,18 @@
                   KCRW.com
                 </button>
               </li>
+              <li>
+                <button
+                  type="button"
+                  class="preview-trigger"
+                  data-preview="hydroponics"
+                  aria-expanded="false"
+                  aria-controls="image-preview"
+                >
+                  A small fleet of cobalt-blue Kratky hydroponic vessels for
+                  lettuce, herbs, and micro-dwarf tomatoes
+                </button>
+              </li>
 
               <li>
                 <button
@@ -651,7 +672,7 @@
                   aria-expanded="false"
                   aria-controls="image-preview"
                 >
-                  Short-form videos (this one's a new skill)
+                  Short-form videos (a skill in-progress)
                 </button>
               </li>
 
@@ -690,13 +711,20 @@
               <li>Adobe Photoshop, Premiere &amp; InDesign</li>
               <li>JavaScript: React, Vue &amp; vanilla</li>
               <li>HTML + CSS</li>
-              <li>RISO RZ390UI</li>
+              <li>
+                RISO RZ390UI via
+                <a
+                  href="https://www.novacommunityarts.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Nova Community Arts</a
+                >
+              </li>
               <li>Cricut Explore 3 and a sewing machine</li>
               <li>Epoxy resin</li>
-              <li>An unholy quantity of LEGO</li>
+              <li>An unholy quantity of LEGOs</li>
               <li>
-                An exciting variety of glues, ranging from hot to room
-                temperature
+                Grow lights, mason jars, and love
               </li>
             </ul>
           </section>
@@ -710,11 +738,15 @@
               </li>
               <li>
                 <span class="todo-box" aria-hidden="true"></span
-                ><span>Meet more people</span>
+                ><span>Grow more plants</span>
               </li>
               <li>
                 <span class="todo-box" aria-hidden="true"></span
                 ><span>Design and sell useful things</span>
+              </li>
+              <li>
+                <span class="todo-box" aria-hidden="true"></span
+                ><span>Meet more people</span>
               </li>
             </ul>
           </section>
@@ -735,6 +767,8 @@
             href="https://www.hiyajj.com"
             aria-label="hiyajj.com"
             title="hiyajj.com"
+            target="_blank"
+            rel="noopener noreferrer"
             ><svg
               viewBox="0 0 24 24"
               fill="none"
@@ -751,6 +785,8 @@
             href="https://linkedin.com/in/jjkeith/"
             aria-label="LinkedIn"
             title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
             ><svg
               aria-hidden="true"
               focusable="false"
@@ -767,6 +803,8 @@
             href="https://www.instagram.com/cultivish/"
             aria-label="Cultivish on Instagram"
             title="Cultivish on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
             ><svg
               viewBox="0 0 24 24"
               fill="none"
@@ -789,6 +827,8 @@
             href="https://www.tiktok.com/@cultivish"
             aria-label="Cultivish on TikTok"
             title="Cultivish on TikTok"
+            target="_blank"
+            rel="noopener noreferrer"
             ><svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -832,7 +872,6 @@
         </button></span
       >
       <a id="preview-link" hidden></a>
-      <span id="preview-credit" class="preview-credit"></span>
     </span>
     <span
       id="preview-status"

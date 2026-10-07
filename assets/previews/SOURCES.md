@@ -4,21 +4,10 @@
   Keith. Resized and compressed for the web.
 - Cultivish: screenshot of https://www.tiktok.com/@cultivish, captured October
   6, 2026.
-- Book: cover screenshot from https://www.amazon.com/dp/1629146587, captured
-  October 6, 2026.
-- Sather Gate: Minesweeper,
-  https://commons.wikimedia.org/wiki/File:Sather-Gate.jpg — CC BY-SA 3.0,
-  https://creativecommons.org/licenses/by-sa/3.0/. Resized/recompressed; image
-  remains under this license.
-- Tommy Trojan: EEJCC,
-  https://commons.wikimedia.org/wiki/File:Tommy_Trojan_at_sunset.jpg — CC BY-SA
-  4.0, https://creativecommons.org/licenses/by-sa/4.0/. Resized/recompressed;
-  image remains under this license.
-
 - Risograph prints, resin jelly molds, and drapes: photographs supplied by JJ
   Keith, October 6, 2026. Converted from HEIC, resized, and exported without
   location metadata.
-- LEGO Christmas village: `assets/lego.jpeg`, supplied by JJ Keith. Resized and
+- LEGO Christmas village: photographs supplied by JJ Keith (including two additional village photographs). Resized and
   exported without metadata.
 - Australian book cover: final cover image from JJ's saved book assets
   (`81Z3Q4jlHZL._AA1500_.jpg`), resized.
@@ -38,4 +27,7 @@
   resized, and exported without location metadata. Caption distinguishes
   collected work from JJ's own zine.
 
-- JJ portrait: user-supplied passport photo.heic. Converted and resized for the name preview, without location metadata. Caption: It me.
+- Portrait replaced with user-supplied 123_1.jpg. Photo: Amina Persson, https://www.aureumhairstudio.com/book. Resized without metadata.
+- Book cover corrected again: prior saved designs were unused. Published illustrated-baby cover retrieved from The Book Company listing for ISBN 9781629146584: https://www.thebookco.com/motherhood-smotherhood-fighting-back-against-the-lactivists-mompetitions-germophobes-and-so-called-experts-who-are-driving-us-crazy/
+
+- Hydroponics: photograph supplied by JJ Keith, resized without metadata.
