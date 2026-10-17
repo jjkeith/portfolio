@@ -2,8 +2,6 @@
 
 - KCRW, Edify, Friendbuy, Gigmor: existing portfolio screenshots supplied by JJ
   Keith. Resized and compressed for the web.
-- Cultivish: screenshot of https://www.tiktok.com/@cultivish, captured October
-  6, 2026.
 - Risograph prints, resin jelly molds, and drapes: photographs supplied by JJ
   Keith, October 6, 2026. Converted from HEIC, resized, and exported without
   location metadata.

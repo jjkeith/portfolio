@@ -166,18 +166,6 @@
         )
       ]
     },
-    tiktok: {
-      title: "Cultivish on TikTok",
-      url: "https://www.tiktok.com/@cultivish",
-      link: "Watch on TikTok ↗",
-      images: [
-        image(
-          "cultivish-tiktok.jpg",
-          "Cultivish TikTok profile and a grid of short-form videos.",
-          "Cultivish · Short-form videos"
-        )
-      ]
-    },
     book: {
       title: "Motherhood Smotherhood",
       url: "https://www.amazon.com/dp/1629146587",
